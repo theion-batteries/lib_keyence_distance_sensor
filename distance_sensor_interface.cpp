@@ -16,30 +16,27 @@
 IdistanceSensor::IdistanceSensor(int OutputHeadNumber)
 {
 this->HeadNum=OutputHeadNumber;
-Keyence_base::HeadsArray[Keyence_base::HeadsCount]=OutputHeadNumber;
-Keyence_base::HeadsCount++;
 }
-~IdistanceSensor()
+IdistanceSensor::~IdistanceSensor()
 {
     delete KeyenceObject;
 }
 void IdistanceSensor::initSensorCom()
 {
-    IkeyenceRS232->initKeyenceCom();
-    IkeyenceRS232->setGeneralMode();
+    KeyenceObject->initKeyenceCom();
+    KeyenceObject->setGeneralMode();
 }
 
 // generic methods
 double IdistanceSensor::getCurrentDistance()
 {
     /******* get values from keyence *********/
-    IkeyenceRS232->getValueOutputHeadAll();
-    return Keyence_base::LookUpValues[this->HeadNum-1];
+    return currentDistance=KeyenceObject->getValueSingleOutputHead(this->HeadNum);
 }
 void IdistanceSensor::printDistance(float val)
 {
-    Serial.print("current distance head ");
-    Serial.print(this->HeadNum);
-    Serial.print(" equal to ");
-    Serial.println(val);
+    SERIAL_HANDLER.PRINT("current distance head ");
+    SERIAL_HANDLER.PRINT(this->HeadNum);
+    SERIAL_HANDLER.PRINT(" equal to ");
+    SERIAL_HANDLER.PRINT_NEW_LINE(val);
 }

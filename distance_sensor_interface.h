@@ -13,15 +13,17 @@
 class IdistanceSensor
 {
     public:
-    IkeyenceRS232* KeyenceObject = new IkeyenceRS232();
     ~IdistanceSensor();
-    int Pin;
-    bool state;
-    double currentDistance;
-    int HeadNum;
     IdistanceSensor(int OutputHeadNumber);
     void initSensorCom();
     //generic methods
     double getCurrentDistance();
     void printDistance(float val);
+    private:
+    int Pin;
+    bool state;
+    double currentDistance;
+    int HeadNum;
+    IkeyenceRS232* KeyenceObject = new IkeyenceRS232();
+
 };

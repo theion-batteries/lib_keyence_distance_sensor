@@ -11,7 +11,7 @@
 #pragma once
 #include <map>
 #include <vector>
-#include <std::string>
+#include <string>
 #include "settings.h"
 /*** layout pins ***/
 /*
@@ -60,8 +60,6 @@ the communication mode, and the setting values are written/read.
 • 88: Timeout error
 • 99: Other error
 */
-
-
 // Note: not all commands were included, only basic cmds to get mesured values
 //abstract class keyence base: interface
 class IkeyenceBase
@@ -81,21 +79,10 @@ std::map<std::string, std::string> commands{
 {"mesure_value_multipleN",RawCommands[7]},
 {"mesure_value_All",RawCommands[8]},
 };
-// storing number of heads for n number of heads
-static std::vector<int> NumUsedHeads;
-// this counter get incremented by instance: every instance is new head
-static int HeadsCount;
-// test array
-static int HeadsArray[12];
-// Values Array
-static double* LookUpValues;
-
+// mesured Values Array
+double MesuredValues;
 // helper func to debug commands
 std::string findCommand(std::string& command, std::map<std::string, std::string>& CommandMap);
-// list heads availble
-static void listHeads();
-
-// pure virtual methods: must be defined in sub classes
 //get a output value of single head
 virtual double getValueSingleOutputHead(int output_head_Nr)=0;
 //get output multiple heads
@@ -106,44 +93,11 @@ virtual double* getValueOutputHeadAll()=0;
 virtual void setGeneralMode()=0;
 // set communication mode
 virtual void setCommunicationMode()=0;
-
-//usefull template fucntions
-    template<typename T>
-    static void printVectorElements(std::vector<T> &vec)
-    {
-        for (auto i = 0; i < vec.size(); ++i)
-    {
-            Serial.println(vec.at(i)) ;
-        }
-    }
-    template<typename A>
-    static void printArrayElements(A& array)
-    {
-        for (const auto& element: array)
-    {
-        Serial.println("listing heads in array");
-        Serial.println(element) ;
-        }
-    }
-    template<typename A, typename V>
-    static void transformArrayToVector(A& array, std::vector<V>& vector )
-    {
-        for (const auto& element: array)
-    {
-            vector.push_back(element);
-        }
-    }
 };
-
 // inherited class for rs232 interface: Arduino Framework
 class IkeyenceRS232:public IkeyenceBase
 {
 public:
- HardwareSerial* serialHandler;
- unsigned long baudrate;
-IkeyenceRS232(HardwareSerial& serHandler, unsigned long baud);
-void setSerialHandler(HardwareSerial& serHandler); 
-void setSerialBaudrate(unsigned long baud); 
 void initKeyenceCom();
 //get a output value of single head: return double
 double getValueSingleOutputHead(int output_head_Nr) override;
@@ -155,21 +109,7 @@ double* getValueOutputHeadAll() override;
 void setGeneralMode() override;
 // set communication mode
 void setCommunicationMode() override;
-
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
 // inherited class for ethernet interface: this probably via SPI
 class Keyence_ethernet_interface:public IkeyenceBase
 {

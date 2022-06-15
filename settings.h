@@ -14,7 +14,7 @@
 
 
 /********** Keyence Specification *******/
-#define NUM_HEADS 3  //number of sensors output heads
+#define NUM_OUTPUT_HEADS 3  //number of sensors output heads
 #define COMMUNICATION_TYPE RS232 //define the rs232 interface
 //#define COMMUNICATION_TYPE ETHERNET //define the ethernet interface
 #if COMMUNICATION_TYPE == RS232
@@ -24,13 +24,15 @@
 #define PRINT_NEW_LINE
 #define PRINT
 /********** Framework Specification *******/
+#define __AVR__
 #if defined(__AVR__)
 #include "Arduino.h"
 #define std::string String
 #define SERIAL_HANDLER Serial1
 #define PRINT_NEW_LINE println
 #define PRINT print
-
+#define BEGIN begin
+#define AVAILABLE available
 #elif defined(ESP8266)
 
 #elif defined(ESP32)
