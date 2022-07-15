@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "author": "sami-theion",
+  "editor": "wokwi",
+  "parts": [ { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": -39.29, "left": 13.1, "attrs": {} } ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "esp:RX2", "esp:TX0", "green", [ "h35.73", "v-57.3" ] ],
+    [ "esp:RX0", "esp:TX2", "green", [ "h26.82", "v47.84" ] ]
+  ]
+}

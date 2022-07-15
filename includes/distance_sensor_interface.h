@@ -13,6 +13,8 @@
 class IdistanceSensor
 {
     public:
+    IkeyenceRS232* KeyenceObject = new IkeyenceRS232();
+
     ~IdistanceSensor();
     IdistanceSensor(int OutputHeadNumber);
     void initSensorCom();
@@ -24,6 +26,5 @@ class IdistanceSensor
     bool state;
     double currentDistance;
     int HeadNum;
-    IkeyenceRS232* KeyenceObject = new IkeyenceRS232();
 
 };

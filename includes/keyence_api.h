@@ -13,6 +13,7 @@
 #include <vector>
 #include <string>
 #include "settings.h"
+
 /*** layout pins ***/
 /*
 5V  ------> VCC
@@ -22,7 +23,6 @@ TX3 ------> TxIn
  */
 #define CR "\r" //assume carriage return is \r otherwise + \n, \0
 #define LF '\n' //assume next line or Line Feed used
-
 /***** rs232 basic device commands ****/
 /*
 * the commands must be sent to the device using CR as delimeter, 
@@ -66,9 +66,9 @@ class IkeyenceBase
 {
 public:
 // Array of Raw Commands
-std::string RawCommands[9] = {"Q0","R0","MS,","MS,01","MS,02","MS,03","MM,1110000000000","MM,","MA"};
-// map of command std::strings to raw commands +CR
-std::map<std::string, std::string> commands{
+string RawCommands[9] = {"Q0","R0","MS,","MS,01","MS,02","MS,03","MM,1110000000000","MM,","MA"};
+// map of command strings to raw commands +CR
+std::map<string, string> commands{
 {"set_communication_mode",RawCommands[0]},
 {"set_general_mode",RawCommands[1]},
 {"mesure_value_outputN",RawCommands[2]},
@@ -81,12 +81,15 @@ std::map<std::string, std::string> commands{
 };
 // mesured Values Array
 double MesuredValues;
+// single value
+double lastValue=0;
+
 // helper func to debug commands
-std::string findCommand(std::string& command, std::map<std::string, std::string>& CommandMap);
+string findCommand(string& command, std::map<string, string>& CommandMap);
 //get a output value of single head
 virtual double getValueSingleOutputHead(int output_head_Nr)=0;
 //get output multiple heads
-virtual double* getValueMultipleOutputHead(std::string HeadsArray)=0;
+virtual double* getValueMultipleOutputHead(string HeadsArray)=0;
 // get output all
 virtual double* getValueOutputHeadAll()=0;
 // set general mode
@@ -102,16 +105,19 @@ void initKeyenceCom();
 //get a output value of single head: return double
 double getValueSingleOutputHead(int output_head_Nr) override;
 //get output multiple heads: return array of doubles
-double* getValueMultipleOutputHead(std::string HeadsArray) override;
+double* getValueMultipleOutputHead(string HeadsArray) override;
 // get output all: return array of doubles
 double* getValueOutputHeadAll() override;
 // set general mode
 void setGeneralMode() override;
 // set communication mode
 void setCommunicationMode() override;
+// send cmd to custom protocoll
+void sendCmd(const string& cmd, Stream& streamPort);
+// process received msg from sensor controll driver
+double processResponse();
 };
-// inherited class for ethernet interface: this probably via SPI
+//inherited class for ethernet interface: this probably via SPI
 class Keyence_ethernet_interface:public IkeyenceBase
 {
-
 };

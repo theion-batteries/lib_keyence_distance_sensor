@@ -10,9 +10,6 @@
  */
 #include "distance_sensor_interface.h"
 
-
-// conctructor distance sensor generic keyence
-// 1 - 12
 IdistanceSensor::IdistanceSensor(int OutputHeadNumber)
 {
 this->HeadNum=OutputHeadNumber;
@@ -26,17 +23,17 @@ void IdistanceSensor::initSensorCom()
     KeyenceObject->initKeyenceCom();
     KeyenceObject->setGeneralMode();
 }
-
-// generic methods
 double IdistanceSensor::getCurrentDistance()
 {
     /******* get values from keyence *********/
-    return currentDistance=KeyenceObject->getValueSingleOutputHead(this->HeadNum);
+    return currentDistance=KeyenceObject->getValueSingleOutputHead(HeadNum);
+    //return currentDistance=KeyenceObject->getValueMultipleOutputHead("100000000000")[HeadNum-1];
+
 }
 void IdistanceSensor::printDistance(float val)
 {
-    SERIAL_HANDLER.PRINT("current distance head ");
-    SERIAL_HANDLER.PRINT(this->HeadNum);
-    SERIAL_HANDLER.PRINT(" equal to ");
-    SERIAL_HANDLER.PRINT_NEW_LINE(val);
+    USB_SERIAL.print("current distance head ");
+    USB_SERIAL.print(this->HeadNum);
+    USB_SERIAL.print(" equal to ");
+    USB_SERIAL.println(val);
 }
