@@ -50,18 +50,16 @@
 #endif
 
 /********** Native cpp********/
-#if defined(Native)
+/* by native cpp we want to skip any data forwarding controller (like arduino or esp32)
+and directly interface the keyence controller via serial communication on WIN or UNIX OS*/
+#define NATIVE
+#if defined(NATIVE)
 #define FRAMEWORK ARDUINO 
-//#define FRAMEWORK ESP_IDF
-#if FRAMEWORK==ARDUINO
-#include "Arduino.h"
-#include <HardwareSerial.h>
-#define string String 
+#define string std::string 
 #define _VIRTUAL_TEST_
 #define USB_SERIAL Serial
 #define KEYENCE_SERIAL_HANDLER Serial2
 #if ENABLE_MOCK_SERIAL == true
 #define MOCK_SERIAL Serial
-#endif
 #endif
 #endif
