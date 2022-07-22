@@ -1,0 +1,3 @@
+[submodule "dependencies/SerialPort"]
+	path = dependencies/SerialPort
+	url = https://github.com/manashmandal/SerialPort.git

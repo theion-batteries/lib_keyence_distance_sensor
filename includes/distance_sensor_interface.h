@@ -13,10 +13,9 @@
 class IdistanceSensor
 {
     public:
-    IkeyenceRS232* KeyenceObject = new IkeyenceRS232();
-
+    keyence::IkeyenceBase* keyenceInterface; // pointer to the interface
     ~IdistanceSensor();
-    IdistanceSensor(int OutputHeadNumber);
+    IdistanceSensor(int OutputHeadNumber, keyence::IkeyenceBase* keyenceInterface);
     void initSensorCom();
     //generic methods
     double getCurrentDistance();

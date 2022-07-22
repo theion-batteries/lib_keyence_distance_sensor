@@ -2,7 +2,7 @@
 <sim-project version="13.40" multi-file="no" uid="simp1c2ae444e27347b2a77cd91f01dfe30f">
   <meta>
     <name>keyence distance sensor</name>
-    <authors> sami dhiab</authors>
+    <authors> </authors>
     <description>class diagramm for the keyence library
 the keyence sensor has rs232 (serial com), ethernet (tcp/ip) interfaces
 the purpose is to get data from a keyence controller over these interfaces, 
@@ -15,11 +15,15 @@ the design must be flexibel to integrate different platforms</description>
         <item-type type-id="class" type="Class" />
         <value>4</value>
       </counter>
+      <counter>
+        <item-type stereotype="interface" type-id="uml-interface-classifier" type="Interface" />
+        <value>1</value>
+      </counter>
     </entity-names>
     <entity-ids>
       <counter>
         <item-type type-id="group" type="Group" />
-        <value>440</value>
+        <value>468</value>
       </counter>
       <counter>
         <item-type type-id="package" type="Package" />
@@ -41,6 +45,14 @@ the design must be flexibel to integrate different platforms</description>
         <item-type type-id="property" type="Property" />
         <value>7</value>
       </counter>
+      <counter>
+        <item-type type-id="uml-interface-classifier" type="Interface" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="realization" type="Realization" />
+        <value>2</value>
+      </counter>
     </entity-ids>
     <diagrams>
       <counter>
@@ -61,6 +73,7 @@ the design must be flexibel to integrate different platforms</description>
   </counters>
   <alias-groups />
   <management uid="md-4149f922d6e249c8bd80759fb0aa680a" name="" task-id-sequence="0">
+    <working-schedule uid="ws-c28bfea661274711ac403dfeeaef4439" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
     <persons>
       <person id="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ">
         <first-name />
@@ -70,6 +83,7 @@ the design must be flexibel to integrate different platforms</description>
         <phone-number />
         <description />
         <color>#00000000</color>
+        <working-schedule uid="ws-cd40a234b8514e75b847081e48802ddd" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
       </person>
     </persons>
     <teams />
@@ -83,13 +97,25 @@ the design must be flexibel to integrate different platforms</description>
   <types default="UML">
     <type-sets>
       <type-set file="UmlTypes.xml" />
-      <type-set file="UmlTypes.xml" />
-      <type-set file="UmlTypes.xml" />
     </type-sets>
     <custom-types>
-      <type id="std::map&lt;string" tid="" name="std::map&lt;string" description="" />
-      <type id="string&amp;" tid="" name="string&amp;" description="" />
-      <type id="Cpp.string ()" tid="" name="Cpp.string ()" description="" />
+      <parameters />
+      <types>
+        <type id="Cpp.string ()" tid="" name="Cpp.string ()" description="" />
+        <type id="IkeyenceRS232*" tid="" name="IkeyenceRS232*" description="" />
+        <type id="const string&amp;" tid="" name="const string&amp;" description="" />
+        <type id="float" tid="" name="float" description="" />
+        <type id="double" tid="" name="double" description="" />
+        <type id="double*" tid="" name="double*" description="" />
+        <type id="std::map&lt;string, string&gt;&amp;" tid="" name="std::map&lt;string, string&gt;&amp;" description="" />
+        <type id="string&amp;" tid="" name="string&amp;" description="" />
+        <type id="std::map&lt;string" tid="" name="std::map&lt;string" description="" />
+        <type id="bool" tid="" name="bool" description="" />
+        <type id="int" tid="" name="int" description="" />
+        <type id="string" tid="" name="string" description="" />
+        <type id="Stream&amp;" tid="" name="Stream&amp;" description="" />
+        <type id="void" tid="" name="void" description="" />
+      </types>
     </custom-types>
   </types>
   <items />
@@ -106,7 +132,7 @@ the design must be flexibel to integrate different platforms</description>
         <version />
       </meta>
       <abstract-items>
-        <item id="209023c8d6404893a9be8bdd681d5d6c" cid="PKG001" type="package" name="" style-class="" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 13:53:38">
+        <item id="209023c8d6404893a9be8bdd681d5d6c" cid="PKG001" type="package" name="" style-class="" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 13:53:38" visibility="undefined">
           <tagged-values>
             <tagged-value id="tva35cde837a804f3ba76bc5bf590ef632" name="namespace" type="text" multiple="false" hidden="false" value="" />
             <tagged-value id="tv02a12c3fcccf4a88952c346f84388ff8" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
@@ -141,7 +167,7 @@ the design must be flexibel to integrate different platforms</description>
                 <tagged-value id="tva52dc08b164141f4b32724ec353ae6de" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="07/15/2022 10:32:10" />
               </tagged-values>
               <feature />
-              <structural-feature type="double" type-id="Cpp.double" />
+              <structural-feature type="double" type-id="double" />
               <property />
             </item>
             <item id="f5de22f1a0a8490889db06d95485f16e" cid="PROP005" type="property" name="HeadNum" style-class="" owner="b73bbacc4c244b61a3d6baaa8ed60cf5" creation-date="07/15/2022 13:53:38" visibility="private">
@@ -156,10 +182,10 @@ the design must be flexibel to integrate different platforms</description>
                 <tagged-value id="tvbcb670d0fbff4bcb95c02d1fa234cb7d" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="07/15/2022 10:32:10" />
               </tagged-values>
               <feature />
-              <structural-feature type="int" type-id="Cpp.int" />
+              <structural-feature type="int" type-id="int" />
               <property />
             </item>
-            <item id="10230160847f44debc76295ee44a2a09" cid="C004" type="class" name="Ikeyence_ethernet" style-class="" creation-date="07/15/2022 13:53:38" visibility="">
+            <item id="10230160847f44debc76295ee44a2a09" cid="C004" type="class" name="Ikeyence_ethernet" style-class="" creation-date="07/15/2022 13:53:38" visibility="undefined">
               <stereotypes>
                 <stereotype name="interface" />
               </stereotypes>
@@ -178,7 +204,7 @@ the design must be flexibel to integrate different platforms</description>
                 <stereotype id="10230160847f44debc76295ee44a2a09_interface_c" type="interface" ref="" />
               </stereotype-instances>
             </item>
-            <item id="a167ba6c2679488eaa1d070f75958283" cid="C006" type="class" name="Main" style-class="" creation-date="07/15/2022 13:53:38">
+            <item id="a167ba6c2679488eaa1d070f75958283" cid="C006" type="class" name="Main" style-class="" creation-date="07/15/2022 13:53:38" visibility="undefined">
               <stereotypes>
                 <stereotype name="main" />
               </stereotypes>
@@ -825,7 +851,7 @@ the design must be flexibel to integrate different platforms</description>
                 <tagged-value id="tvb8541fab8a6b498b984f2980ee7fea73" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="07/15/2022 10:32:10" />
               </tagged-values>
               <feature />
-              <structural-feature type="int" type-id="Cpp.int" />
+              <structural-feature type="int" type-id="int" />
               <property />
             </item>
             <item id="b73bbacc4c244b61a3d6baaa8ed60cf5" cid="C005" type="class" name="IdistanceSensor" style-class="" creation-date="07/15/2022 13:53:38" visibility="public">
@@ -846,6 +872,15 @@ the design must be flexibel to integrate different platforms</description>
                 <owned-item ref="5dab57e1bc07496990860fed219244ec" />
                 <owned-item ref="cdd9259f1f324798b2c7d92b0f4925a8" />
                 <owned-item ref="f5de22f1a0a8490889db06d95485f16e" />
+                <owned-item ref="cdd9259f1f324798b2c7d92b0f4925a8" />
+                <owned-item ref="f5de22f1a0a8490889db06d95485f16e" />
+                <owned-item ref="9c2a2c38fb1540f3969eade8284a922e" />
+                <owned-item ref="cdd9259f1f324798b2c7d92b0f4925a8" />
+                <owned-item ref="f5de22f1a0a8490889db06d95485f16e" />
+                <owned-item ref="9c2a2c38fb1540f3969eade8284a922e" />
+                <owned-item ref="cdd9259f1f324798b2c7d92b0f4925a8" />
+                <owned-item ref="f5de22f1a0a8490889db06d95485f16e" />
+                <owned-item ref="9c2a2c38fb1540f3969eade8284a922e" />
               </owned-items>
               <attributes>
                 <attribute id="a0d7793e071704b4e9cab7eda86d76a69495" cid="PROP001" name="KeyenceObject" creation-date="07/15/2022 13:53:38" property-ref="de047d9093f745dd8117d8b5cac72bde" />
@@ -869,7 +904,7 @@ the design must be flexibel to integrate different platforms</description>
                 </operation>
                 <operation id="o705f3f6ccb2e40e097805fe27bd0edeb501" cid="OP007" name="IdistanceSensor" creation-date="07/15/2022 13:53:38" type="" type-id="" visibility="public">
                   <parameters>
-                    <parameter id="p1fab95709e784c1f9588a49a9d0b78d9" name="OutputHeadNumber" type="int" type-id="Cpp.int" />
+                    <parameter id="p1fab95709e784c1f9588a49a9d0b78d9" name="OutputHeadNumber" type="int" type-id="int" />
                   </parameters>
                   <stereotypes>
                     <stereotype>create</stereotype>
@@ -897,7 +932,7 @@ the design must be flexibel to integrate different platforms</description>
 </source-code>
                   </source-codes>
                 </operation>
-                <operation id="ofdc2280696344c909d92fb0040aa649b501" cid="OP009" name="getCurrentDistance" creation-date="07/15/2022 13:53:38" type="double" type-id="Cpp.double" visibility="public">
+                <operation id="ofdc2280696344c909d92fb0040aa649b501" cid="OP009" name="getCurrentDistance" creation-date="07/15/2022 13:53:38" type="double" type-id="double" visibility="public">
                   <tagged-values>
                     <tagged-value id="tv39ea8f02781a4a9fa8c71c07cb6fd77f" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getCurrentDistance" />
                     <tagged-value id="tv39becb8669ee4be3b36099c2601b959e" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\includes\distance_sensor_interface.h" />
@@ -922,11 +957,29 @@ the design must be flexibel to integrate different platforms</description>
                             </text>
                           </style>
                         </styles>
+                        <definition>
+                          <sections>
+                            <section name="">
+                              <default-page>
+                                <page size="179.2,253.44" header-offset="15" footer-offset="15" unit="mm">
+                                  <margins left="20" right="20" top="20" bottom="20" />
+                                </page>
+                              </default-page>
+                            </section>
+                          </sections>
+                        </definition>
                         <content>
                           <paragraph>
-                            <style />
+                            <style numbering-type="None">
+                              <numbering name="" multi-level="false">
+                                <numbering-level type="None" level="0" format="{0}." />
+                              </numbering>
+                            </style>
                             <p s="S1">
-                              <t>generic methods
+                              <t>generic </t>
+                            </p>
+                            <p s="S1">
+                              <t>methods
 </t>
                             </p>
                           </paragraph>
@@ -945,7 +998,7 @@ the design must be flexibel to integrate different platforms</description>
                 </operation>
                 <operation id="of46779c797a84ad4a36b5e5e8eb0bfda501" cid="OP010" name="printDistance" creation-date="07/15/2022 13:53:38" type="" type-id="" visibility="public">
                   <parameters>
-                    <parameter id="p4692b1593947453198934c4c3fa8b472" name="val" type="float" type-id="Cpp.float" />
+                    <parameter id="p4692b1593947453198934c4c3fa8b472" name="val" type="float" type-id="float" />
                   </parameters>
                   <tagged-values>
                     <tagged-value id="tv5047517374264523b9a117922e8ce16f" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="printDistance" />
@@ -977,10 +1030,10 @@ the design must be flexibel to integrate different platforms</description>
                 <tagged-value id="tve66a74346dc44bac9ab92f04d975e51e" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="07/15/2022 10:32:10" />
               </tagged-values>
               <feature />
-              <structural-feature type="bool" type-id="Cpp.bool" />
+              <structural-feature type="bool" type-id="bool" />
               <property />
             </item>
-            <item id="e21f935fe942438c979b414aea45ec14" cid="C003" type="class" name="IkeyenceRS232" style-class="" creation-date="07/15/2022 13:53:38" visibility="">
+            <item id="e21f935fe942438c979b414aea45ec14" cid="C003" type="class" name="IkeyenceRS232" style-class="" creation-date="07/15/2022 13:53:38" visibility="undefined">
               <stereotypes>
                 <stereotype name="interface" />
               </stereotypes>
@@ -999,7 +1052,7 @@ the design must be flexibel to integrate different platforms</description>
                 <stereotype id="e21f935fe942438c979b414aea45ec14_interface_c" type="interface" ref="" />
               </stereotype-instances>
               <operations>
-                <operation id="o338d66e85fa24a3baff8b00321fecb9e495" cid="OP005" name="processResponse" creation-date="07/15/2022 13:53:38" type="double" type-id="Cpp.double" visibility="public" abstract="true" virtual="true">
+                <operation id="o338d66e85fa24a3baff8b00321fecb9e495" cid="OP005" name="processResponse" creation-date="07/15/2022 13:53:38" type="double" type-id="double" visibility="public" abstract="true" virtual="true">
                   <tagged-values>
                     <tagged-value id="tv82a38d2e231248058284a7aa25802977" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="processResponse" />
                     <tagged-value id="tv099bdafa2c794192a5aa609dbbcde594" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\includes\keyence_api.h" />
@@ -1026,7 +1079,11 @@ the design must be flexibel to integrate different platforms</description>
                         </styles>
                         <content>
                           <paragraph>
-                            <style />
+                            <style numbering-type="None">
+                              <numbering name="" multi-level="false">
+                                <numbering-level type="None" level="0" format="{0}." />
+                              </numbering>
+                            </style>
                             <p s="S1">
                               <t> process received msg from sensor controll driver
 </t>
@@ -1069,9 +1126,9 @@ the design must be flexibel to integrate different platforms</description>
 </source-code>
                   </source-codes>
                 </operation>
-                <operation id="o1b952d5425554680b95c45a8a8e2402c501" cid="OP014" name="getValueSingleOutputHead" creation-date="07/15/2022 13:53:38" type="double" type-id="Cpp.double" visibility="private" abstract="true" virtual="true">
+                <operation id="o1b952d5425554680b95c45a8a8e2402c501" cid="OP014" name="getValueSingleOutputHead" creation-date="07/15/2022 13:53:38" type="double" type-id="double" visibility="private" abstract="true" virtual="true">
                   <parameters>
-                    <parameter id="pabf37e74788b4d9a95890e5aa550f50b" name="output_head_Nr" type="int" type-id="Cpp.int" />
+                    <parameter id="pabf37e74788b4d9a95890e5aa550f50b" name="output_head_Nr" type="int" type-id="int" />
                   </parameters>
                   <tagged-values>
                     <tagged-value id="tv3cc5f107628e4a709ab9383cac42090c" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getValueSingleOutputHead" />
@@ -1127,7 +1184,7 @@ the design must be flexibel to integrate different platforms</description>
                 </operation>
                 <operation id="o894d83191daf47e5b83882f0f2ed985b501" cid="OP015" name="getValueMultipleOutputHead" creation-date="07/15/2022 13:53:38" type="double*" type-id="double*" visibility="private" abstract="true" virtual="true">
                   <parameters>
-                    <parameter id="pf26fb6674076476bacfac9039b784bdf" name="HeadsArray" type="string" type-id="Cpp.string" />
+                    <parameter id="pf26fb6674076476bacfac9039b784bdf" name="HeadsArray" type="string" type-id="string" />
                   </parameters>
                   <tagged-values>
                     <tagged-value id="tv2a712eff70444aa4a7956331a4ffe2fd" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getValueMultipleOutputHead" />
@@ -1302,6 +1359,21 @@ the design must be flexibel to integrate different platforms</description>
                 </operation>
               </operations>
             </item>
+            <item id="de047d9093f745dd8117d8b5cac72bde" cid="PROP001" type="property" name="KeyenceObject" style-class="" owner="b73bbacc4c244b61a3d6baaa8ed60cf5" creation-date="07/15/2022 13:53:38" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvb40ff7aa34914296b046e374d3263bc6" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="KeyenceObject" />
+                <tagged-value id="tv95ca6d64ef234ea59462ed9e97fe93cb" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pbbaf6572569642088f1ae6cbca9ac614_753293694" />
+                <tagged-value id="tv035350c8c7284ec0953e235ccdbe89f9" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\includes\distance_sensor_interface.h" />
+                <tagged-value id="tv892918dea0574562a153fd1ddb32e6bb" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tvca17fa85984c40bbb95eccbcada415a8" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="288" />
+                <tagged-value id="tv9410aeaffc0448c48d6c5f787cc536df" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="51" />
+                <tagged-value id="tv60ef5ac0df6441a5b103efa870dd081a" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="630" />
+                <tagged-value id="tv7ce9a0cac13b4a03847c2b88baa3fb09" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="07/15/2022 10:32:10" />
+              </tagged-values>
+              <feature />
+              <structural-feature type="IkeyenceRS232*" type-id="IkeyenceRS232*" />
+              <property default-value="new IkeyenceRS232()" />
+            </item>
             <item id="abb24fc1e3c441cfa72a8f8ff6f8a3b6" cid="C002" type="class" name="IkeyenceBase" style-class="" creation-date="07/15/2022 13:53:38" visibility="public">
               <tagged-values>
                 <tagged-value id="tv258403b3797c47d080b8e93e320ba53b" name="namespace" type="text" multiple="false" hidden="false" value="" />
@@ -1315,7 +1387,7 @@ the design must be flexibel to integrate different platforms</description>
                 <tagged-value id="tva6d2423c3ad94f62b7d1510836f8b8dc" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="07/15/2022 10:32:10" />
               </tagged-values>
               <operations>
-                <operation id="oafb555229f0a4b6a83162f920a480e06501" cid="OP011" name="findCommand" creation-date="07/15/2022 13:53:38" type="string" type-id="Cpp.string" visibility="private">
+                <operation id="oafb555229f0a4b6a83162f920a480e06501" cid="OP011" name="findCommand" creation-date="07/15/2022 13:53:38" type="string" type-id="string" visibility="private">
                   <parameters>
                     <parameter id="p15f750ad518446b5ac7ab40576aa439b" name="command" type="string&amp;" type-id="string&amp;" />
                     <parameter id="p85dc9c566aa1428390e2f97705c86b01" name="CommandMap" type="std::map&lt;string, string&gt;&amp;" type-id="std::map&lt;string, string&gt;&amp;" />
@@ -1342,24 +1414,9 @@ the design must be flexibel to integrate different platforms</description>
                 <operation id="o5b1eb67cb0314e1e8aacdf13890d43f6278" cid="OP001" name="NewOperation2" creation-date="07/15/2022 14:59:50" type="" type-id="" visibility="public" />
               </operations>
             </item>
-            <item id="de047d9093f745dd8117d8b5cac72bde" cid="PROP001" type="property" name="KeyenceObject" style-class="" owner="b73bbacc4c244b61a3d6baaa8ed60cf5" creation-date="07/15/2022 13:53:38" visibility="public">
-              <tagged-values>
-                <tagged-value id="tvb40ff7aa34914296b046e374d3263bc6" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="KeyenceObject" />
-                <tagged-value id="tv95ca6d64ef234ea59462ed9e97fe93cb" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pbbaf6572569642088f1ae6cbca9ac614_753293694" />
-                <tagged-value id="tv035350c8c7284ec0953e235ccdbe89f9" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\includes\distance_sensor_interface.h" />
-                <tagged-value id="tv892918dea0574562a153fd1ddb32e6bb" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
-                <tagged-value id="tvca17fa85984c40bbb95eccbcada415a8" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="288" />
-                <tagged-value id="tv9410aeaffc0448c48d6c5f787cc536df" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="51" />
-                <tagged-value id="tv60ef5ac0df6441a5b103efa870dd081a" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="630" />
-                <tagged-value id="tv7ce9a0cac13b4a03847c2b88baa3fb09" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="07/15/2022 10:32:10" />
-              </tagged-values>
-              <feature />
-              <structural-feature type="IkeyenceRS232*" type-id="IkeyenceRS232*" />
-              <property default-value="new IkeyenceRS232()" />
-            </item>
           </abstract-items>
           <sub-models />
-          <diagram type="uml-class" id="p1ff41a9dccdf42b3897c0985c1148a8f_724385947" name="" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" namespace="" view-location="-333,-246" zoom="0.6">
+          <diagram type="uml-class" id="p1ff41a9dccdf42b3897c0985c1148a8f_724385947" name="" order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" namespace="" view-location="-505,-235" zoom="0.6999999">
             <style>
               <background-color index="1" color="#FFFFFFFF" />
               <background-color index="2" color="#FFFFFFFF" />
@@ -1371,7 +1428,7 @@ the design must be flexibel to integrate different platforms</description>
               </authors>
               <description />
               <creation-date>07/15/2022 13:53:38</creation-date>
-              <change-date>07/15/2022 15:04:16</change-date>
+              <change-date>07/22/2022 12:54:03</change-date>
               <revision-count>0</revision-count>
               <version />
             </meta>
@@ -1381,7 +1438,7 @@ the design must be flexibel to integrate different platforms</description>
             <abstract-items>
               <item id="e442c38b00ba4ba9a32e73da770fe2ba" cid="GNR005" type="generalization" name="" style-class="" change-tracking-state="added" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 15:04:16" from="di088b02edaa88469ca8bf780ebf4b128b6641" to="diddde09acf6b047bb8f4510d6ca3d80596629" visibility="package" />
               <item id="03fe6ae84da44eeab7f38e7e01bae375" cid="GNR004" type="generalization" name="" style-class="" change-tracking-state="added" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 15:04:08" from="difdc3ff0b95a342b0b6087da452233e946022" to="e21f935fe942438c979b414aea45ec14" visibility="package" />
-              <item id="didd8705de94244ede868ece102e94eada4770" cid="C013" type="class" name="Ikeyence" style-class="" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 13:53:38" visibility="">
+              <item id="didd8705de94244ede868ece102e94eada4770" cid="C013" type="class" name="Ikeyence" style-class="" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 13:53:38" visibility="undefined">
                 <stereotypes>
                   <stereotype name="interface" />
                 </stereotypes>
@@ -1400,7 +1457,7 @@ the design must be flexibel to integrate different platforms</description>
                   <stereotype id="e21f935fe942438c979b414aea45ec14_interface_c" type="interface" ref="" />
                 </stereotype-instances>
                 <operations>
-                  <operation id="o338d66e85fa24a3baff8b00321fecb9e495" cid="OP005" name="processResponse" creation-date="07/15/2022 13:53:38" type="double" type-id="Cpp.double" visibility="public" abstract="true" virtual="true">
+                  <operation id="o338d66e85fa24a3baff8b00321fecb9e495" cid="OP005" name="processResponse" creation-date="07/15/2022 13:53:38" type="double" type-id="double" visibility="public" abstract="true" virtual="true">
                     <tagged-values>
                       <tagged-value id="tv82a38d2e231248058284a7aa25802977" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="processResponse" />
                       <tagged-value id="tv099bdafa2c794192a5aa609dbbcde594" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\includes\keyence_api.h" />
@@ -1427,7 +1484,11 @@ the design must be flexibel to integrate different platforms</description>
                           </styles>
                           <content>
                             <paragraph>
-                              <style unit="mm" />
+                              <style numbering-type="None">
+                                <numbering name="" multi-level="false">
+                                  <numbering-level type="None" level="0" format="{0}." />
+                                </numbering>
+                              </style>
                               <p s="S1">
                                 <t> process received msg from sensor controll driver
 </t>
@@ -1470,9 +1531,9 @@ the design must be flexibel to integrate different platforms</description>
 </source-code>
                     </source-codes>
                   </operation>
-                  <operation id="o1b952d5425554680b95c45a8a8e2402c501" cid="OP014" name="getValueSingleOutputHead" creation-date="07/15/2022 13:53:38" type="double" type-id="Cpp.double" visibility="private" abstract="true" virtual="true">
+                  <operation id="o1b952d5425554680b95c45a8a8e2402c501" cid="OP014" name="getValueSingleOutputHead" creation-date="07/15/2022 13:53:38" type="double" type-id="double" visibility="private" abstract="true" virtual="true">
                     <parameters>
-                      <parameter id="pabf37e74788b4d9a95890e5aa550f50b" name="output_head_Nr" type="int" type-id="Cpp.int" />
+                      <parameter id="pabf37e74788b4d9a95890e5aa550f50b" name="output_head_Nr" type="int" type-id="int" />
                     </parameters>
                     <tagged-values>
                       <tagged-value id="tv3cc5f107628e4a709ab9383cac42090c" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getValueSingleOutputHead" />
@@ -1528,7 +1589,7 @@ the design must be flexibel to integrate different platforms</description>
                   </operation>
                   <operation id="o894d83191daf47e5b83882f0f2ed985b501" cid="OP015" name="getValueMultipleOutputHead" creation-date="07/15/2022 13:53:38" type="double*" type-id="double*" visibility="private" abstract="true" virtual="true">
                     <parameters>
-                      <parameter id="pf26fb6674076476bacfac9039b784bdf" name="HeadsArray" type="string" type-id="Cpp.string" />
+                      <parameter id="pf26fb6674076476bacfac9039b784bdf" name="HeadsArray" type="string" type-id="string" />
                     </parameters>
                     <tagged-values>
                       <tagged-value id="tv2a712eff70444aa4a7956331a4ffe2fd" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getValueMultipleOutputHead" />
@@ -1705,11 +1766,11 @@ the design must be flexibel to integrate different platforms</description>
               </item>
               <item id="4e278faa19914657a97c840c1f42b2ea" cid="REL003" type="relationship" name="" style-class="" change-tracking-state="added" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 14:57:50" from="didd8705de94244ede868ece102e94eada4770" to="b73bbacc4c244b61a3d6baaa8ed60cf5" visibility="package">
                 <relation from="didd8705de94244ede868ece102e94eada4770" to="b73bbacc4c244b61a3d6baaa8ed60cf5" derived="false">
-                  <start-role id="umlar-49958ae2-edfb-4071-b7f1-b4ba341fe50e" name="" navigability="" association-type="association" visibility="private" />
-                  <end-role id="umlar-5d43c88b-b5a7-4d84-b038-2141cb9a80d8" name="" navigability="" association-type="association" visibility="private" />
+                  <start-role id="umlar-b3763b1f-2339-43be-9760-1221196dbc57" name="" navigability="" association-type="association" visibility="private" />
+                  <end-role id="umlar-17fad87c-5524-4329-af02-672a63943f13" name="" navigability="" association-type="association" visibility="private" />
                 </relation>
               </item>
-              <item id="diddde09acf6b047bb8f4510d6ca3d80596629" cid="C015" type="class" name="Ikeyence_ethernet" style-class="" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 13:53:38" visibility="">
+              <item id="diddde09acf6b047bb8f4510d6ca3d80596629" cid="C015" type="class" name="Ikeyence_ethernet" style-class="" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 13:53:38" visibility="undefined">
                 <stereotypes>
                   <stereotype name="interface" />
                 </stereotypes>
@@ -1728,7 +1789,7 @@ the design must be flexibel to integrate different platforms</description>
                   <stereotype id="e21f935fe942438c979b414aea45ec14_interface_c" type="interface" ref="" />
                 </stereotype-instances>
                 <operations>
-                  <operation id="o338d66e85fa24a3baff8b00321fecb9e495" cid="OP005" name="processResponse" creation-date="07/15/2022 13:53:38" type="double" type-id="Cpp.double" visibility="public" abstract="true" virtual="true">
+                  <operation id="o338d66e85fa24a3baff8b00321fecb9e495" cid="OP005" name="processResponse" creation-date="07/15/2022 13:53:38" type="double" type-id="double" visibility="public" abstract="true" virtual="true">
                     <tagged-values>
                       <tagged-value id="tv82a38d2e231248058284a7aa25802977" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="processResponse" />
                       <tagged-value id="tv099bdafa2c794192a5aa609dbbcde594" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\includes\keyence_api.h" />
@@ -1755,7 +1816,11 @@ the design must be flexibel to integrate different platforms</description>
                           </styles>
                           <content>
                             <paragraph>
-                              <style unit="mm" />
+                              <style numbering-type="None">
+                                <numbering name="" multi-level="false">
+                                  <numbering-level type="None" level="0" format="{0}." />
+                                </numbering>
+                              </style>
                               <p s="S1">
                                 <t> process received msg from sensor controll driver
 </t>
@@ -1798,9 +1863,9 @@ the design must be flexibel to integrate different platforms</description>
 </source-code>
                     </source-codes>
                   </operation>
-                  <operation id="o1b952d5425554680b95c45a8a8e2402c501" cid="OP014" name="getValueSingleOutputHead" creation-date="07/15/2022 13:53:38" type="double" type-id="Cpp.double" visibility="private" abstract="true" virtual="true">
+                  <operation id="o1b952d5425554680b95c45a8a8e2402c501" cid="OP014" name="getValueSingleOutputHead" creation-date="07/15/2022 13:53:38" type="double" type-id="double" visibility="private" abstract="true" virtual="true">
                     <parameters>
-                      <parameter id="pabf37e74788b4d9a95890e5aa550f50b" name="output_head_Nr" type="int" type-id="Cpp.int" />
+                      <parameter id="pabf37e74788b4d9a95890e5aa550f50b" name="output_head_Nr" type="int" type-id="int" />
                     </parameters>
                     <tagged-values>
                       <tagged-value id="tv3cc5f107628e4a709ab9383cac42090c" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getValueSingleOutputHead" />
@@ -1856,7 +1921,7 @@ the design must be flexibel to integrate different platforms</description>
                   </operation>
                   <operation id="o894d83191daf47e5b83882f0f2ed985b501" cid="OP015" name="getValueMultipleOutputHead" creation-date="07/15/2022 13:53:38" type="double*" type-id="double*" visibility="private" abstract="true" virtual="true">
                     <parameters>
-                      <parameter id="pf26fb6674076476bacfac9039b784bdf" name="HeadsArray" type="string" type-id="Cpp.string" />
+                      <parameter id="pf26fb6674076476bacfac9039b784bdf" name="HeadsArray" type="string" type-id="string" />
                     </parameters>
                     <tagged-values>
                       <tagged-value id="tv2a712eff70444aa4a7956331a4ffe2fd" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getValueMultipleOutputHead" />
@@ -2031,12 +2096,12 @@ the design must be flexibel to integrate different platforms</description>
                   </operation>
                 </operations>
               </item>
-              <item id="e6463aba315448128bea088e649d1a74" cid="C010" type="class" name="UNIX" style-class="" change-tracking-state="added" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 14:53:07" />
-              <item id="185e493fa4cf44e3b00f788b0754090c" cid="C008" type="class" name="ESP" style-class="" change-tracking-state="added" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 14:52:34" />
+              <item id="e6463aba315448128bea088e649d1a74" cid="C010" type="class" name="UNIX" style-class="" change-tracking-state="added" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 14:53:07" visibility="undefined" />
+              <item id="185e493fa4cf44e3b00f788b0754090c" cid="C008" type="class" name="ESP" style-class="" change-tracking-state="added" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 14:52:34" visibility="undefined" />
               <item id="874bf524a0ab4fd4a4546fc1e70450ca" cid="GNR001" type="generalization" name="" style-class="" change-tracking-state="added" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 14:10:01" from="aadb852e616d4c64a37931093326b11e" to="didd8705de94244ede868ece102e94eada4770" visibility="package" />
               <item id="863a762fecd64c5093823189830e19c7" cid="GNR002" type="generalization" name="" style-class="" change-tracking-state="added" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 14:54:01" from="e21f935fe942438c979b414aea45ec14" to="didd8705de94244ede868ece102e94eada4770" visibility="package" />
-              <item id="aa4c9b650c114ff0b50ff8e4ae252420" cid="C009" type="class" name="WIN" style-class="" change-tracking-state="added" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 14:53:00" />
-              <item id="difdc3ff0b95a342b0b6087da452233e946022" cid="C014" type="class" name="keyenceRS232" style-class="" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 13:53:38" visibility="">
+              <item id="aa4c9b650c114ff0b50ff8e4ae252420" cid="C009" type="class" name="WIN" style-class="" change-tracking-state="added" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 14:53:00" visibility="undefined" />
+              <item id="difdc3ff0b95a342b0b6087da452233e946022" cid="C014" type="class" name="keyenceRS232" style-class="" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 13:53:38" visibility="undefined">
                 <stereotypes>
                   <stereotype name="implementationClass" />
                 </stereotypes>
@@ -2055,7 +2120,7 @@ the design must be flexibel to integrate different platforms</description>
                   <stereotype id="difdc3ff0b95a342b0b6087da452233e946022_implementationClass_c" type="implementationClass" ref="" />
                 </stereotype-instances>
                 <operations>
-                  <operation id="o338d66e85fa24a3baff8b00321fecb9e495" cid="OP005" name="processResponse" creation-date="07/15/2022 13:53:38" type="double" type-id="Cpp.double" visibility="public" abstract="true" virtual="true">
+                  <operation id="o338d66e85fa24a3baff8b00321fecb9e495" cid="OP005" name="processResponse" creation-date="07/15/2022 13:53:38" type="double" type-id="double" visibility="public" abstract="true" virtual="true">
                     <tagged-values>
                       <tagged-value id="tv82a38d2e231248058284a7aa25802977" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="processResponse" />
                       <tagged-value id="tv099bdafa2c794192a5aa609dbbcde594" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\includes\keyence_api.h" />
@@ -2082,7 +2147,11 @@ the design must be flexibel to integrate different platforms</description>
                           </styles>
                           <content>
                             <paragraph>
-                              <style unit="mm" />
+                              <style numbering-type="None">
+                                <numbering name="" multi-level="false">
+                                  <numbering-level type="None" level="0" format="{0}." />
+                                </numbering>
+                              </style>
                               <p s="S1">
                                 <t> process received msg from sensor controll driver
 </t>
@@ -2125,9 +2194,9 @@ the design must be flexibel to integrate different platforms</description>
 </source-code>
                     </source-codes>
                   </operation>
-                  <operation id="o1b952d5425554680b95c45a8a8e2402c501" cid="OP014" name="getValueSingleOutputHead" creation-date="07/15/2022 13:53:38" type="double" type-id="Cpp.double" visibility="private" abstract="true" virtual="true">
+                  <operation id="o1b952d5425554680b95c45a8a8e2402c501" cid="OP014" name="getValueSingleOutputHead" creation-date="07/15/2022 13:53:38" type="double" type-id="double" visibility="private" abstract="true" virtual="true">
                     <parameters>
-                      <parameter id="pabf37e74788b4d9a95890e5aa550f50b" name="output_head_Nr" type="int" type-id="Cpp.int" />
+                      <parameter id="pabf37e74788b4d9a95890e5aa550f50b" name="output_head_Nr" type="int" type-id="int" />
                     </parameters>
                     <tagged-values>
                       <tagged-value id="tv3cc5f107628e4a709ab9383cac42090c" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getValueSingleOutputHead" />
@@ -2183,7 +2252,7 @@ the design must be flexibel to integrate different platforms</description>
                   </operation>
                   <operation id="o894d83191daf47e5b83882f0f2ed985b501" cid="OP015" name="getValueMultipleOutputHead" creation-date="07/15/2022 13:53:38" type="double*" type-id="double*" visibility="private" abstract="true" virtual="true">
                     <parameters>
-                      <parameter id="pf26fb6674076476bacfac9039b784bdf" name="HeadsArray" type="string" type-id="Cpp.string" />
+                      <parameter id="pf26fb6674076476bacfac9039b784bdf" name="HeadsArray" type="string" type-id="string" />
                     </parameters>
                     <tagged-values>
                       <tagged-value id="tv2a712eff70444aa4a7956331a4ffe2fd" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getValueMultipleOutputHead" />
@@ -2358,8 +2427,7 @@ the design must be flexibel to integrate different platforms</description>
                   </operation>
                 </operations>
               </item>
-              <item id="ed32dfc056c8407f86f41db7f184fb3b" cid="GNR003" type="generalization" name="" style-class="" change-tracking-state="added" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 14:54:19" from="diddde09acf6b047bb8f4510d6ca3d80596629" to="didd8705de94244ede868ece102e94eada4770" visibility="package" />
-              <item id="di088b02edaa88469ca8bf780ebf4b128b6641" cid="C016" type="class" name="keyenceRS232" style-class="" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 13:53:38" visibility="">
+              <item id="di088b02edaa88469ca8bf780ebf4b128b6641" cid="C016" type="class" name="keyenceRS232" style-class="" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 13:53:38" visibility="undefined">
                 <stereotypes>
                   <stereotype name="implementationClass" />
                 </stereotypes>
@@ -2378,7 +2446,7 @@ the design must be flexibel to integrate different platforms</description>
                   <stereotype id="di088b02edaa88469ca8bf780ebf4b128b6641_implementationClass_c" type="implementationClass" ref="" />
                 </stereotype-instances>
                 <operations>
-                  <operation id="o338d66e85fa24a3baff8b00321fecb9e495" cid="OP005" name="processResponse" creation-date="07/15/2022 13:53:38" type="double" type-id="Cpp.double" visibility="public" abstract="true" virtual="true">
+                  <operation id="o338d66e85fa24a3baff8b00321fecb9e495" cid="OP005" name="processResponse" creation-date="07/15/2022 13:53:38" type="double" type-id="double" visibility="public" abstract="true" virtual="true">
                     <tagged-values>
                       <tagged-value id="tv82a38d2e231248058284a7aa25802977" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="processResponse" />
                       <tagged-value id="tv099bdafa2c794192a5aa609dbbcde594" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\includes\keyence_api.h" />
@@ -2405,7 +2473,11 @@ the design must be flexibel to integrate different platforms</description>
                           </styles>
                           <content>
                             <paragraph>
-                              <style unit="mm" />
+                              <style numbering-type="None">
+                                <numbering name="" multi-level="false">
+                                  <numbering-level type="None" level="0" format="{0}." />
+                                </numbering>
+                              </style>
                               <p s="S1">
                                 <t> process received msg from sensor controll driver
 </t>
@@ -2448,9 +2520,9 @@ the design must be flexibel to integrate different platforms</description>
 </source-code>
                     </source-codes>
                   </operation>
-                  <operation id="o1b952d5425554680b95c45a8a8e2402c501" cid="OP014" name="getValueSingleOutputHead" creation-date="07/15/2022 13:53:38" type="double" type-id="Cpp.double" visibility="private" abstract="true" virtual="true">
+                  <operation id="o1b952d5425554680b95c45a8a8e2402c501" cid="OP014" name="getValueSingleOutputHead" creation-date="07/15/2022 13:53:38" type="double" type-id="double" visibility="private" abstract="true" virtual="true">
                     <parameters>
-                      <parameter id="pabf37e74788b4d9a95890e5aa550f50b" name="output_head_Nr" type="int" type-id="Cpp.int" />
+                      <parameter id="pabf37e74788b4d9a95890e5aa550f50b" name="output_head_Nr" type="int" type-id="int" />
                     </parameters>
                     <tagged-values>
                       <tagged-value id="tv3cc5f107628e4a709ab9383cac42090c" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getValueSingleOutputHead" />
@@ -2506,7 +2578,7 @@ the design must be flexibel to integrate different platforms</description>
                   </operation>
                   <operation id="o894d83191daf47e5b83882f0f2ed985b501" cid="OP015" name="getValueMultipleOutputHead" creation-date="07/15/2022 13:53:38" type="double*" type-id="double*" visibility="private" abstract="true" virtual="true">
                     <parameters>
-                      <parameter id="pf26fb6674076476bacfac9039b784bdf" name="HeadsArray" type="string" type-id="Cpp.string" />
+                      <parameter id="pf26fb6674076476bacfac9039b784bdf" name="HeadsArray" type="string" type-id="string" />
                     </parameters>
                     <tagged-values>
                       <tagged-value id="tv2a712eff70444aa4a7956331a4ffe2fd" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getValueMultipleOutputHead" />
@@ -2681,7 +2753,8 @@ the design must be flexibel to integrate different platforms</description>
                   </operation>
                 </operations>
               </item>
-              <item id="516323d1c3ef4960bdea314e18912b3a" cid="C007" type="class" name="AVR" style-class="" change-tracking-state="added" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 14:52:06" />
+              <item id="a13b8f5bf0414cbdab422a3d0c13ecff" cid="REA001" type="realization" name="" style-class="" change-tracking-state="added" creation-date="07/22/2022 12:54:03" from="diddde09acf6b047bb8f4510d6ca3d80596629" to="didd8705de94244ede868ece102e94eada4770" visibility="package" />
+              <item id="516323d1c3ef4960bdea314e18912b3a" cid="C007" type="class" name="AVR" style-class="" change-tracking-state="added" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 14:52:06" visibility="undefined" />
             </abstract-items>
             <layer id="caceb10b80564dcebe67d48cdfcbdce3" name="Default" visible="true" enabled="true" locked="false">
               <item id="aadb852e616d4c64a37931093326b11e" iid="89a112cf06f546be9fb641aff8f24dd4" creation-date="07/15/2022 13:53:38" order-index="3" type="entity">
@@ -2742,15 +2815,6 @@ the design must be flexibel to integrate different platforms</description>
                 </layout>
                 <relation from="e21f935fe942438c979b414aea45ec14" from-iid="0b145e89eccb492f9ad2e625ca513499" to="didd8705de94244ede868ece102e94eada4770" to-iid="94a666faac364056a2afa3d00f1d1837" />
               </item>
-              <item id="ed32dfc056c8407f86f41db7f184fb3b" iid="645c5c3e58074c55b14ee330abd09c94" creation-date="07/15/2022 14:54:19" order-index="16" type="relation">
-                <layout line-style="oblique" start-auto-side="false" lock-to-fields="false" auto-path="" x1="504" y1="208" x2="414" y2="60" start-border-pos="0.0598689426075328" end-border-pos="0.563342592932961" start-local-pos="143.5" end-local-pos="184" name-position="0,20">
-                  <points>
-                    <point x="504" y="208" />
-                    <point x="414" y="60" />
-                  </points>
-                </layout>
-                <relation from="diddde09acf6b047bb8f4510d6ca3d80596629" from-iid="a340d881dcd9458da70f443f4e1771cc" to="didd8705de94244ede868ece102e94eada4770" to-iid="94a666faac364056a2afa3d00f1d1837" />
-              </item>
               <item id="4e278faa19914657a97c840c1f42b2ea" iid="03c9696ba2414d528c85e5587b3533ec" creation-date="07/15/2022 14:57:50" order-index="17" type="relation">
                 <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" start-auto-side="false" lock-to-fields="false" auto-path="" x1="151" y1="-82" x2="-87" y2="-82" start-border-pos="0.875441696113074" end-border-pos="0.374501992031873" start-local-pos="182" name-position="0,20">
                   <points>
@@ -2798,56 +2862,19 @@ the design must be flexibel to integrate different platforms</description>
                 </layout>
                 <relation from="di088b02edaa88469ca8bf780ebf4b128b6641" from-iid="74845e9d1a2f43bf90ee3cf42a2ebc7e" to="diddde09acf6b047bb8f4510d6ca3d80596629" to-iid="a340d881dcd9458da70f443f4e1771cc" />
               </item>
+              <item id="a13b8f5bf0414cbdab422a3d0c13ecff" iid="ceb31ca8946642e29a65e2e6435e0145" creation-date="07/22/2022 12:54:03" order-index="20" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="504" y1="208" x2="414" y2="60" start-border-pos="0.0598689426075328" end-border-pos="0.563342592932961" name-position="0,20">
+                  <points>
+                    <point x="504" y="208" />
+                    <point x="414" y="60" />
+                  </points>
+                </layout>
+                <relation from="diddde09acf6b047bb8f4510d6ca3d80596629" from-iid="a340d881dcd9458da70f443f4e1771cc" to="didd8705de94244ede868ece102e94eada4770" to-iid="94a666faac364056a2afa3d00f1d1837" />
+              </item>
             </layer>
           </diagram>
         </model>
       </sub-models>
-      <diagram type="uml-class" id="p6e47ca8310f64989acfcd1a10f54639c_621019188" name="ClassDiagram1" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default">
-        <style>
-          <background-color index="1" color="#FFFFFFFF" />
-          <background-color index="2" color="#FFFFFFFF" />
-          <background-type type="solid" />
-        </style>
-        <meta>
-          <authors>
-            <author> </author>
-          </authors>
-          <description />
-          <creation-date>07/15/2022 13:50:29</creation-date>
-          <change-date>07/15/2022 13:50:29</change-date>
-          <revision-count>0</revision-count>
-          <version />
-        </meta>
-        <abstract-items />
-        <layer id="5239cd9cf37740a39beed77a9282626e" name="Default" visible="true" enabled="true" locked="false" />
-      </diagram>
-      <diagram type="uml-package" id="p12dc2602b8d643ce9741109ada73ca9d_455501171" name="Packages" order-index="2" overview-order-index="0" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" namespace="">
-        <style>
-          <background-color index="1" color="#FFFFFFFF" />
-          <background-color index="2" color="#FFFFFFFF" />
-          <background-type type="vertical-linear" />
-        </style>
-        <meta>
-          <authors>
-            <author> </author>
-          </authors>
-          <description />
-          <creation-date>07/15/2022 13:53:38</creation-date>
-          <change-date>07/15/2022 13:53:38</change-date>
-          <revision-count>0</revision-count>
-          <version />
-        </meta>
-        <tagged-values>
-          <tagged-value id="tv0e308128b6e14c88bf9f44a46780b2cf" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
-        </tagged-values>
-        <abstract-items />
-        <layer id="66d91215d58d4665b4fc1d9b1675350b" name="Default" visible="true" enabled="true" locked="false">
-          <item id="209023c8d6404893a9be8bdd681d5d6c" iid="06f1dbee55254c718deca07a6e7ceb8b" creation-date="07/15/2022 13:53:38" order-index="0" type="entity">
-            <layout ax="0" ay="0" awidth="84" aheight="56" x="0" y="0" width="84" height="56" expanded="0,0,84,56" collapsed="0,0,0,0" />
-            <package name-in-body="false" />
-          </item>
-        </layer>
-      </diagram>
     </model>
   </models>
 </sim-project>

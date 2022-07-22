@@ -9,15 +9,14 @@
  * 
  */
 #pragma once
-#include "Arduino.h"
-#include <HardwareSerial.h>
+
 #include "settings.h"
-#include "keyence_api.h"
+#include "keyence_arduino_api.h"
 /*
 * The sensor mock will respond to any message coming from real sensor
 * sensor mock will use serial 2, real sensor serial 1 and output on serial 0
 */
-class SensorMock: public IkeyenceRS232
+class SensorMock: public keyence::KeyenceToArduino
 {
 public:
 void initMock() {

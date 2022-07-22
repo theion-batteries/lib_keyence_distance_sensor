@@ -10,23 +10,20 @@
  */
 #include "distance_sensor_interface.h"
 
-IdistanceSensor::IdistanceSensor(int OutputHeadNumber)
-{
-this->HeadNum=OutputHeadNumber;
-}
+IdistanceSensor::IdistanceSensor(int OutputHeadNumber, keyence::IkeyenceBase* InterfaceKeyence):HeadNum(OutputHeadNumber), keyenceInterface(InterfaceKeyence) {}
 IdistanceSensor::~IdistanceSensor()
 {
-    delete KeyenceObject;
+    delete keyenceInterface;
 }
 void IdistanceSensor::initSensorCom()
 {
-    KeyenceObject->initKeyenceCom();
-    KeyenceObject->setGeneralMode();
+    keyenceInterface->initKeyenceCom();
+    keyenceInterface->setGeneralMode();
 }
 double IdistanceSensor::getCurrentDistance()
 {
     /******* get values from keyence *********/
-    return currentDistance=KeyenceObject->getValueSingleOutputHead(HeadNum);
+    return currentDistance=keyenceInterface->getValueSingleOutputHead(HeadNum);
     //return currentDistance=KeyenceObject->getValueMultipleOutputHead("100000000000")[HeadNum-1];
 
 }
