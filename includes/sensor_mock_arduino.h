@@ -16,7 +16,7 @@
 * The sensor mock will respond to any message coming from real sensor
 * sensor mock will use serial 2, real sensor serial 1 and output on serial 0
 */
-class SensorMock: public keyence::KeyenceToArduino
+class SensorMock: public keyence::keyenceArduinoRS232
 {
 public:
 void initMock() {

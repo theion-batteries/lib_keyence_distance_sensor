@@ -23,7 +23,7 @@ the design must be flexibel to integrate different platforms</description>
     <entity-ids>
       <counter>
         <item-type type-id="group" type="Group" />
-        <value>468</value>
+        <value>470</value>
       </counter>
       <counter>
         <item-type type-id="package" type="Package" />
@@ -101,6 +101,7 @@ the design must be flexibel to integrate different platforms</description>
     <custom-types>
       <parameters />
       <types>
+        <type id="std::map" tid="" name="std::map" description="" />
         <type id="Cpp.string ()" tid="" name="Cpp.string ()" description="" />
         <type id="IkeyenceRS232*" tid="" name="IkeyenceRS232*" description="" />
         <type id="const string&amp;" tid="" name="const string&amp;" description="" />
@@ -1416,7 +1417,7 @@ the design must be flexibel to integrate different platforms</description>
             </item>
           </abstract-items>
           <sub-models />
-          <diagram type="uml-class" id="p1ff41a9dccdf42b3897c0985c1148a8f_724385947" name="" order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" namespace="" view-location="-505,-235" zoom="0.6999999">
+          <diagram type="uml-class" id="p1ff41a9dccdf42b3897c0985c1148a8f_724385947" name="" order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" namespace="" view-location="-505,-206" zoom="0.5">
             <style>
               <background-color index="1" color="#FFFFFFFF" />
               <background-color index="2" color="#FFFFFFFF" />
@@ -1443,15 +1444,15 @@ the design must be flexibel to integrate different platforms</description>
                   <stereotype name="interface" />
                 </stereotypes>
                 <tagged-values>
-                  <tagged-value id="tv18438629636c4754a56f44c2365535a9" name="namespace" type="text" multiple="false" hidden="false" value="" />
-                  <tagged-value id="tv18572015e70b42b5889eb737e6014d60" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="IkeyenceRS232" />
-                  <tagged-value id="tv9e65edb9ce1d499cbd2b655ab71c2e73" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pbbaf6572569642088f1ae6cbca9ac614_753293694" />
-                  <tagged-value id="tva54537a34b864ce78eef2f2807f90f24" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\includes\keyence_api.h" />
-                  <tagged-value id="tva638f34e6d1e4ea4914965262c2f2306" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
-                  <tagged-value id="tvd867136896b046ac9bc9bbe531bedb9d" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="4044" />
-                  <tagged-value id="tv920ca1d0ec624ed38d791dc31899a9d9" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="687" />
-                  <tagged-value id="tv52da26665c3e4ac788307dcf8e04711f" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="4885" />
-                  <tagged-value id="tv9469bb3df4df4a6098f1d026a76df971" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="07/15/2022 10:32:10" />
+                  <tagged-value id="tv763b3c7740a340e7a3d7bf75ac9b021e" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                  <tagged-value id="tv30ecdabfdd3c498c8fc506d2592068b8" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="IkeyenceRS232" />
+                  <tagged-value id="tva278ebecdc2e4b05b041c8f38ae71a67" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pbbaf6572569642088f1ae6cbca9ac614_753293694" />
+                  <tagged-value id="tv1811e2dd4c1d496486d7c634fcfbc71f" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\includes\keyence_api.h" />
+                  <tagged-value id="tv09e46e532dda464db3fdaf1a83e02c3f" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                  <tagged-value id="tvbadc3fd4741542caaacb4c69d6a076db" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="4044" />
+                  <tagged-value id="tvbdae192fc82745b0847a44c4dda9ad24" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="687" />
+                  <tagged-value id="tv7beeb6670bac47b883dd9df494f13c1e" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="4885" />
+                  <tagged-value id="tvb6ddb9a649bb4e4b967c41444cd78376" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="07/15/2022 10:32:10" />
                 </tagged-values>
                 <stereotype-instances>
                   <stereotype id="e21f935fe942438c979b414aea45ec14_interface_c" type="interface" ref="" />
@@ -1459,14 +1460,14 @@ the design must be flexibel to integrate different platforms</description>
                 <operations>
                   <operation id="o338d66e85fa24a3baff8b00321fecb9e495" cid="OP005" name="processResponse" creation-date="07/15/2022 13:53:38" type="double" type-id="double" visibility="public" abstract="true" virtual="true">
                     <tagged-values>
-                      <tagged-value id="tv82a38d2e231248058284a7aa25802977" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="processResponse" />
-                      <tagged-value id="tv099bdafa2c794192a5aa609dbbcde594" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\includes\keyence_api.h" />
-                      <tagged-value id="tv982c764d912d418aaca64ad5b75b3c44" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
-                      <tagged-value id="tv4f8617db1aed481d971b9f370a0da6c5" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="4702" />
-                      <tagged-value id="tv67299ea1c2d0489e95e5fdc1cd7a4bb4" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="25" />
+                      <tagged-value id="tv29c507d3d03f4436bd2e20cc58680324" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="processResponse" />
+                      <tagged-value id="tvefad7faf15be4b37944b54697403c213" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\includes\keyence_api.h" />
+                      <tagged-value id="tv2a56250f312d45c28fc776c5c3eee28f" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                      <tagged-value id="tv1784e0541c5a4756a0e3ed45423166ee" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="4702" />
+                      <tagged-value id="tv8721d9ac39d444e09e51bcd644ba6e0d" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="25" />
                     </tagged-values>
                     <documentations>
-                      <doc id="bfbd2cde492c492fbdc8cbbf3d8a0b27">
+                      <doc id="6675545be1434c65ae67a4dbb6f09b17">
                         <text>
                           <default>
                             <style font-name="Verdana" font-size="12">
@@ -1501,11 +1502,11 @@ the design must be flexibel to integrate different platforms</description>
                   </operation>
                   <operation id="o52da44ec904c4b9f82c26d23fcc82e2f501" cid="OP012" name="initKeyenceCom" creation-date="07/15/2022 13:53:38" type="" type-id="" visibility="private" abstract="true" virtual="true">
                     <tagged-values>
-                      <tagged-value id="tv1ebf59ebeca747f6995af9e14cce90dd" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="initKeyenceCom" />
-                      <tagged-value id="tvb14ff94991da4b70a105d56cceb4415e" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\src\keyence_api.cpp" />
-                      <tagged-value id="tv9094c041f89042798fdd57addff182a7" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
-                      <tagged-value id="tvbb45be2a22f9401fb756337323399d09" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="595" />
-                      <tagged-value id="tv1257939e3674484d826f046129ca3313" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="100" />
+                      <tagged-value id="tv2b2fe8b9e32f4192b8c4b76f11b2441c" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="initKeyenceCom" />
+                      <tagged-value id="tvf0f9d0258c294246b263188875d5a113" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\src\keyence_api.cpp" />
+                      <tagged-value id="tv6285ea51bf7343599bfed69bde674839" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                      <tagged-value id="tvad0bfb68d18245fdb0c8921012131c14" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="595" />
+                      <tagged-value id="tveef09bfdf73443f6b739dd00d3a1b3c5" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="100" />
                     </tagged-values>
                     <source-codes>
                       <source-code language="Cpp">
@@ -1519,11 +1520,11 @@ the design must be flexibel to integrate different platforms</description>
                       <parameter id="p61dfcd4101e04310ad128736e4fe929a" name="streamPort" type="Stream&amp;" type-id="Stream&amp;" />
                     </parameters>
                     <tagged-values>
-                      <tagged-value id="tv68fa910773ce48258bf2adf46b06b225" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="sendCmd" />
-                      <tagged-value id="tv4548773189ca4413b369733aa99ec123" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\src\keyence_api.cpp" />
-                      <tagged-value id="tv80ede048c96c4d43938925b1c0f91fb4" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
-                      <tagged-value id="tvcfc028d92cac41afa1b902bdfe4ff66c" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="699" />
-                      <tagged-value id="tv3fea04845ec641d894566c1715609972" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="100" />
+                      <tagged-value id="tvc3e6169e9ece439d99cbb5d86237c15d" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="sendCmd" />
+                      <tagged-value id="tv3a89270890b4483db2cea7ee0432cd95" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\src\keyence_api.cpp" />
+                      <tagged-value id="tvdbe302f630a8440bb0de6e53231c909d" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                      <tagged-value id="tvcc06b815da6f4537ad8d1fef1cec3cdc" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="699" />
+                      <tagged-value id="tv61ead212881e44d4a89f1d84cde28815" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="100" />
                     </tagged-values>
                     <source-codes>
                       <source-code language="Cpp">
@@ -1536,11 +1537,11 @@ the design must be flexibel to integrate different platforms</description>
                       <parameter id="pabf37e74788b4d9a95890e5aa550f50b" name="output_head_Nr" type="int" type-id="int" />
                     </parameters>
                     <tagged-values>
-                      <tagged-value id="tv3cc5f107628e4a709ab9383cac42090c" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getValueSingleOutputHead" />
-                      <tagged-value id="tv87c891c7858a46b0852deeb63207fdac" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\src\keyence_api.cpp" />
-                      <tagged-value id="tv27559732640140429588f8049bf49572" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
-                      <tagged-value id="tvf5c0004cecb04d12a17e2518b7301eeb" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="910" />
-                      <tagged-value id="tv0759085a899d44fea7fce6ab04f07ae6" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="1271" />
+                      <tagged-value id="tv8a96b748be714919bb7f828dd831f435" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getValueSingleOutputHead" />
+                      <tagged-value id="tva75469b2d39543de8bc9b00c6ab43a7f" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\src\keyence_api.cpp" />
+                      <tagged-value id="tv15f996cb0e9742ffbc5bb97294cd6728" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                      <tagged-value id="tv5d776486d5474d909a319404947bc0f9" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="910" />
+                      <tagged-value id="tvab790eb817e6423dab26b1de82df8c57" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="1271" />
                     </tagged-values>
                     <source-codes>
                       <source-code language="Cpp">
@@ -1592,11 +1593,11 @@ the design must be flexibel to integrate different platforms</description>
                       <parameter id="pf26fb6674076476bacfac9039b784bdf" name="HeadsArray" type="string" type-id="string" />
                     </parameters>
                     <tagged-values>
-                      <tagged-value id="tv2a712eff70444aa4a7956331a4ffe2fd" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getValueMultipleOutputHead" />
-                      <tagged-value id="tvd312d2a3f373464294d70485e4351402" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\src\keyence_api.cpp" />
-                      <tagged-value id="tv3773d06e9e0b4b38840e9c183633eaa7" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
-                      <tagged-value id="tva0628b01f3c04c2da4022bf8a0093752" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="2280" />
-                      <tagged-value id="tveffc27dc8970409e8154165e18841c73" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="1737" />
+                      <tagged-value id="tv0e8d64350394460f83d81a09826931ae" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getValueMultipleOutputHead" />
+                      <tagged-value id="tv4d36a9ef44684009bb688beaaf7afdfa" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\src\keyence_api.cpp" />
+                      <tagged-value id="tv49bc08dc4b6e4cd9bb89cd75b4bb8180" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                      <tagged-value id="tv8de7de41716b4f1a91ba54cc5033de6b" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="2280" />
+                      <tagged-value id="tv2dcdb5c3b7e64eb0a36aa5d43a8ad3ff" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="1737" />
                     </tagged-values>
                     <source-codes>
                       <source-code language="Cpp">
@@ -1658,11 +1659,11 @@ the design must be flexibel to integrate different platforms</description>
                   </operation>
                   <operation id="o7582de968d7842a1afba5eb73b608200501" cid="OP016" name="getValueOutputHeadAll" creation-date="07/15/2022 13:53:38" type="double*" type-id="double*" visibility="private" abstract="true" virtual="true">
                     <tagged-values>
-                      <tagged-value id="tv588ab033a13f4bf39ebb4a8f2b5246cf" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getValueOutputHeadAll" />
-                      <tagged-value id="tv300688cd590044bfbfa7b64cadc0cbb3" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\src\keyence_api.cpp" />
-                      <tagged-value id="tv8d92c76e61f543ffa65dcaf8ffe25286" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
-                      <tagged-value id="tva8aefd5b7e7f4e4cad1ab9e4a056948b" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="4038" />
-                      <tagged-value id="tve81a72abe2af4755931e5d110bbfd11b" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="1234" />
+                      <tagged-value id="tv1d4fb495abea4c6ea70de3af29b69b57" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getValueOutputHeadAll" />
+                      <tagged-value id="tvec1a9a4140b94dcbb20d4822d9a504fa" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\src\keyence_api.cpp" />
+                      <tagged-value id="tv3fea0b1dd5ab457486b02994dafbed60" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                      <tagged-value id="tv99dcc8d9052a402a87ec45c2baedfd89" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="4038" />
+                      <tagged-value id="tv7f30748db0e34fd3bea8deb63e2badbc" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="1234" />
                     </tagged-values>
                     <source-codes>
                       <source-code language="Cpp">
@@ -1698,11 +1699,11 @@ the design must be flexibel to integrate different platforms</description>
                   </operation>
                   <operation id="ocdfe9a88d5fe4136a9650018a2da42f6501" cid="OP017" name="setGeneralMode" creation-date="07/15/2022 13:53:38" type="" type-id="" visibility="private" abstract="true" virtual="true">
                     <tagged-values>
-                      <tagged-value id="tv36e0a4dddf234e39a8ee46ee5461ec58" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="setGeneralMode" />
-                      <tagged-value id="tv624f7f81dc4e4642ac78ab5892f5b2ca" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\src\keyence_api.cpp" />
-                      <tagged-value id="tve30f8d43084b4c78985b12fed749584e" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
-                      <tagged-value id="tv08402835f690404baf7762d94df7a3c1" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="5297" />
-                      <tagged-value id="tv3083e83f67194fb28ed9976edcc76502" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="503" />
+                      <tagged-value id="tv39030240d5fe4235aa558a7d5522b92c" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="setGeneralMode" />
+                      <tagged-value id="tvc5e8ed366cf748e58d7cb43de2edcd7d" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\src\keyence_api.cpp" />
+                      <tagged-value id="tv49723d93616e47379487ed9458f22ff7" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                      <tagged-value id="tv7faa83b14a494cdfbf0a91c6b7e046d0" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="5297" />
+                      <tagged-value id="tv9e215cc7b06849c08e78dff1f810ec33" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="503" />
                     </tagged-values>
                     <source-codes>
                       <source-code language="Cpp">
@@ -1725,11 +1726,11 @@ the design must be flexibel to integrate different platforms</description>
                   </operation>
                   <operation id="o7d79da70b5244f20bd3b33360bda7b2a501" cid="OP018" name="setCommunicationMode" creation-date="07/15/2022 13:53:38" type="" type-id="" visibility="private" abstract="true" virtual="true">
                     <tagged-values>
-                      <tagged-value id="tvbb51f0554ae54f8eaa42acd9dfe240b1" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="setCommunicationMode" />
-                      <tagged-value id="tv19dba4bb0d5848ddb19a727a6adf9d1d" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\src\keyence_api.cpp" />
-                      <tagged-value id="tvbd59f23a2bf542fe9727a4ad635706b2" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
-                      <tagged-value id="tv95dbfd5913dc4ccda8c0da1c554e74e0" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="5829" />
-                      <tagged-value id="tv95818e8a83954bf28def9d24a244e3d6" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="648" />
+                      <tagged-value id="tv3eac6d465422480b98cb4a0ed37793f0" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="setCommunicationMode" />
+                      <tagged-value id="tv85bfaac4bac14bbc8d1641d0670fb926" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\src\keyence_api.cpp" />
+                      <tagged-value id="tv5895803134a142619a4893dc3693e2e7" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                      <tagged-value id="tv96b32dac37ca40b49339ad2bf4e6040a" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="5829" />
+                      <tagged-value id="tvfb9a5131f2fc49c48e461849ca43692a" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="648" />
                     </tagged-values>
                     <source-codes>
                       <source-code language="Cpp">
@@ -1755,14 +1756,17 @@ the design must be flexibel to integrate different platforms</description>
 </source-code>
                     </source-codes>
                   </operation>
-                  <operation id="o7611f2e75d064dafb6b25c170dea95bd816" cid="OP002" name="findCommand" creation-date="07/15/2022 15:00:26" type="Cpp.string ()" type-id="Cpp.string ()" visibility="private">
+                  <operation id="o7611f2e75d064dafb6b25c170dea95bd816" cid="OP002" name="findCommand" creation-date="07/15/2022 15:00:26" type="string" type-id="string" visibility="private">
                     <parameters>
                       <parameter id="p971b24abf7b941c8ae6c3cb23e14c975" name="command" type="string&amp;" type-id="string&amp;" />
-                      <parameter id="pd8da851bfcd543d3a88a6c58d6338d0c" name="CommandMap" type="std::map&lt;string" type-id="std::map&lt;string" />
+                      <parameter id="pd8da851bfcd543d3a88a6c58d6338d0c" name="CommandMap" type="std::map" type-id="std::map" default-value="&lt;string" />
                       <parameter id="pe462d22a59044e94a7384a87261b053c" name="string&gt;&amp;" type="" type-id="" />
                     </parameters>
                   </operation>
                 </operations>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
               </item>
               <item id="4e278faa19914657a97c840c1f42b2ea" cid="REL003" type="relationship" name="" style-class="" change-tracking-state="added" creator="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ" creation-date="07/15/2022 14:57:50" from="didd8705de94244ede868ece102e94eada4770" to="b73bbacc4c244b61a3d6baaa8ed60cf5" visibility="package">
                 <relation from="didd8705de94244ede868ece102e94eada4770" to="b73bbacc4c244b61a3d6baaa8ed60cf5" derived="false">

@@ -9,14 +9,11 @@ namespace keyence
     public:
         void initKeyenceCom() override;
 
-        void sendCmd<Stream>(const string& cmd, Stream& streamPort)
-        {
-            streamPort.println(cmd);
-        }
+        void sendCmd(const std::string& cmd) override;
         //get a output value of single head: return double
         double getValueSingleOutputHead(int output_head_Nr) override;
         //get output multiple heads: return array of doubles
-        double* getValueMultipleOutputHead(string HeadsArray) override;
+        double* getValueMultipleOutputHead(std::string HeadsArray) override;
         // get output all: return array of doubles
         double* getValueOutputHeadAll() override;
         // set general mode

@@ -14,7 +14,7 @@
 // helper method to retrieve commands from map
 namespace keyence
 {
-  string IkeyenceBase::findCommand(string& command, std::map<string, string>& CommandMap)
+  std::string IkeyenceBase::findCommand(std::string& command, std::map<std::string, std::string>& CommandMap)
   {
     for (auto it = CommandMap.begin(); it != CommandMap.end(); ++it)
     {

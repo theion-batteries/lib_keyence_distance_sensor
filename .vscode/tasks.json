@@ -9,7 +9,7 @@
                 "-g",
                 "${file}",
                 "-I",
-                "${workspaceFolder}/includes",
+                "${workspaceFolder}/includes ${workspaceFolder}/dependencies/SerialPort/include",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],

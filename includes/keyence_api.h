@@ -97,9 +97,8 @@ namespace keyence
       virtual void setCommunicationMode() = 0;
       // init communication
       virtual void initKeyenceCom() = 0;
-      // send cmd to custom protocoll
-      template <typename T>
-      void sendCmd(const std::string& cmd, T& streamPort);
+      // send cmd to custom cmd
+      virtual void sendCmd(const std::string& cmd)=0;
       // process received msg from sensor controll driver
       virtual double processResponse();
    };
