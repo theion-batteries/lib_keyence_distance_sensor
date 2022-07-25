@@ -117,24 +117,109 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named keyence_interface
+# Target rules for targets named keyenceLib
 
 # Build rule for target.
-keyence_interface: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 keyence_interface
-.PHONY : keyence_interface
+keyenceLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 keyenceLib
+.PHONY : keyenceLib
 
 # fast build rule for target.
-keyence_interface/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyence_interface.dir/build.make CMakeFiles/keyence_interface.dir/build
-.PHONY : keyence_interface/fast
+keyenceLib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyenceLib.dir/build.make CMakeFiles/keyenceLib.dir/build
+.PHONY : keyenceLib/fast
+
+#=============================================================================
+# Target rules for targets named keyenceExe
+
+# Build rule for target.
+keyenceExe: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 keyenceExe
+.PHONY : keyenceExe
+
+# fast build rule for target.
+keyenceExe/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyenceExe.dir/build.make CMakeFiles/keyenceExe.dir/build
+.PHONY : keyenceExe/fast
+
+src/distance_sensor_interface.obj: src/distance_sensor_interface.cpp.obj
+.PHONY : src/distance_sensor_interface.obj
+
+# target to build an object file
+src/distance_sensor_interface.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyenceLib.dir/build.make CMakeFiles/keyenceLib.dir/src/distance_sensor_interface.cpp.obj
+.PHONY : src/distance_sensor_interface.cpp.obj
+
+src/distance_sensor_interface.i: src/distance_sensor_interface.cpp.i
+.PHONY : src/distance_sensor_interface.i
+
+# target to preprocess a source file
+src/distance_sensor_interface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyenceLib.dir/build.make CMakeFiles/keyenceLib.dir/src/distance_sensor_interface.cpp.i
+.PHONY : src/distance_sensor_interface.cpp.i
+
+src/distance_sensor_interface.s: src/distance_sensor_interface.cpp.s
+.PHONY : src/distance_sensor_interface.s
+
+# target to generate assembly for a file
+src/distance_sensor_interface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyenceLib.dir/build.make CMakeFiles/keyenceLib.dir/src/distance_sensor_interface.cpp.s
+.PHONY : src/distance_sensor_interface.cpp.s
+
+src/keyence_api.obj: src/keyence_api.cpp.obj
+.PHONY : src/keyence_api.obj
+
+# target to build an object file
+src/keyence_api.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyenceLib.dir/build.make CMakeFiles/keyenceLib.dir/src/keyence_api.cpp.obj
+.PHONY : src/keyence_api.cpp.obj
+
+src/keyence_api.i: src/keyence_api.cpp.i
+.PHONY : src/keyence_api.i
+
+# target to preprocess a source file
+src/keyence_api.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyenceLib.dir/build.make CMakeFiles/keyenceLib.dir/src/keyence_api.cpp.i
+.PHONY : src/keyence_api.cpp.i
+
+src/keyence_api.s: src/keyence_api.cpp.s
+.PHONY : src/keyence_api.s
+
+# target to generate assembly for a file
+src/keyence_api.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyenceLib.dir/build.make CMakeFiles/keyenceLib.dir/src/keyence_api.cpp.s
+.PHONY : src/keyence_api.cpp.s
+
+src/keyence_win_api.obj: src/keyence_win_api.cpp.obj
+.PHONY : src/keyence_win_api.obj
+
+# target to build an object file
+src/keyence_win_api.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyenceLib.dir/build.make CMakeFiles/keyenceLib.dir/src/keyence_win_api.cpp.obj
+.PHONY : src/keyence_win_api.cpp.obj
+
+src/keyence_win_api.i: src/keyence_win_api.cpp.i
+.PHONY : src/keyence_win_api.i
+
+# target to preprocess a source file
+src/keyence_win_api.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyenceLib.dir/build.make CMakeFiles/keyenceLib.dir/src/keyence_win_api.cpp.i
+.PHONY : src/keyence_win_api.cpp.i
+
+src/keyence_win_api.s: src/keyence_win_api.cpp.s
+.PHONY : src/keyence_win_api.s
+
+# target to generate assembly for a file
+src/keyence_win_api.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyenceLib.dir/build.make CMakeFiles/keyenceLib.dir/src/keyence_win_api.cpp.s
+.PHONY : src/keyence_win_api.cpp.s
 
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
 # target to build an object file
 src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyence_interface.dir/build.make CMakeFiles/keyence_interface.dir/src/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyenceExe.dir/build.make CMakeFiles/keyenceExe.dir/src/main.cpp.obj
 .PHONY : src/main.cpp.obj
 
 src/main.i: src/main.cpp.i
@@ -142,7 +227,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyence_interface.dir/build.make CMakeFiles/keyence_interface.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyenceExe.dir/build.make CMakeFiles/keyenceExe.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -150,7 +235,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyence_interface.dir/build.make CMakeFiles/keyence_interface.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyenceExe.dir/build.make CMakeFiles/keyenceExe.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -161,7 +246,17 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... keyence_interface"
+	@echo "... keyenceExe"
+	@echo "... keyenceLib"
+	@echo "... src/distance_sensor_interface.obj"
+	@echo "... src/distance_sensor_interface.i"
+	@echo "... src/distance_sensor_interface.s"
+	@echo "... src/keyence_api.obj"
+	@echo "... src/keyence_api.i"
+	@echo "... src/keyence_api.s"
+	@echo "... src/keyence_win_api.obj"
+	@echo "... src/keyence_win_api.i"
+	@echo "... src/keyence_win_api.s"
 	@echo "... src/main.obj"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

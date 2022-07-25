@@ -9,13 +9,13 @@ namespace keyence
     class keyenceWinRS232: public IkeyenceRS232
     {
     public:
-        keyenceWinRS232(const char *portName);
+        explicit keyenceWinRS232(const char *portName);
         virtual ~keyenceWinRS232();
         void initKeyenceCom() override;
         //get a output value of single head: return double
         double getValueSingleOutputHead(int output_head_Nr) override;
         //get output multiple heads: return array of doubles
-        double* getValueMultipleOutputHead(std::string HeadsArray) override;
+        double* getValueMultipleOutputHead(const char* HeadsArray) override;
         // get output all: return array of doubles
         double* getValueOutputHeadAll() override;
         // set general mode
@@ -23,11 +23,11 @@ namespace keyence
         // set communication mode
         void setCommunicationMode() override;
         // send cmd
-        void sendCmd(const std::string& cmd) override;
+        void sendCmd(const char* cmd) override;
     private:
     SerialPort* SerObject;
     const char* COM_PORT;
-    int DATA_LENGTH =255;
+    const int DATA_LENGTH =255;
     };
 } // namespace name
 

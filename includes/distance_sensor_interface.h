@@ -9,11 +9,10 @@
  * 
  */
 #pragma once
-#include "keyence_api.h"
+#include "settings.h"
 class IdistanceSensor
 {
     public:
-    keyence::IkeyenceBase* keyenceInterface; // pointer to the interface
     ~IdistanceSensor();
     IdistanceSensor(int OutputHeadNumber, keyence::IkeyenceBase* keyenceInterface);
     void initSensorCom();
@@ -21,6 +20,7 @@ class IdistanceSensor
     double getCurrentDistance();
     void printDistance(float val);
     private:
+    keyence::IkeyenceBase* keyenceInterface; // pointer to the interface
     int Pin;
     bool state;
     double currentDistance;

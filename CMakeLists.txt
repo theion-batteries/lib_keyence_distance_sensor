@@ -9,27 +9,38 @@ set(EXEC main)
 
 # set the C++17 standard
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_GENERATOR "Unix Makefiles")
-
-# set output dir
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/arch/)
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/lib/)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/)
 
 # I../includes
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/includes/)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/dependencies/SerialPort/include/)
 
 # puts all .cpp files inside src to the SOURCES variable
-file(GLOB SOURCES src/*.cpp)
+#file(GLOB SOURCES src/*.cpp)
+# Local header files here ONLY
+# target is windows
+add_library(keyenceLib)
+target_sources(keyenceLib
+    PUBLIC
+   src/keyence_api.cpp
+   src/distance_sensor_interface.cpp
+   src/keyence_win_api.cpp
+   includes/distance_sensor_interface.h
+   includes/keyence_api.h
+   includes/keyence_rs232_api.h
+   includes/settings.h
+   includes/keyence_win_api.h 
+  )
+
+  add_executable(keyenceExe src/main.cpp)
+
 
 # compiles the files defined by SOURCES to generante the executable defined by EXEC
-add_executable(${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp)
-
-INCLUDE_DIRECTORIES(
-  c:/src/vcpkg/installed/x64-windows/include/
-)
-  
-LINK_DIRECTORIES(
-  c:/src/vcpkg/installed/x64-windows/lib/
-)
+#add_executable(${PROJECT_NAME} ${SOURCES})
+#add_executable(${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp)
+#INCLUDE_DIRECTORIES(
+#  c:/src/vcpkg/installed/x64-windows/include/
+#)
+#  
+#LINK_DIRECTORIES(
+#  c:/src/vcpkg/installed/x64-windows/lib/
+#) 

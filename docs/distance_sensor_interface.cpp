@@ -29,5 +29,8 @@ double IdistanceSensor::getCurrentDistance()
 }
 void IdistanceSensor::printDistance(float val)
 {
-
+    std::cout<<"current distance head "<<std::endl;
+    std::cout<<this->HeadNum<<std::endl;
+    std::cout<<" equal to "<<std::endl;
+    std::cout<<val<<std::endl;
 }

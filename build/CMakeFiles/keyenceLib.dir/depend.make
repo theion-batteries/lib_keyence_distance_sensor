@@ -1,2 +1,2 @@
-# Empty dependencies file for keyence_interface.
+# Empty dependencies file for keyenceLib.
 # This may be replaced when dependencies are built.

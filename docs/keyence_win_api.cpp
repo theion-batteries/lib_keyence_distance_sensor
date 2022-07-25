@@ -1,5 +1,5 @@
 #include "keyence_win_api.h"
-#include "settings.h"
+
 namespace keyence
 {
     keyenceWinRS232::keyenceWinRS232(const char* portName)
@@ -17,29 +17,28 @@ namespace keyence
     {
         std::cout << "Is connected: " << SerObject->isConnected() << std::endl;
     }
-    void keyenceWinRS232::sendCmd(const char* cmd) {
-        SerObject->writeSerialPort(cmd, static_cast<std::string>(cmd).size());
+    void keyenceWinRS232::sendCmd(const std::string& cmd) {
+        SerObject->writeSerialPort(cmd.c_str(), cmd.size());
     }
 
     //get a output value of single head: head number format is 01,02,03... but param is given as int 1,2,3...
     double keyenceWinRS232::getValueSingleOutputHead(int output_head_Nr)
     {
-        int const buffer_len = DATA_LENGTH;
-        const char* Zero = "0";
+        std::string Zero = "0";
         std::string Response;
-        const char* receivedString;
+        char receivedString[DATA_LENGTH];
         double val = 0;
         // head specific parameters
         std::string Soutput_head_Nr = std::to_string(output_head_Nr);
         //write the get value command
-        const char* command = "mesure_value_outputN";
-        std::string cmd = static_cast<std::string>(findCommand(command, commands));
+        std::string command = "mesure_value_outputN";
+        std::string cmd = findCommand(command, commands);
         if (output_head_Nr < 9) {
             Soutput_head_Nr = Zero + Soutput_head_Nr;
         }
         // cmd=MS,01
         cmd += Soutput_head_Nr;
-        const char* cmdToSend = (cmd + cr).c_str();
+        std::string cmdToSend = cmd + CR;
         // send full cmd
         sendCmd(cmdToSend);
 
@@ -69,22 +68,22 @@ namespace keyence
         {
             if (val == 0) { std::cout << "no value" << std::endl; return lastValue; }
             else {
-                std::cout << "filtered response for head: " + Soutput_head_Nr + " equal to: " << val << std::endl;
+                std::cout << "filtered response for head: " + Soutput_head_Nr + " equal to: " + val << std::endl;
                 lastValue = val;
                 return val;
             }
         }
     }
     //get output multiple heads in this format: "0-12" example: head 1,2 and 3 will be 111000000000
-    double* keyenceWinRS232::getValueMultipleOutputHead(const char* HeadsArray)
+    double* keyenceWinRS232::getValueMultipleOutputHead(std::string HeadsArray)
     {
         int NumOfOutputs = 0;
         std::string Response;
-        const char* DATA;
+        char* DATA[DATA_LENGTH];
         //write the get value command
         if (NumOfOutputs < 1)
         {
-            for (auto& element : static_cast<std::string>(HeadsArray))
+            for (auto& element : HeadsArray)
             {
                 if (element == '1')
                 {
@@ -93,34 +92,33 @@ namespace keyence
             }
         }
         double Values[3];
-        const char* valuesHolder = "";
+        std::string valuesHolder = "";
         int ValuesCounter = 0;
         std::cout << "number of heads" << std::endl;
         std::cout << NumOfOutputs << std::endl;
-        const char* command = "mesure_value_multipleN";
+        std::string command = "mesure_value_multipleN";
         std::string cmd = findCommand(command, commands);
         //cmd:MM,010010000000
-        cmd += HeadsArray;
+        cmd += std::string(HeadsArray);
         std::cout << "command sent:" << std::endl;
         std::cout << cmd << std::endl;
-        sendCmd((cmd + cr).c_str());
+        sendCmd(cmd + CR);
         if (SerObject->isConnected())
         {
             // Read data from rs232 port
             int hasData = SerObject->readSerialPort(DATA, DATA_LENGTH);
             // Response: MM,010010000000,value[,value,value]: 
-            Response = DATA;
-            Response.replace(cmd.size(), Response.size(), "");
+            Response.replace(cmd, cmd.size(), "");
             std::cout << Response << std::endl;
             // iterate response and extract values
             for (int i = 0; i < Response.length();i++)
             {// ,val1,val2,val3,val4,val5
                 if (Response[i] == ',')
                 {
-                    valuesHolder = Response.substr(i + 1, Response.at( i + 1)).c_str();
+                    valuesHolder = Response.substr(i + 1, Response.at(',', i + 1));
                     std::cout << "value holder got" << std::endl;
                     std::cout << valuesHolder << std::endl;
-                    Values[ValuesCounter] = atof(static_cast<std::string>(valuesHolder).c_str());
+                    Values[ValuesCounter] = atof(valuesHolder.c_str());
                     ValuesCounter++;
                     valuesHolder = "";
                 }
@@ -138,15 +136,15 @@ namespace keyence
     double* keyenceWinRS232::getValueOutputHeadAll()
     {
         std::string Response;
-        const char* valuesHolder = "";
+        std::string valuesHolder = "";
         int ValuesCounter = 0;
         std::string cmd;
-        const char* command = "mesure_value_All";
-        const char* receivedString;
+        std::string command = "mesure_value_All";
+        char receivedString[DATA_LENGTH];
         cmd = findCommand(command, commands);
         // speed purpose we skip any loop
         //cmd = "MA";
-        sendCmd((cmd + cr).c_str());
+        sendCmd(cmd + CR);
         if (SerObject->isConnected())
         {
             // Read data from rs232 port
@@ -154,7 +152,7 @@ namespace keyence
             // MA,value[,value,value]: 
             if (hasData)
             {
-                Response.replace(cmd.size(), Response.size(), ""); //remove default response
+                Response.replace(cmd, cmd.size(), ""); //remove default response
                 std::cout << Response << std::endl;
             }
 
@@ -175,11 +173,11 @@ namespace keyence
     void keyenceWinRS232::setGeneralMode()
     {
         //write the get value command
-        const char* command = "set_general_mode";
-        const char* cmd = findCommand(command, commands);
-        const char* Response;
-        const char* receivedString;
-        sendCmd(cmd + cr);
+        std::string command = "set_general_mode";
+        std::string cmd = findCommand(command, commands);
+        std::string Response;
+        char receivedString[DATA_LENGTH];
+        sendCmd(cmd + CR);
         if (SerObject->isConnected())
         {
             // Read data from rs232 port
@@ -191,10 +189,10 @@ namespace keyence
     void keyenceWinRS232::setCommunicationMode()
     {
         //write the get value command
-        const char* receivedString;
-        const char* command = "set_communication_mode";
-        const char* cmd = findCommand(command, commands);
-        sendCmd(cmd + cr);
+        std::string command = "set_communication_mode";
+        std::string cmd = findCommand(command, commands);
+        char receivedString[DATA_LENGTH];
+        sendCmd(cmd + CR);
         if (SerObject->isConnected())
         {
             // Read data from rs232 port

@@ -52,15 +52,7 @@
 /********** win cpp********/
 #define WIN
 #if defined(WIN)
-#define FRAMEWORK ARDUINO 
-#define string std::string 
-#define _VIRTUAL_TEST_
-#define USB_SERIAL Serial
-#define KEYENCE_SERIAL_HANDLER Serial2
-#if ENABLE_MOCK_SERIAL == true
-#define MOCK_SERIAL Serial
 #include "keyence_win_api.h"
-#endif
 #endif
 
 /********** unix cpp ***********/

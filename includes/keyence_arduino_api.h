@@ -9,11 +9,11 @@ namespace keyence
     public:
         void initKeyenceCom() override;
 
-        void sendCmd(const std::string& cmd) override;
+        void sendCmd(const char* cmd) override;
         //get a output value of single head: return double
         double getValueSingleOutputHead(int output_head_Nr) override;
         //get output multiple heads: return array of doubles
-        double* getValueMultipleOutputHead(std::string HeadsArray) override;
+        double* getValueMultipleOutputHead(const char* HeadsArray) override;
         // get output all: return array of doubles
         double* getValueOutputHeadAll() override;
         // set general mode

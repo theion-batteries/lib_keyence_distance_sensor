@@ -1,5 +1,5 @@
 #include "keyence_arduino_api.h"
-#include "settings.h"
+
 #pragma once
 namespace keyence
 {
@@ -13,20 +13,20 @@ namespace keyence
     //get a output value of single head: head number format is 01,02,03... but param is given as int 1,2,3...
     double keyenceArduinoRS232::getValueSingleOutputHead(int output_head_Nr)
     {
-        const char* Zero = "0";
-        const char* Response;
+        string Zero = "0";
+        string Response;
         double val = 0;
         // head specific parameters
-        const char* Soutput_head_Nr = std::to_string(output_head_Nr).c_str();
+        string Soutput_head_Nr = string(output_head_Nr);
         //write the get value command
-        const char* command = "mesure_value_outputN";
-        const char* cmd = findCommand(command, commands);
+        string command = "mesure_value_outputN";
+        string cmd = findCommand(command, commands);
         if (output_head_Nr < 9) {
             Soutput_head_Nr = Zero + Soutput_head_Nr;
         }
         // cmd=MS,01
         cmd += Soutput_head_Nr;
-        const char* cmdToSend = cmd + cr;
+        string cmdToSend = cmd + CR;
         sendCmd(cmdToSend, KEYENCE_SERIAL_HANDLER);
         if (KEYENCE_SERIAL_HANDLER.available() > 0)
         {
@@ -55,13 +55,13 @@ namespace keyence
         }
     }
     //get output multiple heads in this format: "0-12" example: head 1,2 and 3 will be 111000000000
-    double* keyenceArduinoRS232::getValueMultipleOutputHead(const char* HeadsArray)
+    double* keyenceArduinoRS232::getValueMultipleOutputHead(string HeadsArray)
     {
         int NumOfOutputs = 0;
         //write the get value command
         if (NumOfOutputs < 1)
         {
-            for (auto& element : static_cast<std::string>(HeadsArray))
+            for (auto& element : HeadsArray)
             {
                 if (element == '1')
                 {
@@ -70,12 +70,12 @@ namespace keyence
             }
         }
         double Values[NUM_OUTPUT_HEADS];
-        const char* valuesHolder = "";
+        string valuesHolder = "";
         int ValuesCounter = 0;
         USB_SERIAL.println("number of heads");
         USB_SERIAL.println(NumOfOutputs);
-        const char* command = "mesure_value_multipleN";
-        const char* cmd = findCommand(command, commands);
+        string command = "mesure_value_multipleN";
+        string cmd = findCommand(command, commands);
         //cmd:MM,010010000000
         cmd += string(HeadsArray);
         USB_SERIAL.println("command sent:");
@@ -85,7 +85,7 @@ namespace keyence
         if (KEYENCE_SERIAL_HANDLER.available() > 0)
         {
             // Read data from rs232 port
-            const char* Response = KEYENCE_SERIAL_HANDLER.readStringUntil('\r');
+            string Response = KEYENCE_SERIAL_HANDLER.readStringUntil('\r');
             // Response: MM,010010000000,value[,value,value]: 
             Response.replace(cmd, ""); //remove default response
             USB_SERIAL.println(Response);
@@ -114,15 +114,15 @@ namespace keyence
     // get output all
     double* keyenceArduinoRS232::getValueOutputHeadAll()
     {
-        const char* Response;
-        const char* valuesHolder = "";
+        string Response;
+        string valuesHolder = "";
         int ValuesCounter = 0;
-        const char* cmd;
-        const char* command = "mesure_value_All";
+        string cmd;
+        string command = "mesure_value_All";
         cmd = findCommand(command, commands);
         // speed purpose we skip any loop
         //cmd = "MA";
-        KEYENCE_SERIAL_HANDLER.print(cmd + cr);
+        KEYENCE_SERIAL_HANDLER.print(cmd + CR);
         if (KEYENCE_SERIAL_HANDLER.available() > 0)
         {
             // Read data from rs232 port
@@ -147,13 +147,13 @@ namespace keyence
     void keyenceArduinoRS232::setGeneralMode()
     {
         //write the get value command
-        const char* command = "set_general_mode";
-        const char* cmd = findCommand(command, commands);
-        KEYENCE_SERIAL_HANDLER.print(cmd + cr);
+        string command = "set_general_mode";
+        string cmd = findCommand(command, commands);
+        KEYENCE_SERIAL_HANDLER.print(cmd + CR);
         if (KEYENCE_SERIAL_HANDLER.available() > 0)
         {
             // Read data from rs232 port
-            const char* Response = KEYENCE_SERIAL_HANDLER.readStringUntil('\r');
+            string Response = KEYENCE_SERIAL_HANDLER.readStringUntil('\r');
 #ifdef DEBUG_
             // write the data to the other port
             USB_SERIAL.println("response:");
@@ -166,15 +166,15 @@ namespace keyence
     {
 
         //write the get value command
-        const char* command = "set_communication_mode";
-        const char* cmd = findCommand(command, commands);
-        KEYENCE_SERIAL_HANDLER.print(cmd + cr);
+        string command = "set_communication_mode";
+        string cmd = findCommand(command, commands);
+        KEYENCE_SERIAL_HANDLER.print(cmd + CR);
         delay(100); //this delay is obligatory to clear buffer
 
         if (KEYENCE_SERIAL_HANDLER.available() > 0)
         {
             // Read data from rs232 port
-            const char* Response = KEYENCE_SERIAL_HANDLER.readStringUntil('\r');
+            string Response = KEYENCE_SERIAL_HANDLER.readStringUntil('\r');
 #ifdef DEBUG
             // write the data to the other port
             USB_SERIAL.println("response:");

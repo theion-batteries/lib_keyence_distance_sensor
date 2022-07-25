@@ -20,8 +20,10 @@ GND ------> GND
 RX3 ------> RxOut
 TX3 ------> TxIn
  */
-#define CR "\r" //assume carriage return is \r otherwise + \n, \0
+
+
 #define LF '\n' //assume next line or Line Feed used
+#define cr '\r' //assume carriage return is \r otherwise
  /***** rs232 basic device commands ****/
  /*
  * the commands must be sent to the device using CR as delimeter,
@@ -70,9 +72,9 @@ namespace keyence
       double lastValue = 0;
    public:
       // Array of Raw Commands
-      std::string RawCommands[9] = { "Q0","R0","MS,","MS,01","MS,02","MS,03","MM,1110000000000","MM,","MA" };
+      const char* RawCommands[9] = { "Q0","R0","MS,","MS,01","MS,02","MS,03","MM,1110000000000","MM,","MA" };
       // map of command std::strings to raw commands +CR
-      std::map<std::string, std::string> commands{
+      std::map<const char*, const char*> commands{
       {"set_communication_mode",RawCommands[0]},
       {"set_general_mode",RawCommands[1]},
       {"mesure_value_outputN",RawCommands[2]},
@@ -84,11 +86,11 @@ namespace keyence
       {"mesure_value_All",RawCommands[8]},
       };
       // helper func to find commands
-      std::string findCommand(std::string& command, std::map<std::string, std::string>& CommandMap);
+      const char* findCommand(const char* command, std::map<const char*, const char*>& CommandMap);
       //get a output value of single head
       virtual double getValueSingleOutputHead(int output_head_Nr) = 0;
       //get output multiple heads
-      virtual double* getValueMultipleOutputHead(std::string HeadsArray) = 0;
+      virtual double* getValueMultipleOutputHead(const char* HeadsArray) = 0;
       // get output all
       virtual double* getValueOutputHeadAll() = 0;
       // set general mode
@@ -98,7 +100,7 @@ namespace keyence
       // init communication
       virtual void initKeyenceCom() = 0;
       // send cmd to custom cmd
-      virtual void sendCmd(const std::string& cmd)=0;
+      virtual void sendCmd(const char* cmd)=0;
       // process received msg from sensor controll driver
       virtual double processResponse();
    };

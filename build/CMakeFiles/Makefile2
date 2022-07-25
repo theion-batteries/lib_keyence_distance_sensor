@@ -63,7 +63,8 @@ CMAKE_BINARY_DIR = C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/b
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/keyence_interface.dir/all
+all: CMakeFiles/keyenceLib.dir/all
+all: CMakeFiles/keyenceExe.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +72,61 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/keyence_interface.dir/clean
+clean: CMakeFiles/keyenceLib.dir/clean
+clean: CMakeFiles/keyenceExe.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/keyence_interface.dir
+# Target rules for target CMakeFiles/keyenceLib.dir
 
 # All Build rule for target.
-CMakeFiles/keyence_interface.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyence_interface.dir/build.make CMakeFiles/keyence_interface.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyence_interface.dir/build.make CMakeFiles/keyence_interface.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles --progress-num=1,2 "Built target keyence_interface"
-.PHONY : CMakeFiles/keyence_interface.dir/all
+CMakeFiles/keyenceLib.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyenceLib.dir/build.make CMakeFiles/keyenceLib.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyenceLib.dir/build.make CMakeFiles/keyenceLib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles --progress-num=3,4,5,6 "Built target keyenceLib"
+.PHONY : CMakeFiles/keyenceLib.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/keyence_interface.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/keyence_interface.dir/all
+CMakeFiles/keyenceLib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/keyenceLib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles 0
-.PHONY : CMakeFiles/keyence_interface.dir/rule
+.PHONY : CMakeFiles/keyenceLib.dir/rule
 
 # Convenience name for target.
-keyence_interface: CMakeFiles/keyence_interface.dir/rule
-.PHONY : keyence_interface
+keyenceLib: CMakeFiles/keyenceLib.dir/rule
+.PHONY : keyenceLib
 
 # clean rule for target.
-CMakeFiles/keyence_interface.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyence_interface.dir/build.make CMakeFiles/keyence_interface.dir/clean
-.PHONY : CMakeFiles/keyence_interface.dir/clean
+CMakeFiles/keyenceLib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyenceLib.dir/build.make CMakeFiles/keyenceLib.dir/clean
+.PHONY : CMakeFiles/keyenceLib.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/keyenceExe.dir
+
+# All Build rule for target.
+CMakeFiles/keyenceExe.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyenceExe.dir/build.make CMakeFiles/keyenceExe.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyenceExe.dir/build.make CMakeFiles/keyenceExe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles --progress-num=1,2 "Built target keyenceExe"
+.PHONY : CMakeFiles/keyenceExe.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/keyenceExe.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/keyenceExe.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles 0
+.PHONY : CMakeFiles/keyenceExe.dir/rule
+
+# Convenience name for target.
+keyenceExe: CMakeFiles/keyenceExe.dir/rule
+.PHONY : keyenceExe
+
+# clean rule for target.
+CMakeFiles/keyenceExe.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyenceExe.dir/build.make CMakeFiles/keyenceExe.dir/clean
+.PHONY : CMakeFiles/keyenceExe.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
