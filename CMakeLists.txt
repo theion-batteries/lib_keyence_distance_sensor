@@ -38,6 +38,10 @@ src/keyence_win_api.cpp
 src/keyence_rs232_api.cpp
 dependencies/SerialPort/src/SerialPort.cpp
 )
+#include_directories(
+#        "${PROJECT_SOURCE_DIR}/../include"
+#        ${UTPP_INCLUDE_DIRS}
+#    )
 #file(GLOB all_SRCS
 #        "${PROJECT_SOURCE_DIR}/*.cpp"
 #        "${PROJECT_SOURCE_DIR}/../src/data_handlers.cpp"
@@ -53,13 +57,17 @@ dependencies/SerialPort/src/SerialPort.cpp
 #        "${PROJECT_SOURCE_DIR}/../src/portfolio.cpp"
 #        "${PROJECT_SOURCE_DIR}/../src/position_summary.cpp"
 #        )
+#add_executable(run_tests ${all_SRCS})
+#
 # compiles the files defined by SOURCES to generante the executable defined by EXEC
 #add_executable(${PROJECT_NAME} ${SOURCES})
 #add_executable(${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp)
-#INCLUDE_DIRECTORIES(
-#  c:/src/vcpkg/installed/x64-windows/include/
-#)
-#  
-#LINK_DIRECTORIES(
-#  c:/src/vcpkg/installed/x64-windows/lib/
-#) 
+
+## include preinstalled lib with vcpkg
+INCLUDE_DIRECTORIES(
+  c:/src/vcpkg/installed/x64-windows/include/
+)
+  
+LINK_DIRECTORIES(
+  c:/src/vcpkg/installed/x64-windows/lib/
+) 
