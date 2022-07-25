@@ -15,6 +15,7 @@ namespace keyence
     void keyenceWinRS232::initKeyenceCom()
     {
         std::cout << "Is connected: " << SerObject->isConnected() << std::endl;
+        
     }
     void keyenceWinRS232::sendCmd(const char* cmd) {
         SerObject->writeSerialPort(cmd, static_cast<std::string>(cmd).size());
