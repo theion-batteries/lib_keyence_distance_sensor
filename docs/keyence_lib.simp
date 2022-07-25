@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="13.40" multi-file="no" uid="simp5d35b69456454b398dd5ffbd0f230ac7">
+  <meta>
+    <name>keyence_lib</name>
+    <authors> sami dhiab</authors>
+    <description />
+  </meta>
+  <counters>
+    <entity-names />
+    <entity-ids />
+    <diagrams />
+    <fields />
+  </counters>
+  <alias-groups />
+  <management uid="md-079a3228d3f240a29cbb86a337c6f602" name="" task-id-sequence="0">
+    <persons>
+      <person id="CDoZfQE0eoPT0twKUywpA/M9JYk1d9GmWyMQgYZ5a+RPzUpQ">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-2ff2645a7cd046bdaa05a515ba7bf06f" />
+  <types default="C++">
+    <type-sets>
+      <type-set file="CppTypes.xml" />
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <parameters />
+      <types />
+    </custom-types>
+  </types>
+  <items />
+  <models />
+</sim-project>

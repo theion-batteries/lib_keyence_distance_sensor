@@ -1,0 +1,108 @@
+\hypertarget{keyence__api_8h_source}{}\doxysection{keyence\+\_\+api.\+h}
+\label{keyence__api_8h_source}\index{keyence\_api.h@{keyence\_api.h}}
+\mbox{\hyperlink{keyence__api_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{settings_8h}{settings.h}}"{}}}
+\DoxyCodeLine{16 \textcolor{comment}{/*** layout pins ***/}}
+\DoxyCodeLine{17 \textcolor{comment}{/*}}
+\DoxyCodeLine{18 \textcolor{comment}{5V  -\/-\/-\/-\/-\/-\/> VCC}}
+\DoxyCodeLine{19 \textcolor{comment}{GND -\/-\/-\/-\/-\/-\/> GND}}
+\DoxyCodeLine{20 \textcolor{comment}{RX3 -\/-\/-\/-\/-\/-\/> RxOut}}
+\DoxyCodeLine{21 \textcolor{comment}{TX3 -\/-\/-\/-\/-\/-\/> TxIn}}
+\DoxyCodeLine{22 \textcolor{comment}{ */}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define LF '\(\backslash\)n' }\textcolor{comment}{//assume next line or Line Feed used}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define cr '\(\backslash\)r' }\textcolor{comment}{//assume carriage return is \(\backslash\)r otherwise}}
+\DoxyCodeLine{27 \textcolor{comment}{ /***** rs232 basic device commands ****/}}
+\DoxyCodeLine{28  \textcolor{comment}{/*}}
+\DoxyCodeLine{29 \textcolor{comment}{ * the commands must be sent to the device using CR as delimeter,}}
+\DoxyCodeLine{30 \textcolor{comment}{ * and the response must be received also with CR.}}
+\DoxyCodeLine{31 \textcolor{comment}{ * the controller (arduino) must send one command and wait for}}
+\DoxyCodeLine{32 \textcolor{comment}{ * the response to send next one.}}
+\DoxyCodeLine{33 \textcolor{comment}{ * General Mode: During measurement The measurement control commands are accepted.}}
+\DoxyCodeLine{34 \textcolor{comment}{ Commands such as writing/reading setting values are not accepted}}
+\DoxyCodeLine{35 \textcolor{comment}{ * Communication Mode: • When the command "{}Q"{} "{}0"{} "{}CR"{} is received, the mode changes to}}
+\DoxyCodeLine{36 \textcolor{comment}{ the communication mode, and the setting values are written/read.}}
+\DoxyCodeLine{37 \textcolor{comment}{ • The measurement stops during the communication mode.}}
+\DoxyCodeLine{38 \textcolor{comment}{ * command | description | Mode | response | ERROR}}
+\DoxyCodeLine{39 \textcolor{comment}{ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{40 \textcolor{comment}{ * Q0 CR | Changing to the communication mode  | communication |  same as command  | Err-\/51}}
+\DoxyCodeLine{41 \textcolor{comment}{ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{42 \textcolor{comment}{ * R0 CR | Changing to the general mode | general | same as command  | ERROR}}
+\DoxyCodeLine{43 \textcolor{comment}{ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{44 \textcolor{comment}{ * MS,01 CR | Measured value output (single) 01-\/12 | General | MS,OUT01,value CR | ERROR}}
+\DoxyCodeLine{45 \textcolor{comment}{ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{46 \textcolor{comment}{ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{47 \textcolor{comment}{ * MM,010010000000 CR | Measured value output (multiple) 01-\/12 ex here out2 and out5| General | MM,010010000000,value[,value,value] CR | ERROR}}
+\DoxyCodeLine{48 \textcolor{comment}{ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{49 \textcolor{comment}{ * MA CR | Measured value output (all) 01-\/12| General | MA,value[,value,value] CR | ERROR}}
+\DoxyCodeLine{50 \textcolor{comment}{ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{51 \textcolor{comment}{ * Timing Diagrams}}
+\DoxyCodeLine{52 \textcolor{comment}{ * t: time between receiving command and responding: process time}}
+\DoxyCodeLine{53 \textcolor{comment}{ * Mesrument/control PW: 100ms + number of heads x 100ms : if one head: 200ms if 3 heads 100ms +3*100=400ms}}
+\DoxyCodeLine{54 \textcolor{comment}{ * Mode Change to General: 600 ms + Number of head expansion units x 750 ms = 600+3*750 = 2850 ms}}
+\DoxyCodeLine{55 \textcolor{comment}{ * Error Code}}
+\DoxyCodeLine{56 \textcolor{comment}{ • 50: Command error}}
+\DoxyCodeLine{57 \textcolor{comment}{ • 51: Status error}}
+\DoxyCodeLine{58 \textcolor{comment}{ • 60: Command length error}}
+\DoxyCodeLine{59 \textcolor{comment}{ • 61: Parameter count error}}
+\DoxyCodeLine{60 \textcolor{comment}{ • 62: Parameter range error}}
+\DoxyCodeLine{61 \textcolor{comment}{ • 88: Timeout error}}
+\DoxyCodeLine{62 \textcolor{comment}{ • 99: Other error}}
+\DoxyCodeLine{63 \textcolor{comment}{ */}}
+\DoxyCodeLine{64 \textcolor{keyword}{namespace }keyence}
+\DoxyCodeLine{65 \{}
+\DoxyCodeLine{66    \textcolor{keyword}{class }\mbox{\hyperlink{classkeyence_1_1_ikeyence_base}{IkeyenceBase}}}
+\DoxyCodeLine{67    \{}
+\DoxyCodeLine{68    \textcolor{keyword}{protected}:}
+\DoxyCodeLine{69       \textcolor{comment}{// mesured Values Array}}
+\DoxyCodeLine{70       \textcolor{keywordtype}{double} MesuredValues;}
+\DoxyCodeLine{71       \textcolor{comment}{// single value}}
+\DoxyCodeLine{72       \textcolor{keywordtype}{double} lastValue = 0;}
+\DoxyCodeLine{73    \textcolor{keyword}{public}:}
+\DoxyCodeLine{74       \mbox{\hyperlink{classkeyence_1_1_ikeyence_base}{IkeyenceBase}}()=\textcolor{keywordflow}{default};}
+\DoxyCodeLine{75       \textcolor{keyword}{virtual} \mbox{\hyperlink{classkeyence_1_1_ikeyence_base}{\string~IkeyenceBase}}()=\textcolor{keywordflow}{default};}
+\DoxyCodeLine{76       \textcolor{comment}{// Array of Raw Commands}}
+\DoxyCodeLine{77       \textcolor{keyword}{const} \textcolor{keywordtype}{char}* RawCommands[9] = \{ \textcolor{stringliteral}{"{}Q0"{}},\textcolor{stringliteral}{"{}R0"{}},\textcolor{stringliteral}{"{}MS,"{}},\textcolor{stringliteral}{"{}MS,01"{}},\textcolor{stringliteral}{"{}MS,02"{}},\textcolor{stringliteral}{"{}MS,03"{}},\textcolor{stringliteral}{"{}MM,1110000000000"{}},\textcolor{stringliteral}{"{}MM,"{}},\textcolor{stringliteral}{"{}MA"{}} \};}
+\DoxyCodeLine{78       \textcolor{comment}{// map of command std::strings to raw commands +CR}}
+\DoxyCodeLine{79       std::map<const char*, const char*> commands\{}
+\DoxyCodeLine{80       \{\textcolor{stringliteral}{"{}set\_communication\_mode"{}},RawCommands[0]\},}
+\DoxyCodeLine{81       \{\textcolor{stringliteral}{"{}set\_general\_mode"{}},RawCommands[1]\},}
+\DoxyCodeLine{82       \{\textcolor{stringliteral}{"{}mesure\_value\_outputN"{}},RawCommands[2]\},}
+\DoxyCodeLine{83       \{\textcolor{stringliteral}{"{}mesure\_value\_output1"{}},RawCommands[3]\},}
+\DoxyCodeLine{84       \{\textcolor{stringliteral}{"{}mesure\_value\_output2"{}},RawCommands[4]\},}
+\DoxyCodeLine{85       \{\textcolor{stringliteral}{"{}mesure\_value\_output3"{}},RawCommands[5]\},}
+\DoxyCodeLine{86       \{\textcolor{stringliteral}{"{}mesure\_value\_multiple123"{}},RawCommands[6]\},}
+\DoxyCodeLine{87       \{\textcolor{stringliteral}{"{}mesure\_value\_multipleN"{}},RawCommands[7]\},}
+\DoxyCodeLine{88       \{\textcolor{stringliteral}{"{}mesure\_value\_All"{}},RawCommands[8]\},}
+\DoxyCodeLine{89       \};}
+\DoxyCodeLine{90       \textcolor{comment}{// helper func to find commands}}
+\DoxyCodeLine{91       \textcolor{keyword}{const} \textcolor{keywordtype}{char}* findCommand(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* command, std::map<const char*, const char*>\& CommandMap);}
+\DoxyCodeLine{92       \textcolor{comment}{//get a output value of single head}}
+\DoxyCodeLine{93       \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} getValueSingleOutputHead(\textcolor{keywordtype}{int} output\_head\_Nr) = 0;}
+\DoxyCodeLine{94       \textcolor{comment}{//get output multiple heads}}
+\DoxyCodeLine{95       \textcolor{keyword}{virtual} \textcolor{keywordtype}{double}* getValueMultipleOutputHead(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* HeadsArray) = 0;}
+\DoxyCodeLine{96       \textcolor{comment}{// get output all}}
+\DoxyCodeLine{97       \textcolor{keyword}{virtual} \textcolor{keywordtype}{double}* getValueOutputHeadAll() = 0;}
+\DoxyCodeLine{98       \textcolor{comment}{// set general mode}}
+\DoxyCodeLine{99       \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} setGeneralMode() = 0;}
+\DoxyCodeLine{100       \textcolor{comment}{// set communication mode}}
+\DoxyCodeLine{101       \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} setCommunicationMode() = 0;}
+\DoxyCodeLine{102       \textcolor{comment}{// init communication}}
+\DoxyCodeLine{103       \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} initKeyenceCom() = 0;}
+\DoxyCodeLine{104       \textcolor{comment}{// send cmd to custom cmd}}
+\DoxyCodeLine{105       \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} sendCmd(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* cmd)=0;}
+\DoxyCodeLine{106       \textcolor{comment}{// process received msg from sensor controll driver}}
+\DoxyCodeLine{107       \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} processResponse()\{\textcolor{keywordflow}{return} 5000;\}}
+\DoxyCodeLine{108    \};}
+\DoxyCodeLine{109 \} \textcolor{comment}{// namespace keyence}}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111 }
+
+\end{DoxyCode}

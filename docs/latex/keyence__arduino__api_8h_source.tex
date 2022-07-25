@@ -1,0 +1,30 @@
+\hypertarget{keyence__arduino__api_8h_source}{}\doxysection{keyence\+\_\+arduino\+\_\+api.\+h}
+\label{keyence__arduino__api_8h_source}\index{keyence\_arduino\_api.h@{keyence\_arduino\_api.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include "{}keyence\_rs232\_api.h"{}}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{keyword}{namespace }keyence}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7     \textcolor{keyword}{class }\mbox{\hyperlink{classkeyence_1_1keyence_arduino_r_s232}{keyenceArduinoRS232}} : \textcolor{keyword}{public} \mbox{\hyperlink{classkeyence_1_1_ikeyence_r_s232}{IkeyenceRS232}}}
+\DoxyCodeLine{8     \{}
+\DoxyCodeLine{9     \textcolor{keyword}{public}:}
+\DoxyCodeLine{10         \textcolor{keywordtype}{void} initKeyenceCom() \textcolor{keyword}{override};}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12         \textcolor{keywordtype}{void} sendCmd(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* cmd) \textcolor{keyword}{override};}
+\DoxyCodeLine{13         \textcolor{comment}{//get a output value of single head: return double}}
+\DoxyCodeLine{14         \textcolor{keywordtype}{double} getValueSingleOutputHead(\textcolor{keywordtype}{int} output\_head\_Nr) \textcolor{keyword}{override};}
+\DoxyCodeLine{15         \textcolor{comment}{//get output multiple heads: return array of doubles}}
+\DoxyCodeLine{16         \textcolor{keywordtype}{double}* getValueMultipleOutputHead(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* HeadsArray) \textcolor{keyword}{override};}
+\DoxyCodeLine{17         \textcolor{comment}{// get output all: return array of doubles}}
+\DoxyCodeLine{18         \textcolor{keywordtype}{double}* getValueOutputHeadAll() \textcolor{keyword}{override};}
+\DoxyCodeLine{19         \textcolor{comment}{// set general mode}}
+\DoxyCodeLine{20         \textcolor{keywordtype}{void} setGeneralMode() \textcolor{keyword}{override};}
+\DoxyCodeLine{21         \textcolor{comment}{// set communication mode}}
+\DoxyCodeLine{22         \textcolor{keywordtype}{void} setCommunicationMode() \textcolor{keyword}{override};}
+\DoxyCodeLine{23     \};}
+\DoxyCodeLine{24 \} \textcolor{comment}{// namespace keyence}}
+
+\end{DoxyCode}

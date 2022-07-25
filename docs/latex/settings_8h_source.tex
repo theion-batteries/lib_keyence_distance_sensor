@@ -1,0 +1,54 @@
+\hypertarget{settings_8h_source}{}\doxysection{settings.\+h}
+\label{settings_8h_source}\index{settings.h@{settings.h}}
+\mbox{\hyperlink{settings_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{comment}{/********** Keyence Specification *******/}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define NUM\_OUTPUT\_HEADS 3  }\textcolor{comment}{//number of sensors output heads}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define COMMUNICATION\_TYPE RS232 }\textcolor{comment}{//define the rs232 interface}}
+\DoxyCodeLine{15 \textcolor{comment}{//\#define COMMUNICATION\_TYPE ETHERNET //define the ethernet interface}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#if COMMUNICATION\_TYPE == RS232}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#define COMMUNICATION\_HANDLER KEYENCE\_SERIAL\_HANDLER }\textcolor{comment}{//define the serial handler}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define KEYENCE\_SERIAL\_BAUDRATE 115200}}
+\DoxyCodeLine{19 \textcolor{comment}{// these pins are reserved on esp32}}
+\DoxyCodeLine{20 \textcolor{comment}{// \#define RX1\_PIN 18}}
+\DoxyCodeLine{21 \textcolor{comment}{// \#define TX1\_PIN 19}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#define PARITY SERIAL\_8N1}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{24 \textcolor{comment}{/********* Mocking sensor *************/}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define ENABLE\_MOCK\_SERIAL true}}
+\DoxyCodeLine{26 \textcolor{comment}{/********** Framework Specification *******/}}
+\DoxyCodeLine{27 \textcolor{comment}{/**** AVR****}}
+\DoxyCodeLine{28 \textcolor{comment}{\#if defined(\_\_AVR\_\_)}}
+\DoxyCodeLine{29 \textcolor{comment}{\#include "{}Arduino.h"{}}}
+\DoxyCodeLine{30 \textcolor{comment}{\#define string String}}
+\DoxyCodeLine{31 \textcolor{comment}{\#define KEYENCE\_SERIAL\_HANDLER HardwareSerial(0)}}
+\DoxyCodeLine{32 \textcolor{comment}{\#define USB\_SERIAL HardwareSerial(2)}}
+\DoxyCodeLine{33 \textcolor{comment}{\#endif}}
+\DoxyCodeLine{34 \textcolor{comment}{*/}}
+\DoxyCodeLine{35 \textcolor{comment}{/********** ESP32********/}}
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#if defined(ESP32)}}
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#define FRAMEWORK ARDUINO }}
+\DoxyCodeLine{38 \textcolor{comment}{//\#define FRAMEWORK ESP\_IDF}}
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#if FRAMEWORK==ARDUINO}}
+\DoxyCodeLine{40 \textcolor{preprocessor}{\#include "{}Arduino.h"{}}}
+\DoxyCodeLine{41 \textcolor{preprocessor}{\#include <HardwareSerial.h>}}
+\DoxyCodeLine{42 \textcolor{preprocessor}{\#define string String }}
+\DoxyCodeLine{43 \textcolor{preprocessor}{\#define \_VIRTUAL\_TEST\_}}
+\DoxyCodeLine{44 \textcolor{preprocessor}{\#define USB\_SERIAL Serial}}
+\DoxyCodeLine{45 \textcolor{preprocessor}{\#define KEYENCE\_SERIAL\_HANDLER Serial2}}
+\DoxyCodeLine{46 \textcolor{preprocessor}{\#if ENABLE\_MOCK\_SERIAL == true}}
+\DoxyCodeLine{47 \textcolor{preprocessor}{\#define MOCK\_SERIAL Serial}}
+\DoxyCodeLine{48 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{49 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{50 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 \textcolor{comment}{/********** win cpp********/}}
+\DoxyCodeLine{53 \textcolor{preprocessor}{\#define WIN}}
+\DoxyCodeLine{54 \textcolor{preprocessor}{\#if defined(WIN)}}
+\DoxyCodeLine{55 \textcolor{comment}{//\#include "{}keyence\_win\_api.h"{}}}
+\DoxyCodeLine{56 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 \textcolor{comment}{/********** unix cpp ***********/}}
+
+\end{DoxyCode}

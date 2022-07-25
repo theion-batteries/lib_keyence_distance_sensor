@@ -1,0 +1,28 @@
+\hypertarget{distance__sensor__interface_8h_source}{}\doxysection{distance\+\_\+sensor\+\_\+interface.\+h}
+\label{distance__sensor__interface_8h_source}\index{distance\_sensor\_interface.h@{distance\_sensor\_interface.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{keyence__api_8h}{keyence\_api.h}}"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}keyence\_rs232\_api.h"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}keyence\_win\_api.h"{}}}
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_idistance_sensor}{IdistanceSensor}}}
+\DoxyCodeLine{16 \{}
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_idistance_sensor}{IdistanceSensor}}(\textcolor{keywordtype}{int} OutputHeadNumber, \mbox{\hyperlink{classkeyence_1_1_ikeyence_base}{keyence::IkeyenceBase}}* keyenceInterface);}
+\DoxyCodeLine{19     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_idistance_sensor}{\string~IdistanceSensor}}();}
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} initSensorCom();}
+\DoxyCodeLine{21     \textcolor{comment}{//generic methods}}
+\DoxyCodeLine{22     \textcolor{keywordtype}{double} getCurrentDistance();}
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} printDistance(\textcolor{keywordtype}{float} val);}
+\DoxyCodeLine{24 \textcolor{keyword}{private}:}
+\DoxyCodeLine{25     \mbox{\hyperlink{classkeyence_1_1_ikeyence_base}{keyence::IkeyenceBase}}* keyenceInterface; \textcolor{comment}{// pointer to the interface}}
+\DoxyCodeLine{26     \textcolor{keywordtype}{int} Pin;}
+\DoxyCodeLine{27     \textcolor{keywordtype}{bool} state;}
+\DoxyCodeLine{28     \textcolor{keywordtype}{double} currentDistance;}
+\DoxyCodeLine{29     \textcolor{keywordtype}{int} HeadNum;}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \};}
+
+\end{DoxyCode}

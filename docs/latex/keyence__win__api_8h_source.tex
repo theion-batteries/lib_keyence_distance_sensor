@@ -1,0 +1,41 @@
+\hypertarget{keyence__win__api_8h_source}{}\doxysection{keyence\+\_\+win\+\_\+api.\+h}
+\label{keyence__win__api_8h_source}\index{keyence\_win\_api.h@{keyence\_win\_api.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include "{}keyence\_rs232\_api.h"{}}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}SerialPort.hpp"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{settings_8h}{settings.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{namespace }keyence}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11     \textcolor{keyword}{class }\mbox{\hyperlink{classkeyence_1_1keyence_win_r_s232}{keyenceWinRS232}}: \textcolor{keyword}{public} \mbox{\hyperlink{classkeyence_1_1_ikeyence_r_s232}{IkeyenceRS232}}}
+\DoxyCodeLine{12     \{}
+\DoxyCodeLine{13     \textcolor{keyword}{public}:}
+\DoxyCodeLine{14         \mbox{\hyperlink{classkeyence_1_1keyence_win_r_s232}{keyenceWinRS232}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* portName);}
+\DoxyCodeLine{15         \textcolor{keyword}{virtual} \mbox{\hyperlink{classkeyence_1_1keyence_win_r_s232}{\string~keyenceWinRS232}}();}
+\DoxyCodeLine{16         \textcolor{keywordtype}{void} initKeyenceCom() \textcolor{keyword}{override};}
+\DoxyCodeLine{17         \textcolor{comment}{//get a output value of single head: return double}}
+\DoxyCodeLine{18         \textcolor{keywordtype}{double} getValueSingleOutputHead(\textcolor{keywordtype}{int} output\_head\_Nr) \textcolor{keyword}{override};}
+\DoxyCodeLine{19         \textcolor{comment}{//get output multiple heads: return array of doubles}}
+\DoxyCodeLine{20         \textcolor{keywordtype}{double}* getValueMultipleOutputHead(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* HeadsArray) \textcolor{keyword}{override};}
+\DoxyCodeLine{21         \textcolor{comment}{// get output all: return array of doubles}}
+\DoxyCodeLine{22         \textcolor{keywordtype}{double}* getValueOutputHeadAll() \textcolor{keyword}{override};}
+\DoxyCodeLine{23         \textcolor{comment}{// set general mode}}
+\DoxyCodeLine{24         \textcolor{keywordtype}{void} setGeneralMode() \textcolor{keyword}{override};}
+\DoxyCodeLine{25         \textcolor{comment}{// set communication mode}}
+\DoxyCodeLine{26         \textcolor{keywordtype}{void} setCommunicationMode() \textcolor{keyword}{override};}
+\DoxyCodeLine{27         \textcolor{comment}{// send cmd}}
+\DoxyCodeLine{28         \textcolor{keywordtype}{void} sendCmd(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* cmd) \textcolor{keyword}{override};}
+\DoxyCodeLine{29     \textcolor{keyword}{private}:}
+\DoxyCodeLine{30     SerialPort* SerObject;}
+\DoxyCodeLine{31     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* COM\_PORT;}
+\DoxyCodeLine{32     \textcolor{keyword}{const} \textcolor{keywordtype}{int} DATA\_LENGTH =255;}
+\DoxyCodeLine{33     \};}
+\DoxyCodeLine{34 \} \textcolor{comment}{// namespace name}}
+\DoxyCodeLine{35 }
+
+\end{DoxyCode}

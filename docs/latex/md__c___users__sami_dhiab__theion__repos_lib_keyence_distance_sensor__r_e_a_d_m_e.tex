@@ -1,0 +1,27 @@
+
+\begin{DoxyItemize}
+\item Author\+: Sami Dhiab~\newline
+
+\item Version\+: 1.\+0
+\end{DoxyItemize}\hypertarget{md__c___users__sami_dhiab__theion__repos_lib_keyence_distance_sensor__r_e_a_d_m_e_autotoc_md1}{}\doxysection{Introduction}\label{md__c___users__sami_dhiab__theion__repos_lib_keyence_distance_sensor__r_e_a_d_m_e_autotoc_md1}
+This Repo include standalone cpp library for interfacing the keyence controll unitusing the interface class distance\+\_\+sensor. This library is designed to be system independant and uses the dependencies injection mechanism to include the correct class.\hypertarget{md__c___users__sami_dhiab__theion__repos_lib_keyence_distance_sensor__r_e_a_d_m_e_autotoc_md2}{}\doxysection{APIs}\label{md__c___users__sami_dhiab__theion__repos_lib_keyence_distance_sensor__r_e_a_d_m_e_autotoc_md2}
+To use this library, create an instance of the distance sensor by injecting the correct interface (communication -\/\texorpdfstring{$>$}{>} architecture). Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// create a distance sensor object on windows machine using the rs232 communication }}
+\DoxyCodeLine{\textcolor{keyword}{const} \textcolor{keywordtype}{char}* portName = \textcolor{stringliteral}{"{}COM20"{}}; \textcolor{comment}{//com port on windows}}
+\DoxyCodeLine{\mbox{\hyperlink{class_idistance_sensor}{IdistanceSensor}} testSensor(1, \textcolor{keyword}{new} \mbox{\hyperlink{classkeyence_1_1keyence_win_r_s232}{keyence::keyenceWinRS232}}(portName)); \textcolor{comment}{// instance sensor}}
+
+\end{DoxyCode}
+ initialise the sensor as follow\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{testSensor.initSensorCom(); \textcolor{comment}{// init sensor communication}}
+
+\end{DoxyCode}
+ read data from sensor as follow\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{testSensor.getCurrentDistance(); \textcolor{comment}{// get sensor mesured data}}
+
+\end{DoxyCode}
+ \hypertarget{md__c___users__sami_dhiab__theion__repos_lib_keyence_distance_sensor__r_e_a_d_m_e_autotoc_md3}{}\doxysection{Build}\label{md__c___users__sami_dhiab__theion__repos_lib_keyence_distance_sensor__r_e_a_d_m_e_autotoc_md3}
+use the provided \href{build_script.bat}{\texttt{ build}} script or cmake file to build the project and run it.\hypertarget{md__c___users__sami_dhiab__theion__repos_lib_keyence_distance_sensor__r_e_a_d_m_e_autotoc_md4}{}\doxysection{Unit Tests}\label{md__c___users__sami_dhiab__theion__repos_lib_keyence_distance_sensor__r_e_a_d_m_e_autotoc_md4}
+This library has a mock implementation to test all sensor responses and the programm logic on esp32 mcu. The same testing procedure can be applied on any platform. please follow the link for full virtual implementation\+: \href{https://wokwi.com/projects/334545131093885522}{\texttt{ https\+://wokwi.\+com/projects/334545131093885522}} 
