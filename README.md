@@ -13,8 +13,8 @@ To use this library, create an instance of the distance sensor by injecting the 
 Example:
 ~~~cpp
 // create a distance sensor object on windows machine using the rs232 communication 
-    const char* portName = "COM20"; //com port on windows
-    IdistanceSensor testSensor(1, new keyence::keyenceWinRS232(portName)); // instance sensor
+const char* portName = "COM20"; //com port on windows
+IdistanceSensor testSensor(1, new keyence::keyenceWinRS232(portName)); // instance sensor
 ~~~
 initialise the sensor as follow:
 ~~~cpp
