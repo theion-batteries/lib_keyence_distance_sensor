@@ -114,11 +114,27 @@ CMakeFiles/keyenceLib.dir/src/keyence_win_api.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/keyenceLib.dir/src/keyence_win_api.cpp.s"
 	C:/TDM-GCC-64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/src/keyence_win_api.cpp -o CMakeFiles/keyenceLib.dir/src/keyence_win_api.cpp.s
 
+CMakeFiles/keyenceLib.dir/src/keyence_rs232_api.cpp.obj: CMakeFiles/keyenceLib.dir/flags.make
+CMakeFiles/keyenceLib.dir/src/keyence_rs232_api.cpp.obj: CMakeFiles/keyenceLib.dir/includes_CXX.rsp
+CMakeFiles/keyenceLib.dir/src/keyence_rs232_api.cpp.obj: ../src/keyence_rs232_api.cpp
+CMakeFiles/keyenceLib.dir/src/keyence_rs232_api.cpp.obj: CMakeFiles/keyenceLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/keyenceLib.dir/src/keyence_rs232_api.cpp.obj"
+	C:/TDM-GCC-64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/keyenceLib.dir/src/keyence_rs232_api.cpp.obj -MF CMakeFiles/keyenceLib.dir/src/keyence_rs232_api.cpp.obj.d -o CMakeFiles/keyenceLib.dir/src/keyence_rs232_api.cpp.obj -c C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/src/keyence_rs232_api.cpp
+
+CMakeFiles/keyenceLib.dir/src/keyence_rs232_api.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/keyenceLib.dir/src/keyence_rs232_api.cpp.i"
+	C:/TDM-GCC-64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/src/keyence_rs232_api.cpp > CMakeFiles/keyenceLib.dir/src/keyence_rs232_api.cpp.i
+
+CMakeFiles/keyenceLib.dir/src/keyence_rs232_api.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/keyenceLib.dir/src/keyence_rs232_api.cpp.s"
+	C:/TDM-GCC-64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/src/keyence_rs232_api.cpp -o CMakeFiles/keyenceLib.dir/src/keyence_rs232_api.cpp.s
+
 # Object files for target keyenceLib
 keyenceLib_OBJECTS = \
 "CMakeFiles/keyenceLib.dir/src/keyence_api.cpp.obj" \
 "CMakeFiles/keyenceLib.dir/src/distance_sensor_interface.cpp.obj" \
-"CMakeFiles/keyenceLib.dir/src/keyence_win_api.cpp.obj"
+"CMakeFiles/keyenceLib.dir/src/keyence_win_api.cpp.obj" \
+"CMakeFiles/keyenceLib.dir/src/keyence_rs232_api.cpp.obj"
 
 # External object files for target keyenceLib
 keyenceLib_EXTERNAL_OBJECTS =
@@ -126,9 +142,10 @@ keyenceLib_EXTERNAL_OBJECTS =
 libkeyenceLib.a: CMakeFiles/keyenceLib.dir/src/keyence_api.cpp.obj
 libkeyenceLib.a: CMakeFiles/keyenceLib.dir/src/distance_sensor_interface.cpp.obj
 libkeyenceLib.a: CMakeFiles/keyenceLib.dir/src/keyence_win_api.cpp.obj
+libkeyenceLib.a: CMakeFiles/keyenceLib.dir/src/keyence_rs232_api.cpp.obj
 libkeyenceLib.a: CMakeFiles/keyenceLib.dir/build.make
 libkeyenceLib.a: CMakeFiles/keyenceLib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libkeyenceLib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libkeyenceLib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/keyenceLib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/keyenceLib.dir/link.txt --verbose=$(VERBOSE)
 

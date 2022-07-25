@@ -1,5 +1,4 @@
 #include "keyence_win_api.h"
-#include "settings.h"
 namespace keyence
 {
     keyenceWinRS232::keyenceWinRS232(const char* portName)

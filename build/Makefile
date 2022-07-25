@@ -190,6 +190,30 @@ src/keyence_api.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyenceLib.dir/build.make CMakeFiles/keyenceLib.dir/src/keyence_api.cpp.s
 .PHONY : src/keyence_api.cpp.s
 
+src/keyence_rs232_api.obj: src/keyence_rs232_api.cpp.obj
+.PHONY : src/keyence_rs232_api.obj
+
+# target to build an object file
+src/keyence_rs232_api.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyenceLib.dir/build.make CMakeFiles/keyenceLib.dir/src/keyence_rs232_api.cpp.obj
+.PHONY : src/keyence_rs232_api.cpp.obj
+
+src/keyence_rs232_api.i: src/keyence_rs232_api.cpp.i
+.PHONY : src/keyence_rs232_api.i
+
+# target to preprocess a source file
+src/keyence_rs232_api.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyenceLib.dir/build.make CMakeFiles/keyenceLib.dir/src/keyence_rs232_api.cpp.i
+.PHONY : src/keyence_rs232_api.cpp.i
+
+src/keyence_rs232_api.s: src/keyence_rs232_api.cpp.s
+.PHONY : src/keyence_rs232_api.s
+
+# target to generate assembly for a file
+src/keyence_rs232_api.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyenceLib.dir/build.make CMakeFiles/keyenceLib.dir/src/keyence_rs232_api.cpp.s
+.PHONY : src/keyence_rs232_api.cpp.s
+
 src/keyence_win_api.obj: src/keyence_win_api.cpp.obj
 .PHONY : src/keyence_win_api.obj
 
@@ -254,6 +278,9 @@ help:
 	@echo "... src/keyence_api.obj"
 	@echo "... src/keyence_api.i"
 	@echo "... src/keyence_api.s"
+	@echo "... src/keyence_rs232_api.obj"
+	@echo "... src/keyence_rs232_api.i"
+	@echo "... src/keyence_rs232_api.s"
 	@echo "... src/keyence_win_api.obj"
 	@echo "... src/keyence_win_api.i"
 	@echo "... src/keyence_win_api.s"

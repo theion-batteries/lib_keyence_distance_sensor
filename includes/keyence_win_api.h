@@ -1,5 +1,7 @@
 #include "keyence_rs232_api.h"
 #include "SerialPort.hpp"
+#include "settings.h"
+
 #include <stdlib.h>
 
 #pragma once
@@ -9,7 +11,7 @@ namespace keyence
     class keyenceWinRS232: public IkeyenceRS232
     {
     public:
-        explicit keyenceWinRS232(const char *portName);
+        keyenceWinRS232(const char* portName);
         virtual ~keyenceWinRS232();
         void initKeyenceCom() override;
         //get a output value of single head: return double

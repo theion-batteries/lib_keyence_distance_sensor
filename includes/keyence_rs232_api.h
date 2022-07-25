@@ -5,6 +5,8 @@ namespace keyence
     class IkeyenceRS232 : public IkeyenceBase
     {
     public:
+        IkeyenceRS232();
+        virtual ~IkeyenceRS232();
         virtual void initKeyenceCom()=0 ;
         //get a output value of single head: return double
         virtual double getValueSingleOutputHead(int output_head_Nr) =0;

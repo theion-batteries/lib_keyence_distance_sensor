@@ -4,22 +4,24 @@
  * @brief interface wrapper distance sensor
  * @version 0.1
  * @date 2022-02-08
- * 
+ *
  * @copyright Copyright (c) 2022
- * 
+ *
  */
 #pragma once
-#include "settings.h"
+#include "keyence_api.h"
+#include "keyence_rs232_api.h"
+#include "keyence_win_api.h"
 class IdistanceSensor
 {
-    public:
-    ~IdistanceSensor();
+public:
     IdistanceSensor(int OutputHeadNumber, keyence::IkeyenceBase* keyenceInterface);
+    virtual ~IdistanceSensor();
     void initSensorCom();
     //generic methods
     double getCurrentDistance();
     void printDistance(float val);
-    private:
+private:
     keyence::IkeyenceBase* keyenceInterface; // pointer to the interface
     int Pin;
     bool state;

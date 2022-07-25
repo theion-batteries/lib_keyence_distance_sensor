@@ -10,7 +10,9 @@
  */
 #include "distance_sensor_interface.h"
 
-IdistanceSensor::IdistanceSensor(int OutputHeadNumber, keyence::IkeyenceBase* InterfaceKeyence):HeadNum(OutputHeadNumber), keyenceInterface(InterfaceKeyence) {}
+IdistanceSensor::IdistanceSensor(int OutputHeadNumber, keyence::IkeyenceBase* InterfaceKeyence)
+:HeadNum(OutputHeadNumber), keyenceInterface(InterfaceKeyence) {};
+
 IdistanceSensor::~IdistanceSensor()
 {
     delete keyenceInterface;
@@ -27,7 +29,4 @@ double IdistanceSensor::getCurrentDistance()
     //return currentDistance=KeyenceObject->getValueMultipleOutputHead("100000000000")[HeadNum-1];
 
 }
-void IdistanceSensor::printDistance(float val)
-{
-
-}
+void IdistanceSensor::printDistance(float val){};

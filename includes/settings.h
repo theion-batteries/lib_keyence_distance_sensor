@@ -52,7 +52,7 @@
 /********** win cpp********/
 #define WIN
 #if defined(WIN)
-#include "keyence_win_api.h"
+//#include "keyence_win_api.h"
 #endif
 
 /********** unix cpp ***********/

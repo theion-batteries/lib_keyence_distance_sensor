@@ -24,6 +24,7 @@ target_sources(keyenceLib
    src/keyence_api.cpp
    src/distance_sensor_interface.cpp
    src/keyence_win_api.cpp
+   src/keyence_rs232_api.cpp
    includes/distance_sensor_interface.h
    includes/keyence_api.h
    includes/keyence_rs232_api.h

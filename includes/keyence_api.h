@@ -12,7 +12,7 @@
 #include <map>
 #include <vector>
 #include <string>
-
+#include "settings.h"
 /*** layout pins ***/
 /*
 5V  ------> VCC
@@ -71,6 +71,8 @@ namespace keyence
       // single value
       double lastValue = 0;
    public:
+      IkeyenceBase()=default;
+      virtual ~IkeyenceBase()=default;
       // Array of Raw Commands
       const char* RawCommands[9] = { "Q0","R0","MS,","MS,01","MS,02","MS,03","MM,1110000000000","MM,","MA" };
       // map of command std::strings to raw commands +CR
@@ -102,7 +104,7 @@ namespace keyence
       // send cmd to custom cmd
       virtual void sendCmd(const char* cmd)=0;
       // process received msg from sensor controll driver
-      virtual double processResponse();
+      virtual double processResponse(){return 5000;}
    };
 } // namespace keyence
 
