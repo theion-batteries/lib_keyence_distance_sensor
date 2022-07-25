@@ -4,7 +4,7 @@
 # compile CXX with C:/TDM-GCC-64/bin/c++.exe
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = @CMakeFiles/keyence_bin.dir/includes_CXX.rsp
 
 CXX_FLAGS = -std=gnu++17
 
