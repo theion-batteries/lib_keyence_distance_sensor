@@ -5,7 +5,7 @@
     <authors> sami dhiab</authors>
     <description />
   </meta>
-  <counters>
+  <counters models="1">
     <entity-names />
     <entity-ids />
     <diagrams />
@@ -43,5 +43,20 @@
     </custom-types>
   </types>
   <items />
-  <models />
+  <models>
+    <model id="pf4f048dce8e944db8823cbce17b37805_966825644" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>07/25/2022 17:32:08</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+    </model>
+  </models>
 </sim-project>

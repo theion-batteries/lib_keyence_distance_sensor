@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Mon Jul 25 16:13:54 2022
+# Make data base, printed on Tue Jul 26 12:47:20 2022
 
 # Variables
 
@@ -44,8 +44,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupp
 # environment
 VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
 # environment
-PYCHARM COMMUNITY EDITION = C:\Program Files\JetBrains\PyCharm Community Edition 2021 
-.2.2\bin;
+PYCHARM COMMUNITY EDITION = C:\Program Files\JetBrains\PyCharm Community Edition 2021.2.2\bin;
 # environment
 ONEDRIVE = C:\Users\SamiDhiab\OneDrive - Theion GmbH
 # environment
@@ -109,7 +108,7 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 VSCODE_CODE_CACHE_PATH = C:\Users\SamiDhiab\AppData\Roaming\Code\CachedData\3b889b090b5ad5793f524b5d1d39fda662b96a2a
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
 # environment
@@ -211,8 +210,7 @@ PROCESSOR_LEVEL = 23
 # environment
 VSCODE_PID = 10376
 # environment
-USERDOMAIN_ROAMINGPROFIL 
-E = AzureAD
+USERDOMAIN_ROAMINGPROFILE = AzureAD
 # variable set hash-table stats:
 # Load=100/1024=10%, Rehash=0, Collisions=15/115=13%
 
@@ -319,7 +317,7 @@ GNUmakefile:
 # strcache performance: lookups = 4664 / hit rate = 3%
 # hash-table stats:
 # Load=4501/8192=55%, Rehash=0, Collisions=2195/4664=47%
-# Finished Make data base on Mon Jul 25 16:13:54 2022
+# Finished Make data base on Tue Jul 26 12:47:20 2022
 
  
 make.exe: *** No rule to make target 'all'.  Stop.

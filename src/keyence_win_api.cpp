@@ -18,7 +18,7 @@ namespace keyence
         
     }
     void keyenceWinRS232::sendCmd(const char* cmd) {
-        SerObject->writeSerialPort(cmd, static_cast<std::string>(cmd).size());
+        SerObject->writeSerialPort(cmd, static_cast<std::string>(cmd).length()+1);
     }
 
     //get a output value of single head: head number format is 01,02,03... but param is given as int 1,2,3...
@@ -178,13 +178,18 @@ namespace keyence
         const char* command = "set_general_mode";
         const char* cmd = findCommand(command, commands);
         const char* Response;
-        const char* receivedString;
-        sendCmd(cmd + cr);
-        if (SerObject->isConnected())
+        char receivedString[255];
+        sendCmd("R0\n");
+        std::cout << "send command: " << "R0\n"<< std::endl;
+        while (SerObject->isConnected())
         {
             // Read data from rs232 port
             int hasData = SerObject->readSerialPort(receivedString, DATA_LENGTH);
-            std::cout << receivedString << std::endl;
+            if (hasData)
+            {
+                std::cout << receivedString << std::endl;
+                break;
+            }
         }
     }
     // set communication mode
