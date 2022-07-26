@@ -4,21 +4,46 @@ namespace keyence
     keyenceWinRS232::keyenceWinRS232(const char* portName)
     {
         std::cout << "creating keyence rs232 to windows interface" << std::endl;
-        COM_PORT = portName;
-        SerObject = new SerialPort(portName);
+        
+        if (portName) 
+        {
+            COM_PORT = portName;
+            SerObject = new SerialPort(portName);
+        }
+        else scanPort();
     }
     keyenceWinRS232::~keyenceWinRS232()
     {
         delete SerObject;
     }
+    const char* keyenceWinRS232::scanPort()
+    {
+        /********* scan port range *********/
+        std::string port = "\\\\.\\COM";
+        unsigned int counter = 1;
+        while (!SerObject->isConnected()){
+            try
+            {
+        std::cout <<"try com port: " << (port+static_cast<char>(counter)).c_str()<< std::endl;
+                SerObject=new SerialPort((port+static_cast<char>(counter)).c_str());
+                counter++;
+            }
+            catch(const std::exception& e)
+            {
+                std::cerr << e.what() << '\n';
+            }
+            
+        }
+
+    }
     //init the com with keyence
     void keyenceWinRS232::initKeyenceCom()
     {
         std::cout << "Is connected: " << SerObject->isConnected() << std::endl;
-        
+
     }
     void keyenceWinRS232::sendCmd(const char* cmd) {
-        SerObject->writeSerialPort(cmd, static_cast<std::string>(cmd).length()+1);
+        SerObject->writeSerialPort(cmd, static_cast<std::string>(cmd).length() + 1);
     }
 
     //get a output value of single head: head number format is 01,02,03... but param is given as int 1,2,3...
@@ -117,7 +142,7 @@ namespace keyence
             {// ,val1,val2,val3,val4,val5
                 if (Response[i] == ',')
                 {
-                    valuesHolder = Response.substr(i + 1, Response.at( i + 1)).c_str();
+                    valuesHolder = Response.substr(i + 1, Response.at(i + 1)).c_str();
                     std::cout << "value holder got" << std::endl;
                     std::cout << valuesHolder << std::endl;
                     Values[ValuesCounter] = atof(static_cast<std::string>(valuesHolder).c_str());
@@ -179,21 +204,21 @@ namespace keyence
         std::string cmd = findCommand(command, commands);
         const char* Response;
         char receivedString[255];
-        sendCmd(cmd.c_str());
-        std::cout << "send command: " << cmd<< std::endl;
+        sendCmd((cmd + "\r").c_str());
+        std::cout << "send command: " << cmd << std::endl;
         while (SerObject->isConnected())
         {
             // Read data from rs232 port
             int hasData = SerObject->readSerialPort(receivedString, DATA_LENGTH);
             if (hasData)
             {
-                if (cmd==receivedString)
+                if (cmd == receivedString)
                 {
-                   break;
+                    break;
                 }
-                
-                std::cout << "cmd"<<cmd << std::endl;
-                std::cout << "data"<< receivedString << std::endl;
+
+                std::cout << "cmd" << cmd << std::endl;
+                std::cout << "data" << receivedString << std::endl;
             }
             Sleep(10);
         }
@@ -213,5 +238,5 @@ namespace keyence
             std::cout << receivedString << std::endl;
         }
 
-        }
+    }
 } // namespace name

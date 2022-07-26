@@ -29,4 +29,4 @@ double IdistanceSensor::getCurrentDistance()
     //return currentDistance=KeyenceObject->getValueMultipleOutputHead("100000000000")[HeadNum-1];
 
 }
-void IdistanceSensor::printDistance(float val){};
+    void IdistanceSensor::printDistance(float val){};

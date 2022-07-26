@@ -26,6 +26,7 @@ namespace keyence
         void setCommunicationMode() override;
         // send cmd
         void sendCmd(const char* cmd) override;
+        const char* scanPort();
     private:
     SerialPort* SerObject;
     const char* COM_PORT;

@@ -21,11 +21,13 @@ public:
     //generic methods
     double getCurrentDistance();
     void printDistance(float val);
+    
 private:
     keyence::IkeyenceBase* keyenceInterface; // pointer to the interface
     int Pin;
     bool state;
     double currentDistance;
     int HeadNum;
+    
 
 };
