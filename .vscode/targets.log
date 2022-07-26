@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Tue Jul 26 12:47:20 2022
+# Make data base, printed on Tue Jul 26 12:48:23 2022
 
 # Variables
 
@@ -28,7 +28,8 @@ PLATFORMIO_IDE = 2.5.0
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-HOMEDRIVE = C:
+HOMEDRIVE = C 
+:
 # automatic
 @F = $(notdir $@)
 # automatic
@@ -246,7 +247,8 @@ USERDOMAIN_ROAMINGPROFILE = AzureAD
 # C:\WINDOWS\System32\Wbem (key C:/WINDOWS/System32/Wbem, mtime 1657876240): 174 files, no impossibilities.
 # C:\Program Files\doxygen\bin (key C:/Program Files/doxygen/bin, mtime 1652958329): 7 files, no impossibilities.
 # C:\Program Files\nodejs\ (key C:/Program Files/nodejs/, mtime 1632490465): 11 files, no impossibilities.
-# C:\Users\SamiDhiab\AppData\Local\Programs\MiKTeX\miktex\bin\x64\ (key C:/Users/SamiDhiab/AppData/Local/Programs/MiKTeX/miktex/bin/x64/, mtime 1652959888): 732 files, no impossibilities.
+# C:\Users\SamiDhiab\AppData\Local\Programs\MiKTeX\miktex\bin\x64\ (key C:/Users/SamiDhiab/AppData/Local/Programs/MiKTeX/miktex/bin/x64/, mtime 16529 
+59888): 732 files, no impossibilities.
 # C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1657876577): 2995 files, no impossibilities.
 # C:\Users\SamiDhiab\AppData\Local\Programs\Python\Python39\ (key C:/Users/SamiDhiab/AppData/Local/Programs/Python/Python39/, mtime 1633938602): 19 files, no impossibilities.
 # C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1657873902): 13 files, no impossibilities.
@@ -317,7 +319,7 @@ GNUmakefile:
 # strcache performance: lookups = 4664 / hit rate = 3%
 # hash-table stats:
 # Load=4501/8192=55%, Rehash=0, Collisions=2195/4664=47%
-# Finished Make data base on Tue Jul 26 12:47:20 2022
+# Finished Make data base on Tue Jul 26 12:48:23 2022
 
  
 make.exe: *** No rule to make target 'all'.  Stop.
