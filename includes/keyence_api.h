@@ -74,9 +74,9 @@ namespace keyence
       IkeyenceBase()=default;
       virtual ~IkeyenceBase()=default;
       // Array of Raw Commands
-      const char* RawCommands[9] = { "Q0","R0","MS,","MS,01","MS,02","MS,03","MM,1110000000000","MM,","MA" };
+      std::string RawCommands[9] = { "Q0","R0","MS,","MS,01","MS,02","MS,03","MM,1110000000000","MM,","MA" };
       // map of command std::strings to raw commands +CR
-      std::map<const char*, const char*> commands{
+      std::map<std::string, std::string> commands{
       {"set_communication_mode",RawCommands[0]},
       {"set_general_mode",RawCommands[1]},
       {"mesure_value_outputN",RawCommands[2]},
@@ -88,7 +88,7 @@ namespace keyence
       {"mesure_value_All",RawCommands[8]},
       };
       // helper func to find commands
-      const char* findCommand(const char* command, std::map<const char*, const char*>& CommandMap);
+      std::string findCommand(std::string command, std::map<std::string, std::string>& CommandMap);
       //get a output value of single head
       virtual double getValueSingleOutputHead(int output_head_Nr) = 0;
       //get output multiple heads

@@ -176,20 +176,26 @@ namespace keyence
     {
         //write the get value command
         const char* command = "set_general_mode";
-        const char* cmd = findCommand(command, commands);
+        std::string cmd = findCommand(command, commands);
         const char* Response;
         char receivedString[255];
-        sendCmd("R0\n");
-        std::cout << "send command: " << "R0\n"<< std::endl;
+        sendCmd(cmd.c_str());
+        std::cout << "send command: " << cmd<< std::endl;
         while (SerObject->isConnected())
         {
             // Read data from rs232 port
             int hasData = SerObject->readSerialPort(receivedString, DATA_LENGTH);
             if (hasData)
             {
-                std::cout << receivedString << std::endl;
-                break;
+                if (cmd==receivedString)
+                {
+                   break;
+                }
+                
+                std::cout << "cmd"<<cmd << std::endl;
+                std::cout << "data"<< receivedString << std::endl;
             }
+            Sleep(10);
         }
     }
     // set communication mode
@@ -198,8 +204,8 @@ namespace keyence
         //write the get value command
         const char* receivedString;
         const char* command = "set_communication_mode";
-        const char* cmd = findCommand(command, commands);
-        sendCmd(cmd + cr);
+        std::string cmd = findCommand(command, commands);
+        sendCmd(cmd.c_str() + cr);
         if (SerObject->isConnected())
         {
             // Read data from rs232 port

@@ -9,17 +9,19 @@
 
 */
 #include "keyence_api.h"
-
+#include <iostream>
 //commands section
 // helper method to retrieve commands from map
 namespace keyence
 {
-  const char* IkeyenceBase::findCommand(const char* command, std::map<const char*, const char*>& CommandMap)
+  std::string IkeyenceBase::findCommand(std::string command, std::map<std::string, std::string>& CommandMap)
   {
+    std::cout<<command<<std::endl;
     for (auto it = CommandMap.begin(); it != CommandMap.end(); ++it)
     {
       if ((*it).first == command)
       {
+        std::cout<<(*it).second<<std::endl;
         return (*it).second;
       }
     }
