@@ -4,7 +4,6 @@
  * @brief interface wrapper distance sensor
  * @version 0.1
  * @date 2022-02-08
- * 
  * @copyright Copyright (c) 2022
  * 
  */

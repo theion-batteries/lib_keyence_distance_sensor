@@ -3,20 +3,24 @@
 
 namespace keyence
 {
-    class Keyence_ethernet_interface :public IkeyenceBase
+    class IkeyenceEthernet :public IkeyenceBase
     {
     public:
-        void initKeyenceCom() override;
+        IkeyenceEthernet();
+        virtual ~IkeyenceEthernet();
+        virtual void initKeyenceCom()=0 ;
         //get a output value of single head: return double
-        double getValueSingleOutputHead(int output_head_Nr) override;
+        virtual double getValueSingleOutputHead(int output_head_Nr) =0;
         //get output multiple heads: return array of doubles
-        double* getValueMultipleOutputHead(const char* HeadsArray) override;
+        virtual double* getValueMultipleOutputHead(const char* HeadsArray) =0;
         // get output all: return array of doubles
-        double* getValueOutputHeadAll() override;
+        virtual double* getValueOutputHeadAll() =0;
         // set general mode
-        void setGeneralMode() override;
+        virtual void setGeneralMode() =0;
         // set communication mode
-        void setCommunicationMode() override;
+        virtual void setCommunicationMode() =0;
+        // send cmd
+        virtual void sendCmd(std::string& cmd) =0;
 
     };
 } // namespace name
