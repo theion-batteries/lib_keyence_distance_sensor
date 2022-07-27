@@ -5,7 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/includes",
-                "${workspaceFolder}/dependencies/SerialPort/include"
+                "${workspaceFolder}/dependencies/SerialPort/include",
+                "${workspaceFolder}/dependencies/sockpp/include/sockpp"
             ],
             "defines": [
                 "_DEBUG",

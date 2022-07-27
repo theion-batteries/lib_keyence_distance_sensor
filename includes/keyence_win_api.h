@@ -53,7 +53,7 @@ namespace keyence
         // set communication mode
         void setCommunicationMode() override;
         // send cmd
-        void sendCmd(std::string& cmd) override;
+        void sendCmd(const char* cmd) override;
         
     private:
     sockpp::tcp_connector* SockObject;

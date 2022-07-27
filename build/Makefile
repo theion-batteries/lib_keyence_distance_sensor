@@ -152,6 +152,198 @@ dependencies/SerialPort/src/SerialPort.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/SerialPort/src/SerialPort.cpp.s
 .PHONY : dependencies/SerialPort/src/SerialPort.cpp.s
 
+dependencies/sockpp/src/acceptor.obj: dependencies/sockpp/src/acceptor.cpp.obj
+.PHONY : dependencies/sockpp/src/acceptor.obj
+
+# target to build an object file
+dependencies/sockpp/src/acceptor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/sockpp/src/acceptor.cpp.obj
+.PHONY : dependencies/sockpp/src/acceptor.cpp.obj
+
+dependencies/sockpp/src/acceptor.i: dependencies/sockpp/src/acceptor.cpp.i
+.PHONY : dependencies/sockpp/src/acceptor.i
+
+# target to preprocess a source file
+dependencies/sockpp/src/acceptor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/sockpp/src/acceptor.cpp.i
+.PHONY : dependencies/sockpp/src/acceptor.cpp.i
+
+dependencies/sockpp/src/acceptor.s: dependencies/sockpp/src/acceptor.cpp.s
+.PHONY : dependencies/sockpp/src/acceptor.s
+
+# target to generate assembly for a file
+dependencies/sockpp/src/acceptor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/sockpp/src/acceptor.cpp.s
+.PHONY : dependencies/sockpp/src/acceptor.cpp.s
+
+dependencies/sockpp/src/connector.obj: dependencies/sockpp/src/connector.cpp.obj
+.PHONY : dependencies/sockpp/src/connector.obj
+
+# target to build an object file
+dependencies/sockpp/src/connector.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/sockpp/src/connector.cpp.obj
+.PHONY : dependencies/sockpp/src/connector.cpp.obj
+
+dependencies/sockpp/src/connector.i: dependencies/sockpp/src/connector.cpp.i
+.PHONY : dependencies/sockpp/src/connector.i
+
+# target to preprocess a source file
+dependencies/sockpp/src/connector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/sockpp/src/connector.cpp.i
+.PHONY : dependencies/sockpp/src/connector.cpp.i
+
+dependencies/sockpp/src/connector.s: dependencies/sockpp/src/connector.cpp.s
+.PHONY : dependencies/sockpp/src/connector.s
+
+# target to generate assembly for a file
+dependencies/sockpp/src/connector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/sockpp/src/connector.cpp.s
+.PHONY : dependencies/sockpp/src/connector.cpp.s
+
+dependencies/sockpp/src/datagram_socket.obj: dependencies/sockpp/src/datagram_socket.cpp.obj
+.PHONY : dependencies/sockpp/src/datagram_socket.obj
+
+# target to build an object file
+dependencies/sockpp/src/datagram_socket.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/sockpp/src/datagram_socket.cpp.obj
+.PHONY : dependencies/sockpp/src/datagram_socket.cpp.obj
+
+dependencies/sockpp/src/datagram_socket.i: dependencies/sockpp/src/datagram_socket.cpp.i
+.PHONY : dependencies/sockpp/src/datagram_socket.i
+
+# target to preprocess a source file
+dependencies/sockpp/src/datagram_socket.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/sockpp/src/datagram_socket.cpp.i
+.PHONY : dependencies/sockpp/src/datagram_socket.cpp.i
+
+dependencies/sockpp/src/datagram_socket.s: dependencies/sockpp/src/datagram_socket.cpp.s
+.PHONY : dependencies/sockpp/src/datagram_socket.s
+
+# target to generate assembly for a file
+dependencies/sockpp/src/datagram_socket.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/sockpp/src/datagram_socket.cpp.s
+.PHONY : dependencies/sockpp/src/datagram_socket.cpp.s
+
+dependencies/sockpp/src/exception.obj: dependencies/sockpp/src/exception.cpp.obj
+.PHONY : dependencies/sockpp/src/exception.obj
+
+# target to build an object file
+dependencies/sockpp/src/exception.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/sockpp/src/exception.cpp.obj
+.PHONY : dependencies/sockpp/src/exception.cpp.obj
+
+dependencies/sockpp/src/exception.i: dependencies/sockpp/src/exception.cpp.i
+.PHONY : dependencies/sockpp/src/exception.i
+
+# target to preprocess a source file
+dependencies/sockpp/src/exception.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/sockpp/src/exception.cpp.i
+.PHONY : dependencies/sockpp/src/exception.cpp.i
+
+dependencies/sockpp/src/exception.s: dependencies/sockpp/src/exception.cpp.s
+.PHONY : dependencies/sockpp/src/exception.s
+
+# target to generate assembly for a file
+dependencies/sockpp/src/exception.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/sockpp/src/exception.cpp.s
+.PHONY : dependencies/sockpp/src/exception.cpp.s
+
+dependencies/sockpp/src/inet6_address.obj: dependencies/sockpp/src/inet6_address.cpp.obj
+.PHONY : dependencies/sockpp/src/inet6_address.obj
+
+# target to build an object file
+dependencies/sockpp/src/inet6_address.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/sockpp/src/inet6_address.cpp.obj
+.PHONY : dependencies/sockpp/src/inet6_address.cpp.obj
+
+dependencies/sockpp/src/inet6_address.i: dependencies/sockpp/src/inet6_address.cpp.i
+.PHONY : dependencies/sockpp/src/inet6_address.i
+
+# target to preprocess a source file
+dependencies/sockpp/src/inet6_address.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/sockpp/src/inet6_address.cpp.i
+.PHONY : dependencies/sockpp/src/inet6_address.cpp.i
+
+dependencies/sockpp/src/inet6_address.s: dependencies/sockpp/src/inet6_address.cpp.s
+.PHONY : dependencies/sockpp/src/inet6_address.s
+
+# target to generate assembly for a file
+dependencies/sockpp/src/inet6_address.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/sockpp/src/inet6_address.cpp.s
+.PHONY : dependencies/sockpp/src/inet6_address.cpp.s
+
+dependencies/sockpp/src/inet_address.obj: dependencies/sockpp/src/inet_address.cpp.obj
+.PHONY : dependencies/sockpp/src/inet_address.obj
+
+# target to build an object file
+dependencies/sockpp/src/inet_address.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/sockpp/src/inet_address.cpp.obj
+.PHONY : dependencies/sockpp/src/inet_address.cpp.obj
+
+dependencies/sockpp/src/inet_address.i: dependencies/sockpp/src/inet_address.cpp.i
+.PHONY : dependencies/sockpp/src/inet_address.i
+
+# target to preprocess a source file
+dependencies/sockpp/src/inet_address.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/sockpp/src/inet_address.cpp.i
+.PHONY : dependencies/sockpp/src/inet_address.cpp.i
+
+dependencies/sockpp/src/inet_address.s: dependencies/sockpp/src/inet_address.cpp.s
+.PHONY : dependencies/sockpp/src/inet_address.s
+
+# target to generate assembly for a file
+dependencies/sockpp/src/inet_address.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/sockpp/src/inet_address.cpp.s
+.PHONY : dependencies/sockpp/src/inet_address.cpp.s
+
+dependencies/sockpp/src/socket.obj: dependencies/sockpp/src/socket.cpp.obj
+.PHONY : dependencies/sockpp/src/socket.obj
+
+# target to build an object file
+dependencies/sockpp/src/socket.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/sockpp/src/socket.cpp.obj
+.PHONY : dependencies/sockpp/src/socket.cpp.obj
+
+dependencies/sockpp/src/socket.i: dependencies/sockpp/src/socket.cpp.i
+.PHONY : dependencies/sockpp/src/socket.i
+
+# target to preprocess a source file
+dependencies/sockpp/src/socket.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/sockpp/src/socket.cpp.i
+.PHONY : dependencies/sockpp/src/socket.cpp.i
+
+dependencies/sockpp/src/socket.s: dependencies/sockpp/src/socket.cpp.s
+.PHONY : dependencies/sockpp/src/socket.s
+
+# target to generate assembly for a file
+dependencies/sockpp/src/socket.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/sockpp/src/socket.cpp.s
+.PHONY : dependencies/sockpp/src/socket.cpp.s
+
+dependencies/sockpp/src/stream_socket.obj: dependencies/sockpp/src/stream_socket.cpp.obj
+.PHONY : dependencies/sockpp/src/stream_socket.obj
+
+# target to build an object file
+dependencies/sockpp/src/stream_socket.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/sockpp/src/stream_socket.cpp.obj
+.PHONY : dependencies/sockpp/src/stream_socket.cpp.obj
+
+dependencies/sockpp/src/stream_socket.i: dependencies/sockpp/src/stream_socket.cpp.i
+.PHONY : dependencies/sockpp/src/stream_socket.i
+
+# target to preprocess a source file
+dependencies/sockpp/src/stream_socket.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/sockpp/src/stream_socket.cpp.i
+.PHONY : dependencies/sockpp/src/stream_socket.cpp.i
+
+dependencies/sockpp/src/stream_socket.s: dependencies/sockpp/src/stream_socket.cpp.s
+.PHONY : dependencies/sockpp/src/stream_socket.s
+
+# target to generate assembly for a file
+dependencies/sockpp/src/stream_socket.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/dependencies/sockpp/src/stream_socket.cpp.s
+.PHONY : dependencies/sockpp/src/stream_socket.cpp.s
+
 src/distance_sensor_interface.obj: src/distance_sensor_interface.cpp.obj
 .PHONY : src/distance_sensor_interface.obj
 
@@ -199,6 +391,30 @@ src/keyence_api.s: src/keyence_api.cpp.s
 src/keyence_api.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/src/keyence_api.cpp.s
 .PHONY : src/keyence_api.cpp.s
+
+src/keyence_ethernet_api.obj: src/keyence_ethernet_api.cpp.obj
+.PHONY : src/keyence_ethernet_api.obj
+
+# target to build an object file
+src/keyence_ethernet_api.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/src/keyence_ethernet_api.cpp.obj
+.PHONY : src/keyence_ethernet_api.cpp.obj
+
+src/keyence_ethernet_api.i: src/keyence_ethernet_api.cpp.i
+.PHONY : src/keyence_ethernet_api.i
+
+# target to preprocess a source file
+src/keyence_ethernet_api.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/src/keyence_ethernet_api.cpp.i
+.PHONY : src/keyence_ethernet_api.cpp.i
+
+src/keyence_ethernet_api.s: src/keyence_ethernet_api.cpp.s
+.PHONY : src/keyence_ethernet_api.s
+
+# target to generate assembly for a file
+src/keyence_ethernet_api.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/src/keyence_ethernet_api.cpp.s
+.PHONY : src/keyence_ethernet_api.cpp.s
 
 src/keyence_rs232_api.obj: src/keyence_rs232_api.cpp.obj
 .PHONY : src/keyence_rs232_api.obj
@@ -284,12 +500,39 @@ help:
 	@echo ... dependencies/SerialPort/src/SerialPort.obj
 	@echo ... dependencies/SerialPort/src/SerialPort.i
 	@echo ... dependencies/SerialPort/src/SerialPort.s
+	@echo ... dependencies/sockpp/src/acceptor.obj
+	@echo ... dependencies/sockpp/src/acceptor.i
+	@echo ... dependencies/sockpp/src/acceptor.s
+	@echo ... dependencies/sockpp/src/connector.obj
+	@echo ... dependencies/sockpp/src/connector.i
+	@echo ... dependencies/sockpp/src/connector.s
+	@echo ... dependencies/sockpp/src/datagram_socket.obj
+	@echo ... dependencies/sockpp/src/datagram_socket.i
+	@echo ... dependencies/sockpp/src/datagram_socket.s
+	@echo ... dependencies/sockpp/src/exception.obj
+	@echo ... dependencies/sockpp/src/exception.i
+	@echo ... dependencies/sockpp/src/exception.s
+	@echo ... dependencies/sockpp/src/inet6_address.obj
+	@echo ... dependencies/sockpp/src/inet6_address.i
+	@echo ... dependencies/sockpp/src/inet6_address.s
+	@echo ... dependencies/sockpp/src/inet_address.obj
+	@echo ... dependencies/sockpp/src/inet_address.i
+	@echo ... dependencies/sockpp/src/inet_address.s
+	@echo ... dependencies/sockpp/src/socket.obj
+	@echo ... dependencies/sockpp/src/socket.i
+	@echo ... dependencies/sockpp/src/socket.s
+	@echo ... dependencies/sockpp/src/stream_socket.obj
+	@echo ... dependencies/sockpp/src/stream_socket.i
+	@echo ... dependencies/sockpp/src/stream_socket.s
 	@echo ... src/distance_sensor_interface.obj
 	@echo ... src/distance_sensor_interface.i
 	@echo ... src/distance_sensor_interface.s
 	@echo ... src/keyence_api.obj
 	@echo ... src/keyence_api.i
 	@echo ... src/keyence_api.s
+	@echo ... src/keyence_ethernet_api.obj
+	@echo ... src/keyence_ethernet_api.i
+	@echo ... src/keyence_ethernet_api.s
 	@echo ... src/keyence_rs232_api.obj
 	@echo ... src/keyence_rs232_api.i
 	@echo ... src/keyence_rs232_api.s

@@ -20,7 +20,7 @@ namespace keyence
         // set communication mode
         virtual void setCommunicationMode() =0;
         // send cmd
-        virtual void sendCmd(std::string& cmd) =0;
+        virtual void sendCmd(const char* cmd) =0;
 
     };
 } // namespace name

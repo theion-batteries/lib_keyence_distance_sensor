@@ -80,12 +80,12 @@ clean: CMakeFiles/keyence_bin.dir/clean
 CMakeFiles/keyence_bin.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\keyence_bin.dir\build.make CMakeFiles/keyence_bin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\build\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target keyence_bin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 "Built target keyence_bin"
 .PHONY : CMakeFiles/keyence_bin.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/keyence_bin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\build\CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/keyence_bin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\build\CMakeFiles 0
 .PHONY : CMakeFiles/keyence_bin.dir/rule

@@ -271,9 +271,9 @@ namespace keyence
                 << SockObject->last_error_str() << std::endl;
         }
     }
-    void keyenceWinSocket::sendCmd(std::string& cmd)
+    void keyenceWinSocket::sendCmd(const char* cmd)
     {
-        if (SockObject->write(cmd) != ssize_t(cmd.length())) {
+        if (SockObject->write(cmd) != ssize_t(std::string(cmd).length())) {
             std::cerr << "Error writing to the TCP stream: "
                 << SockObject->last_error_str() << std::endl;
         }
@@ -287,7 +287,7 @@ namespace keyence
             const char* Response;
             char receivedString[255];
             cmd = cmd+"\r";
-            sendCmd(cmd);
+            sendCmd(cmd.c_str());
             std::cout << "send command: " << cmd << std::endl;
             while (SockObject->is_connected())
             {
@@ -314,7 +314,7 @@ namespace keyence
             const char* command = "set_communication_mode";
             std::string cmd = findCommand(command, commands);
             cmd += "\r";
-            sendCmd(cmd);
+            sendCmd(cmd.c_str());
             if (SockObject->is_connected())
             {
                 // Read data from rs232 port
@@ -343,7 +343,7 @@ namespace keyence
             // cmd=MS,01
             cmd += Soutput_head_Nr+"\r";
             // send full cmd
-            sendCmd(cmd);
+            sendCmd(cmd.c_str());
 
             if (SockObject->is_connected())
             {
@@ -406,7 +406,7 @@ namespace keyence
             std::cout << "command sent:" << std::endl;
             std::cout << cmd << std::endl;
             cmd+="\r";
-            sendCmd(cmd);
+            sendCmd(cmd.c_str());
             if (SockObject->is_connected())
             {
                 // Read data from rs232 port
@@ -450,7 +450,7 @@ namespace keyence
             // speed purpose we skip any loop
             //cmd = "MA";
             cmd += "\r";
-            sendCmd(cmd);
+            sendCmd(cmd.c_str());
             if (SockObject->is_connected())
             {
                 // Read data from rs232 port
