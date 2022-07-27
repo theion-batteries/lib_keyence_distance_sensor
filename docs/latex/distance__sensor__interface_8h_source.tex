@@ -5,7 +5,7 @@
 \DoxyCodeLine{1 }
 \DoxyCodeLine{11 \textcolor{preprocessor}{\#pragma once}}
 \DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{keyence__api_8h}{keyence\_api.h}}"{}}}
-\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}keyence\_rs232\_api.h"{}}}
+\DoxyCodeLine{13 \textcolor{comment}{//\#include "{}keyence\_rs232\_api.h"{}}}
 \DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}keyence\_win\_api.h"{}}}
 \DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_idistance_sensor}{IdistanceSensor}}}
 \DoxyCodeLine{16 \{}
@@ -16,13 +16,15 @@
 \DoxyCodeLine{21     \textcolor{comment}{//generic methods}}
 \DoxyCodeLine{22     \textcolor{keywordtype}{double} getCurrentDistance();}
 \DoxyCodeLine{23     \textcolor{keywordtype}{void} printDistance(\textcolor{keywordtype}{float} val);}
-\DoxyCodeLine{24 \textcolor{keyword}{private}:}
-\DoxyCodeLine{25     \mbox{\hyperlink{classkeyence_1_1_ikeyence_base}{keyence::IkeyenceBase}}* keyenceInterface; \textcolor{comment}{// pointer to the interface}}
-\DoxyCodeLine{26     \textcolor{keywordtype}{int} Pin;}
-\DoxyCodeLine{27     \textcolor{keywordtype}{bool} state;}
-\DoxyCodeLine{28     \textcolor{keywordtype}{double} currentDistance;}
-\DoxyCodeLine{29     \textcolor{keywordtype}{int} HeadNum;}
-\DoxyCodeLine{30 }
-\DoxyCodeLine{31 \};}
+\DoxyCodeLine{24     }
+\DoxyCodeLine{25 \textcolor{keyword}{private}:}
+\DoxyCodeLine{26     \mbox{\hyperlink{classkeyence_1_1_ikeyence_base}{keyence::IkeyenceBase}}* keyenceInterface; \textcolor{comment}{// pointer to the interface}}
+\DoxyCodeLine{27     \textcolor{keywordtype}{int} Pin;}
+\DoxyCodeLine{28     \textcolor{keywordtype}{bool} state;}
+\DoxyCodeLine{29     \textcolor{keywordtype}{double} currentDistance;}
+\DoxyCodeLine{30     \textcolor{keywordtype}{int} HeadNum;}
+\DoxyCodeLine{31     }
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \};}
 
 \end{DoxyCode}

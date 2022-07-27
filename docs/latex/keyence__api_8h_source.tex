@@ -69,9 +69,9 @@
 \DoxyCodeLine{74       \mbox{\hyperlink{classkeyence_1_1_ikeyence_base}{IkeyenceBase}}()=\textcolor{keywordflow}{default};}
 \DoxyCodeLine{75       \textcolor{keyword}{virtual} \mbox{\hyperlink{classkeyence_1_1_ikeyence_base}{\string~IkeyenceBase}}()=\textcolor{keywordflow}{default};}
 \DoxyCodeLine{76       \textcolor{comment}{// Array of Raw Commands}}
-\DoxyCodeLine{77       \textcolor{keyword}{const} \textcolor{keywordtype}{char}* RawCommands[9] = \{ \textcolor{stringliteral}{"{}Q0"{}},\textcolor{stringliteral}{"{}R0"{}},\textcolor{stringliteral}{"{}MS,"{}},\textcolor{stringliteral}{"{}MS,01"{}},\textcolor{stringliteral}{"{}MS,02"{}},\textcolor{stringliteral}{"{}MS,03"{}},\textcolor{stringliteral}{"{}MM,1110000000000"{}},\textcolor{stringliteral}{"{}MM,"{}},\textcolor{stringliteral}{"{}MA"{}} \};}
+\DoxyCodeLine{77       std::string RawCommands[9] = \{ \textcolor{stringliteral}{"{}Q0"{}},\textcolor{stringliteral}{"{}R0"{}},\textcolor{stringliteral}{"{}MS,"{}},\textcolor{stringliteral}{"{}MS,01"{}},\textcolor{stringliteral}{"{}MS,02"{}},\textcolor{stringliteral}{"{}MS,03"{}},\textcolor{stringliteral}{"{}MM,1110000000000"{}},\textcolor{stringliteral}{"{}MM,"{}},\textcolor{stringliteral}{"{}MA"{}} \};}
 \DoxyCodeLine{78       \textcolor{comment}{// map of command std::strings to raw commands +CR}}
-\DoxyCodeLine{79       std::map<const char*, const char*> commands\{}
+\DoxyCodeLine{79       std::map<std::string, std::string> commands\{}
 \DoxyCodeLine{80       \{\textcolor{stringliteral}{"{}set\_communication\_mode"{}},RawCommands[0]\},}
 \DoxyCodeLine{81       \{\textcolor{stringliteral}{"{}set\_general\_mode"{}},RawCommands[1]\},}
 \DoxyCodeLine{82       \{\textcolor{stringliteral}{"{}mesure\_value\_outputN"{}},RawCommands[2]\},}
@@ -83,7 +83,7 @@
 \DoxyCodeLine{88       \{\textcolor{stringliteral}{"{}mesure\_value\_All"{}},RawCommands[8]\},}
 \DoxyCodeLine{89       \};}
 \DoxyCodeLine{90       \textcolor{comment}{// helper func to find commands}}
-\DoxyCodeLine{91       \textcolor{keyword}{const} \textcolor{keywordtype}{char}* findCommand(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* command, std::map<const char*, const char*>\& CommandMap);}
+\DoxyCodeLine{91       std::string findCommand(std::string command, std::map<std::string, std::string>\& CommandMap);}
 \DoxyCodeLine{92       \textcolor{comment}{//get a output value of single head}}
 \DoxyCodeLine{93       \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} getValueSingleOutputHead(\textcolor{keywordtype}{int} output\_head\_Nr) = 0;}
 \DoxyCodeLine{94       \textcolor{comment}{//get output multiple heads}}

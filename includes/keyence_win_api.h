@@ -12,6 +12,7 @@
 
 namespace keyence
 {
+    
     class keyenceWinRS232: public IkeyenceRS232
     {
     public:
@@ -36,6 +37,7 @@ namespace keyence
     const char* COM_PORT;
     const int DATA_LENGTH =255;
     };
+    
     class keyenceWinSocket: public IkeyenceEthernet
     {
     public:

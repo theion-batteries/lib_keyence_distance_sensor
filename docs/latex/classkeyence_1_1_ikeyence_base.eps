@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 113.960114
+%%BoundingBox: 0 0 500 130.718948
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,7 +19,7 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 4.387500 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 3.825000 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
@@ -174,8 +174,9 @@
 boxfont setfont
 1 boundaspect scale
 (keyence::IkeyenceBase) cw
+(keyence::IkeyenceEthernet) cw
 (keyence::IkeyenceRS232) cw
-(keyence::Keyence_ethernet_interface) cw
+(keyence::keyenceWinSocket) cw
 (keyence::keyenceArduinoRS232) cw
 (keyence::keyenceWinRS232) cw
 (SensorMock) cw
@@ -190,32 +191,37 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (keyence::IkeyenceBase) 1.000000 3.000000 box
- (keyence::IkeyenceRS232) 0.500000 2.000000 box
- (keyence::Keyence_ethernet_interface) 1.500000 2.000000 box
- (keyence::keyenceArduinoRS232) 0.000000 1.000000 box
- (keyence::keyenceWinRS232) 1.000000 1.000000 box
- (SensorMock) 0.000000 0.000000 box
+ (keyence::IkeyenceBase) 0.750000 3.000000 box
+ (keyence::IkeyenceEthernet) 0.000000 2.000000 box
+ (keyence::IkeyenceRS232) 1.500000 2.000000 box
+ (keyence::keyenceWinSocket) 0.000000 1.000000 box
+ (keyence::keyenceArduinoRS232) 1.000000 1.000000 box
+ (keyence::keyenceWinRS232) 2.000000 1.000000 box
+ (SensorMock) 1.000000 0.000000 box
 
 % ----- relations -----
 
 solid
-1 1.000000 2.250000 out
+1 0.750000 2.250000 out
 solid
-0.500000 1.500000 3.000000 conn
+0.000000 1.500000 3.000000 conn
 solid
-0 0.500000 2.750000 in
+0 0.000000 2.750000 in
 solid
-1 0.500000 1.250000 out
-solid
-0.000000 1.000000 2.000000 conn
+1 0.000000 1.250000 out
 solid
 0 1.500000 2.750000 in
 solid
-0 0.000000 1.750000 in
+1 1.500000 1.250000 out
 solid
-1 0.000000 0.250000 out
+1.000000 2.000000 2.000000 conn
+solid
+0 0.000000 1.750000 in
 solid
 0 1.000000 1.750000 in
 solid
-0 0.000000 0.750000 in
+1 1.000000 0.250000 out
+solid
+0 2.000000 1.750000 in
+solid
+0 1.000000 0.750000 in

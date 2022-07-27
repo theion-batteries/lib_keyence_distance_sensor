@@ -7,23 +7,27 @@
 \DoxyCodeLine{3 }
 \DoxyCodeLine{4 \textcolor{keyword}{namespace }keyence}
 \DoxyCodeLine{5 \{}
-\DoxyCodeLine{6     \textcolor{keyword}{class }\mbox{\hyperlink{classkeyence_1_1_keyence__ethernet__interface}{Keyence\_ethernet\_interface}} :\textcolor{keyword}{public} \mbox{\hyperlink{classkeyence_1_1_ikeyence_base}{IkeyenceBase}}}
+\DoxyCodeLine{6     \textcolor{keyword}{class }\mbox{\hyperlink{classkeyence_1_1_ikeyence_ethernet}{IkeyenceEthernet}} :\textcolor{keyword}{public} \mbox{\hyperlink{classkeyence_1_1_ikeyence_base}{IkeyenceBase}}}
 \DoxyCodeLine{7     \{}
 \DoxyCodeLine{8     \textcolor{keyword}{public}:}
-\DoxyCodeLine{9         \textcolor{keywordtype}{void} initKeyenceCom() \textcolor{keyword}{override};}
-\DoxyCodeLine{10         \textcolor{comment}{//get a output value of single head: return double}}
-\DoxyCodeLine{11         \textcolor{keywordtype}{double} getValueSingleOutputHead(\textcolor{keywordtype}{int} output\_head\_Nr) \textcolor{keyword}{override};}
-\DoxyCodeLine{12         \textcolor{comment}{//get output multiple heads: return array of doubles}}
-\DoxyCodeLine{13         \textcolor{keywordtype}{double}* getValueMultipleOutputHead(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* HeadsArray) \textcolor{keyword}{override};}
-\DoxyCodeLine{14         \textcolor{comment}{// get output all: return array of doubles}}
-\DoxyCodeLine{15         \textcolor{keywordtype}{double}* getValueOutputHeadAll() \textcolor{keyword}{override};}
-\DoxyCodeLine{16         \textcolor{comment}{// set general mode}}
-\DoxyCodeLine{17         \textcolor{keywordtype}{void} setGeneralMode() \textcolor{keyword}{override};}
-\DoxyCodeLine{18         \textcolor{comment}{// set communication mode}}
-\DoxyCodeLine{19         \textcolor{keywordtype}{void} setCommunicationMode() \textcolor{keyword}{override};}
-\DoxyCodeLine{20 }
-\DoxyCodeLine{21     \};}
-\DoxyCodeLine{22 \} \textcolor{comment}{// namespace name}}
-\DoxyCodeLine{23 }
+\DoxyCodeLine{9         \mbox{\hyperlink{classkeyence_1_1_ikeyence_ethernet}{IkeyenceEthernet}}();}
+\DoxyCodeLine{10         \textcolor{keyword}{virtual} \mbox{\hyperlink{classkeyence_1_1_ikeyence_ethernet}{\string~IkeyenceEthernet}}();}
+\DoxyCodeLine{11         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} initKeyenceCom()=0 ;}
+\DoxyCodeLine{12         \textcolor{comment}{//get a output value of single head: return double}}
+\DoxyCodeLine{13         \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} getValueSingleOutputHead(\textcolor{keywordtype}{int} output\_head\_Nr) =0;}
+\DoxyCodeLine{14         \textcolor{comment}{//get output multiple heads: return array of doubles}}
+\DoxyCodeLine{15         \textcolor{keyword}{virtual} \textcolor{keywordtype}{double}* getValueMultipleOutputHead(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* HeadsArray) =0;}
+\DoxyCodeLine{16         \textcolor{comment}{// get output all: return array of doubles}}
+\DoxyCodeLine{17         \textcolor{keyword}{virtual} \textcolor{keywordtype}{double}* getValueOutputHeadAll() =0;}
+\DoxyCodeLine{18         \textcolor{comment}{// set general mode}}
+\DoxyCodeLine{19         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} setGeneralMode() =0;}
+\DoxyCodeLine{20         \textcolor{comment}{// set communication mode}}
+\DoxyCodeLine{21         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} setCommunicationMode() =0;}
+\DoxyCodeLine{22         \textcolor{comment}{// send cmd}}
+\DoxyCodeLine{23         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} sendCmd(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* cmd) =0;}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     \};}
+\DoxyCodeLine{26 \} \textcolor{comment}{// namespace name}}
+\DoxyCodeLine{27 }
 
 \end{DoxyCode}

@@ -3,14 +3,14 @@
 Inheritance diagram for keyence\+::Ikeyence\+Base\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=3.190883cm]{classkeyence_1_1_ikeyence_base}
+\includegraphics[height=3.660131cm]{classkeyence_1_1_ikeyence_base}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classkeyence_1_1_ikeyence_base_ab48424fc6f4fd92de96e036b760e43a6}\label{classkeyence_1_1_ikeyence_base_ab48424fc6f4fd92de96e036b760e43a6}} 
-const char $\ast$ {\bfseries find\+Command} (const char $\ast$command, std\+::map$<$ const char $\ast$, const char $\ast$ $>$ \&Command\+Map)
+\mbox{\Hypertarget{classkeyence_1_1_ikeyence_base_a88cafd7c8596b1053dc82e9671f6f2d3}\label{classkeyence_1_1_ikeyence_base_a88cafd7c8596b1053dc82e9671f6f2d3}} 
+std\+::string {\bfseries find\+Command} (std\+::string command, std\+::map$<$ std\+::string, std\+::string $>$ \&Command\+Map)
 \item 
 \mbox{\Hypertarget{classkeyence_1_1_ikeyence_base_aeb0ae0a65f70e8e20765809c424aead0}\label{classkeyence_1_1_ikeyence_base_aeb0ae0a65f70e8e20765809c424aead0}} 
 virtual double {\bfseries get\+Value\+Single\+Output\+Head} (int output\+\_\+head\+\_\+\+Nr)=0
@@ -39,10 +39,10 @@ virtual double {\bfseries process\+Response} ()
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classkeyence_1_1_ikeyence_base_a625f91073d36cef2efa23d9ac36ef194}\label{classkeyence_1_1_ikeyence_base_a625f91073d36cef2efa23d9ac36ef194}} 
-const char $\ast$ {\bfseries Raw\+Commands} \mbox{[}9\mbox{]} = \{ \char`\"{}Q0\char`\"{},\char`\"{}R0\char`\"{},\char`\"{}MS,\char`\"{},\char`\"{}MS,01\char`\"{},\char`\"{}MS,02\char`\"{},\char`\"{}MS,03\char`\"{},\char`\"{}MM,1110000000000\char`\"{},\char`\"{}MM,\char`\"{},\char`\"{}MA\char`\"{} \}
+\mbox{\Hypertarget{classkeyence_1_1_ikeyence_base_aaf1ba4ccb98b3e4032371da9b6a993ba}\label{classkeyence_1_1_ikeyence_base_aaf1ba4ccb98b3e4032371da9b6a993ba}} 
+std\+::string {\bfseries Raw\+Commands} \mbox{[}9\mbox{]} = \{ \char`\"{}Q0\char`\"{},\char`\"{}R0\char`\"{},\char`\"{}MS,\char`\"{},\char`\"{}MS,01\char`\"{},\char`\"{}MS,02\char`\"{},\char`\"{}MS,03\char`\"{},\char`\"{}MM,1110000000000\char`\"{},\char`\"{}MM,\char`\"{},\char`\"{}MA\char`\"{} \}
 \item 
-std\+::map$<$ const char $\ast$, const char $\ast$ $>$ \mbox{\hyperlink{classkeyence_1_1_ikeyence_base_a09e9bbd7c783be72be769c71c7421d21}{commands}}
+std\+::map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{classkeyence_1_1_ikeyence_base_a05a850a4dc0494c4428533e62fe0254c}{commands}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -56,11 +56,11 @@ double {\bfseries last\+Value} = 0
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classkeyence_1_1_ikeyence_base_a09e9bbd7c783be72be769c71c7421d21}\label{classkeyence_1_1_ikeyence_base_a09e9bbd7c783be72be769c71c7421d21}} 
+\mbox{\Hypertarget{classkeyence_1_1_ikeyence_base_a05a850a4dc0494c4428533e62fe0254c}\label{classkeyence_1_1_ikeyence_base_a05a850a4dc0494c4428533e62fe0254c}} 
 \index{keyence::IkeyenceBase@{keyence::IkeyenceBase}!commands@{commands}}
 \index{commands@{commands}!keyence::IkeyenceBase@{keyence::IkeyenceBase}}
 \doxysubsubsection{\texorpdfstring{commands}{commands}}
-{\footnotesize\ttfamily std\+::map$<$const char$\ast$, const char$\ast$$>$ keyence\+::\+Ikeyence\+Base\+::commands}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::string$>$ keyence\+::\+Ikeyence\+Base\+::commands}
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}

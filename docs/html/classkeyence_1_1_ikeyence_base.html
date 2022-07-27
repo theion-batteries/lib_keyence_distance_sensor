@@ -81,19 +81,20 @@ Inheritance diagram for keyence::IkeyenceBase:</div>
  <div class="center">
   <img src="classkeyence_1_1_ikeyence_base.png" usemap="#keyence::IkeyenceBase_map" alt=""/>
   <map id="keyence::IkeyenceBase_map" name="keyence::IkeyenceBase_map">
-<area href="classkeyence_1_1_ikeyence_r_s232.html" alt="keyence::IkeyenceRS232" shape="rect" coords="118,56,344,80"/>
-<area href="classkeyence_1_1_keyence__ethernet__interface.html" alt="keyence::Keyence_ethernet_interface" shape="rect" coords="354,56,580,80"/>
-<area href="classkeyence_1_1keyence_arduino_r_s232.html" alt="keyence::keyenceArduinoRS232" shape="rect" coords="0,112,226,136"/>
-<area href="classkeyence_1_1keyence_win_r_s232.html" alt="keyence::keyenceWinRS232" shape="rect" coords="236,112,462,136"/>
-<area href="class_sensor_mock.html" alt="SensorMock" shape="rect" coords="0,168,226,192"/>
+<area href="classkeyence_1_1_ikeyence_ethernet.html" alt="keyence::IkeyenceEthernet" shape="rect" coords="0,56,196,80"/>
+<area href="classkeyence_1_1_ikeyence_r_s232.html" alt="keyence::IkeyenceRS232" shape="rect" coords="309,56,505,80"/>
+<area href="classkeyence_1_1keyence_win_socket.html" alt="keyence::keyenceWinSocket" shape="rect" coords="0,112,196,136"/>
+<area href="classkeyence_1_1keyence_arduino_r_s232.html" alt="keyence::keyenceArduinoRS232" shape="rect" coords="206,112,402,136"/>
+<area href="classkeyence_1_1keyence_win_r_s232.html" alt="keyence::keyenceWinRS232" shape="rect" coords="412,112,608,136"/>
+<area href="class_sensor_mock.html" alt="SensorMock" shape="rect" coords="206,168,402,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab48424fc6f4fd92de96e036b760e43a6"><td class="memItemLeft" align="right" valign="top"><a id="ab48424fc6f4fd92de96e036b760e43a6" name="ab48424fc6f4fd92de96e036b760e43a6"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>findCommand</b> (const char *command, std::map&lt; const char *, const char * &gt; &amp;CommandMap)</td></tr>
-<tr class="separator:ab48424fc6f4fd92de96e036b760e43a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88cafd7c8596b1053dc82e9671f6f2d3"><td class="memItemLeft" align="right" valign="top"><a id="a88cafd7c8596b1053dc82e9671f6f2d3" name="a88cafd7c8596b1053dc82e9671f6f2d3"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>findCommand</b> (std::string command, std::map&lt; std::string, std::string &gt; &amp;CommandMap)</td></tr>
+<tr class="separator:a88cafd7c8596b1053dc82e9671f6f2d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb0ae0a65f70e8e20765809c424aead0"><td class="memItemLeft" align="right" valign="top"><a id="aeb0ae0a65f70e8e20765809c424aead0" name="aeb0ae0a65f70e8e20765809c424aead0"></a>
 virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>getValueSingleOutputHead</b> (int output_head_Nr)=0</td></tr>
 <tr class="separator:aeb0ae0a65f70e8e20765809c424aead0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,11 +122,11 @@ virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>processResp
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a625f91073d36cef2efa23d9ac36ef194"><td class="memItemLeft" align="right" valign="top"><a id="a625f91073d36cef2efa23d9ac36ef194" name="a625f91073d36cef2efa23d9ac36ef194"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>RawCommands</b> [9] = { &quot;Q0&quot;,&quot;R0&quot;,&quot;MS,&quot;,&quot;MS,01&quot;,&quot;MS,02&quot;,&quot;MS,03&quot;,&quot;MM,1110000000000&quot;,&quot;MM,&quot;,&quot;MA&quot; }</td></tr>
-<tr class="separator:a625f91073d36cef2efa23d9ac36ef194"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09e9bbd7c783be72be769c71c7421d21"><td class="memItemLeft" align="right" valign="top">std::map&lt; const char *, const char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkeyence_1_1_ikeyence_base.html#a09e9bbd7c783be72be769c71c7421d21">commands</a></td></tr>
-<tr class="separator:a09e9bbd7c783be72be769c71c7421d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf1ba4ccb98b3e4032371da9b6a993ba"><td class="memItemLeft" align="right" valign="top"><a id="aaf1ba4ccb98b3e4032371da9b6a993ba" name="aaf1ba4ccb98b3e4032371da9b6a993ba"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>RawCommands</b> [9] = { &quot;Q0&quot;,&quot;R0&quot;,&quot;MS,&quot;,&quot;MS,01&quot;,&quot;MS,02&quot;,&quot;MS,03&quot;,&quot;MM,1110000000000&quot;,&quot;MM,&quot;,&quot;MA&quot; }</td></tr>
+<tr class="separator:aaf1ba4ccb98b3e4032371da9b6a993ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05a850a4dc0494c4428533e62fe0254c"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkeyence_1_1_ikeyence_base.html#a05a850a4dc0494c4428533e62fe0254c">commands</a></td></tr>
+<tr class="separator:a05a850a4dc0494c4428533e62fe0254c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -137,14 +138,14 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>lastValue</b> = 0</
 <tr class="separator:a56b7bb93af90bb642ffa3ec0d90d5bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a09e9bbd7c783be72be769c71c7421d21" name="a09e9bbd7c783be72be769c71c7421d21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09e9bbd7c783be72be769c71c7421d21">&#9670;&nbsp;</a></span>commands</h2>
+<a id="a05a850a4dc0494c4428533e62fe0254c" name="a05a850a4dc0494c4428533e62fe0254c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05a850a4dc0494c4428533e62fe0254c">&#9670;&nbsp;</a></span>commands</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;const char*, const char*&gt; keyence::IkeyenceBase::commands</td>
+          <td class="memname">std::map&lt;std::string, std::string&gt; keyence::IkeyenceBase::commands</td>
         </tr>
       </table>
 </div><div class="memdoc">

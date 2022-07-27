@@ -54,3 +54,4 @@ INCLUDE_DIRECTORIES(
 LINK_DIRECTORIES(
   c:/src/vcpkg/installed/x64-windows/lib/
 ) 
+
