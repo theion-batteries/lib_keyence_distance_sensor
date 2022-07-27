@@ -1,5 +1,5 @@
 # only for cmake --version >= 3.5.1
-cmake_minimum_required(VERSION 3.22.0)
+cmake_minimum_required(VERSION 3.5.0)
 
 # project name
 project(keyence_lib)
@@ -14,8 +14,9 @@ set(CMAKE_CXX_STANDARD 17)
 #include_directories(${CMAKE_CURRENT_SOURCE_DIR}/includes/)
 
 include_directories(${PROJECT_SOURCE_DIR}/includes/)
+include_directories(${PROJECT_SOURCE_DIR}/dependencies/sockpp/include/)
 include_directories(${PROJECT_SOURCE_DIR}/dependencies/SerialPort/include/)
-include_directories(${PROJECT_SOURCE_DIR}/dependencies/sockpp/include/sockpp/)
+
 # puts all .cpp files inside src to the SOURCES variable
 #file(GLOB SOURCES src/*.cpp)
 # Local header files here ONLY
@@ -35,8 +36,8 @@ include_directories(${PROJECT_SOURCE_DIR}/dependencies/sockpp/include/sockpp/)
 #  )
 
 file(GLOB all_SRCS
-        "${PROJECT_SOURCE_DIR}/dependencies/SerialPort/src/*.cpp"
         "${PROJECT_SOURCE_DIR}/dependencies/sockpp/src/*.cpp"
+        "${PROJECT_SOURCE_DIR}/dependencies/SerialPort/src/*.cpp"
         "${PROJECT_SOURCE_DIR}/src/*.cpp"
 )
 add_executable(keyence_bin ${all_SRCS})

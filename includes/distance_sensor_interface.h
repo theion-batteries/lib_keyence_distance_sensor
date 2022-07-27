@@ -10,7 +10,7 @@
  */
 #pragma once
 #include "keyence_api.h"
-#include "keyence_rs232_api.h"
+//#include "keyence_rs232_api.h"
 #include "keyence_win_api.h"
 class IdistanceSensor
 {

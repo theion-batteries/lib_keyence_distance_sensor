@@ -1,5 +1,5 @@
 cd build
-cmake -G "Unix Makefiles" ..
+cmake -G "MinGW Makefiles" ..
 make
 .\keyence_bin.exe
 cd docs

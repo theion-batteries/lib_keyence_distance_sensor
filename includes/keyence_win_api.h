@@ -1,10 +1,10 @@
 #include "keyence_rs232_api.h"
 #include "SerialPort.hpp"
 #include "keyence_ethernet_api.h"
-#include "socket.h"
+#include "sockpp/socket.h"
 #include <iostream>
 #include <string>
-#include "tcp_connector.h"
+#include "sockpp/tcp_connector.h"
 #include "settings.h"
 #include <stdlib.h>
 

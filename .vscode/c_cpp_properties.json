@@ -6,7 +6,7 @@
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/includes",
                 "${workspaceFolder}/dependencies/SerialPort/include",
-                "${workspaceFolder}/dependencies/sockpp/include/sockpp"
+                "${workspaceFolder}/dependencies/sockpp/include"
             ],
             "defines": [
                 "_DEBUG",

@@ -9,10 +9,11 @@
                 "-g",
                 "${workspaceFolder}/src/*.cpp",
                 "${workspaceFolder}/dependencies/SerialPort/src/*.cpp",
-                "${workspaceFolder}/dependencies/sockpp/src*.cpp",
+                "${workspaceFolder}/dependencies/sockpp/src/*.cpp",
                 "-I",
                 "${workspaceFolder}/includes",
                 "${workspaceFolder}/dependencies/SerialPort/include",
+                "${workspaceFolder}/dependencies/sockpp/include",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
