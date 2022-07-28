@@ -1,0 +1,10 @@
+^C:\USERS\SAMIDHIAB\THEION_REPOS\LIB_KEYENCE_DISTANCE_SENSOR\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor -BC:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build --check-stamp-file C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Thu Jul 28 11:10:30 2022
+# Make data base, printed on Thu Jul 28 14:13:04 2022
 
 # Variables
 
@@ -60,7 +60,8 @@ FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 TMP = C:\Users\SAMIDH~1\AppData\Local\Temp
 # environment
-GENICAM_GENTL64_PATH = C:\Program Files\STEMMER IMAGING\Common Vision Blox\GenICam\bin\win64_x64\TLIs
+GENICAM_GENTL64_PATH = C:\Program Files\STEMMER IMAGING\Common Vision Blox\Ge 
+nICam\bin\win64_x64\TLIs
 # environment
 PROGRAMW6432 = C:\Program Files
 # environment
@@ -92,7 +93,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_13324_GTTCCDNNLOPQDBYT
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_7492_NLVSCSUQBVFPHCRX
 # environment
 COMPUTERNAME = DESKTOP-BRFNNCP
 # environment
@@ -122,13 +123,13 @@ USERDOMAIN = AzureAD
 # environment
 MAKELEVEL := 0
 # environment
-PLATFORMIO_PATH = C:\Users\SamiDhiab\.platformio\python3;C:\Program Files\Eclipse Foundation\jdk-8.0.302.8-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\TDM-GCC-64\bin;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;C:\Program Files\STEMMER IMAGING\Common Vision Blox\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\CMake\bin;C;C:\Program Files (x86)\Graphviz\bin;C:\Users\SamiDhiab\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\SamiDhiab\AppData\Local\Programs\Python\Python39\;C:\Users\SamiDhiab\AppData\Local\Microsoft\WindowsApps;C:\Users\SamiDhiab\AppData\Roaming\npm;C:\Users\SamiDhiab\.dotnet\tools;C:\Program Files\JetBrains\PyCharm Community Edition 2021.2.2\bin;;C:\Users\SamiDhiab\.platformio\penv\Scripts\;C:\Users\SamiDhiab\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\SamiDhiab\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Program Files\doxygen\bin;C:\Users\SamiDhiab\AppData\Local\Programs\BFGroup\B2\;C:\Program Files\Eclipse Foundation\jdk-8.0.302.8-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\TDM-GCC-64\bin;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;C:\Program Files\STEMMER IMAGING\Common Vision Blox\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\CMake\bin;C;C:\Program Files (x86)\Graphviz\bin;C:\Users\SamiDhiab\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\SamiDhiab\AppData\Local\Programs\Python\Python39\;C:\Users\SamiDhiab\AppData\Local\Microsoft\WindowsApps;C:\Users\SamiDhiab\AppData\Roaming\npm;C:\Users\SamiDhiab\.dotnet\tools;C:\Program Files\JetBrains\PyCharm Community Edition 2021.2.2\bin;;C:\Users\SamiDhiab\.platformio\penv\Scripts\;C:\Users\SamiDhiab\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\SamiDhiab\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Program Files\doxygen\bin;C:\Users\SamiDhiab\AppData\Local\Programs\BFGroup\B2\
+PLATFORMIO_PATH = C:\Users\SamiDhiab\.platformio\python3;C:\Program Files\Eclipse Foundation\jdk-8.0.302.8-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\TDM-GCC-64\bin;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;C:\Program Files\STEMMER IMAGING\Common Vision Blox\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\CMake\bin;C;C:\Program Files (x86)\Graphviz\bin;C:\Program Files\LLVM\bin;C:\Users\SamiDhiab\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\SamiDhiab\AppData\Local\Programs\Python\Python39\;C:\Users\SamiDhiab\AppData\Local\Microsoft\WindowsApps;C:\Users\SamiDhiab\AppData\Roaming\npm;C:\Users\SamiDhiab\.dotnet\tools;C:\Program Files\JetBrains\PyCharm Community Edition 2021.2.2\bin;;C:\Users\SamiDhiab\.platformio\penv\Scripts\;C:\Users\SamiDhiab\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\SamiDhiab\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Program Files\doxygen\bin;C:\Users\SamiDhiab\AppData\Local\Programs\BFGroup\B2\;C:\Program Files\Eclipse Foundation\jdk-8.0.302.8-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\TDM-GCC-64\bin;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;C:\Program Files\STEMMER IMAGING\Common Vision Blox\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\CMake\bin;C;C:\Program Files (x86)\Graphviz\bin;C:\Program Files\LLVM\bin;C:\Users\SamiDhiab\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\SamiDhiab\AppData\Local\Programs\Python\Python39\;C:\Users\SamiDhiab\AppData\Local\Microsoft\WindowsApps;C:\Users\SamiDhiab\AppData\Roaming\npm;C:\Users\SamiDhiab\.dotnet\tools;C:\Program Files\JetBrains\PyCharm Community Edition 2021.2.2\bin;;C:\Users\SamiDhiab\.platformio\penv\Scripts\;C:\Users\SamiDhiab\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\SamiDhiab\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Program Files\doxygen\bin;C:\Users\SamiDhiab\AppData\Local\Programs\BFGroup\B2\
 # default
 MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
-PATH = C:\Program Files\Eclipse Foundation\jdk-8.0.302.8-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\TDM-GCC-64\bin;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;C:\Program Files\STEMMER IMAGING\Common Vision Blox\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\CMake\bin;C;C:\Program Files (x86)\Graphviz\bin;C:\Users\SamiDhiab\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\SamiDhiab\AppData\Local\Programs\Python\Python39\;C:\Users\SamiDhiab\AppData\Local\Microsoft\WindowsApps;C:\Users\SamiDhiab\AppData\Roaming\npm;C:\Users\SamiDhiab\.dotnet\tools;C:\Program Files\JetBrains\PyCharm Community Edition 2021.2.2\bin;;C:\Users\SamiDhiab\.platformio\penv\Scripts\;C:\Users\SamiDhiab\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\SamiDhiab\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Program Files\doxygen\bin;C:\Users\SamiDhiab\AppData\Local\Programs\BFGroup\B2\
+PATH = C:\Program Files\Eclipse Foundation\jdk-8.0.302.8-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\TDM-GCC-64\bin;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;C:\Program Files\STEMMER IMAGING\Common Vision Blox\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\CMake\bin;C;C:\Program Files (x86)\Graphviz\bin;C:\Program Files\LLVM\bin;C:\Users\SamiDhiab\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\SamiDhiab\AppData\Local\Programs\Python\Python39\;C:\Users\SamiDhiab\AppData\Local\Microsoft\WindowsApps;C:\Users\SamiDhiab\AppData\Roaming\npm;C:\Users\SamiDhiab\.dotnet\tools;C:\Program Files\JetBrains\PyCharm Community Edition 2021.2.2\bin;;C:\Users\SamiDhiab\.platformio\penv\Scripts\;C:\Users\SamiDhiab\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\SamiDhiab\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Program Files\doxygen\bin;C:\Users\SamiDhiab\AppData\Local\Programs\BFGroup\B2\
 # environment
 CVB = C:\Program Files\STEMMER IMAGING\Common Vision Blox\
 # environment
@@ -160,7 +161,8 @@ OS = Windows_NT
 # environment
 VSCODE_IPC_HOOK = \\.\pipe\66617ee1df8269f425333cb861d18dbe-1.69.2-main-sock
 # environment
-PYTHONPATH = C:\Users\SamiDhiab\Theion_Repos;C:\Users\SamiDhiab\Theion_Repos\IR_Thermal_Camera\test\Medium_Imports_Tutorial\utils;C:\Users\SamiDhiab\Theion_Repos\soft_temperature_control_module\lib;
+PYTHONPATH = C:\Users\SamiDhiab\Theion_Repos;C:\Users\SamiDhiab\Theion_Repos\IR_Thermal_Cam 
+era\test\Medium_Imports_Tutorial\utils;C:\Users\SamiDhiab\Theion_Repos\soft_temperature_control_module\lib;
 # environment
 HOMEPATH = \Users\SamiDhiab
 # environment
@@ -212,7 +214,7 @@ PROCESSOR_LEVEL = 23
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 13324
+VSCODE_PID = 7492
 # environment
 USERDOMAIN_ROAMINGPROFILE = AzureAD
 # variable set hash-table stats:
@@ -227,14 +229,15 @@ USERDOMAIN_ROAMINGPROFILE = AzureAD
 # : could not be stat'd.
 # C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1640088842): 34 files, no impossibilities.
 # C:\Users\SamiDhiab\AppData\Roaming\npm (key C:/Users/SamiDhiab/AppData/Roaming/npm, mtime 1632490459): 2 files, no impossibilities.
-# . (key c:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor, mtime 1658921232): 14 files, no impossibilities.
+# . (key c:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor, mtime 1659002313): 15 files, no impossibilities.
 # C:\Users\SamiDhiab\.platformio\penv\Scripts\ (key C:/Users/SamiDhiab/.platformio/penv/Scripts/, mtime 1656008720): 25 files, no impossibilities.
-# C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\ (key C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/, mtime 1636023288): 7 files, no impossibilities.
+# C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn 
+\ (key C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/, mtime 1636023288): 7 files, no impossibilities.
 # C:\Program Files (x86)\Common Files\Oracle\Java\javapath (key C:/Program Files (x86)/Common Files/Oracle/Java/javapath, mtime 1652174015): 5 files, no impossibilities.
 # C:\Program Files\STEMMER IMAGING\Common Vision Blox\ (key C:/Program Files/STEMMER IMAGING/Common Vision Blox/, mtime 1634050659): 73 files, no impossibilities.
 # C: could not be stat'd.
 # C:\Users\SamiDhiab\AppData\Local\Microsoft\WindowsApps (key C:/Users/SamiDhiab/AppData/Local/Microsoft/WindowsApps, mtime 1658743225): 17 files, no impossibilities.
-# C:\TDM-GCC-64\bin (key C:/TDM-GCC-64/bin, mtime 1621866422): 89 files, no impossibilities.
+# C:\TDM-GCC-64\bin (key C:/TDM-GCC-64/bin, mtime 1658999076): 89 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1631803578): 8 files, no impossibilities.
 # C:\WINDOWS\System32\OpenSSH\: could not be stat'd.
 # C:\Program Files (x86)\Graphviz\bin (key C:/Program Files (x86)/Graphviz/bin, mtime 1652959808): 62 files, no impossibilities.
@@ -245,19 +248,21 @@ USERDOMAIN_ROAMINGPROFILE = AzureAD
 # C:\Users\SamiDhiab\AppData\Local\Programs\BFGroup\B2\ (key C:/Users/SamiDhiab/AppData/Local/Programs/BFGroup/B2/, mtime 1657788032): 4 files, no impossibilities.
 # C:\ProgramData\chocolatey\bin (key C:/ProgramData/chocolatey/bin, mtime 1633200592): 41 files, no impossibilities.
 # C:\Users\SamiDhiab\.dotnet\tools: could not be stat'd.
+# C:\Program Files\LLVM\bin (key C:/Program Files/LLVM/bin, mtime 1659010009): 120 files, no impossibilities.
 # C:\Program Files\Eclipse Foundation\jdk-8.0.302.8-hotspot\bin (key C:/Program Files/Eclipse Foundation/jdk-8.0.302.8-hotspot/bin, mtime 1637168167): 53 files, no impossibilities.
 # C:\Program Files\Microsoft SQL Server\130\Tools\Binn\ (key C:/Program Files/Microsoft SQL Server/130/Tools/Binn/, mtime 1636023284): 4 files, no impossibilities.
 # C:\WINDOWS\System32\Wbem (key C:/WINDOWS/System32/Wbem, mtime 1657876240): 174 files, no impossibilities.
 # C:\Program Files\doxygen\bin (key C:/Program Files/doxygen/bin, mtime 1652958329): 7 files, no impossibilities.
 # C:\Program Files\nodejs\ (key C:/Program Files/nodejs/, mtime 1632490465): 11 files, no impossibilities.
 # C:\Users\SamiDhiab\AppData\Local\Programs\MiKTeX\miktex\bin\x64\ (key C:/Users/SamiDhiab/AppData/Local/Programs/MiKTeX/miktex/bin/x64/, mtime 1652959888): 732 files, no impossibilities.
-# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1658938905): 2995 files, no impossibilities.
+# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1659009219): 2995 files, no impossibilities.
 # C:\Users\SamiDhiab\AppData\Local\Programs\Python\Python39\ (key C:/Users/SamiDhiab/AppData/Local/Programs/Python/Python39/, mtime 1633938602): 19 files, no impossibilities.
 # C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1657873902): 13 files, no impossibilities.
 # C:\Users\SamiDhiab\AppData\Local\Programs\Python\Python39\Scripts\ (key C:/Users/SamiDhiab/AppData/Local/Programs/Python/Python39/Scripts/, mtime 1647271958): 78 files, no impossibilities.
 # C:\Program Files\PuTTY\ (key C:/Program Files/PuTTY/, mtime 1629711085): 12 files, no impossibilities.
 
-# 4652 files, no impossibilities in 32 directories.
+ 
+# 4773 files, no impossibilities in 33 directories.
 
 # Implicit Rules
 
@@ -313,15 +318,15 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 9 (5) / strings = 4528 / storage = 68939 B / avg = 15 B
-# current buf: size = 8174 B / used = 3646 B / count = 259 / avg = 14 B
-# other used: total = 60765 B / count = 4269 / avg = 14 B
-# other free: total = 99 B / max = 21 B / min = 4 B / avg = 12 B
+# strcache buffers: 9 (7) / strings = 4600 / storage = 70077 B / avg = 15 B
+# current buf: size = 8174 B / used = 4751 B / count = 310 / avg = 15 B
+# other used: total = 61903 B / count = 4290 / avg = 14 B
+# other free: total = 66 B / max = 17 B / min = 2 B / avg = 8 B
 
-# strcache performance: lookups = 4691 / hit rate = 3%
+# strcache performance: lookups = 4813 / hit rate = 4%
 # hash-table stats:
-# Load=4528/8192=55%, Rehash=0, Collisions=2229/4691=48%
-# Finished Make data base on Thu Jul 28 11:10:30 2022
+# Load=4600/8192=56%, Rehash=0, Collisions=2375/4813=49%
+# Finished Make data base on Thu Jul 28 14:13:04 2022
 
  
 make.exe: *** No rule to make target 'all'.  Stop.

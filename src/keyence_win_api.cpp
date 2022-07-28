@@ -35,7 +35,7 @@ namespace keyence
             }
 
         }
-
+        return port.c_str();
     }
     //init the com with keyence
     void keyenceWinRS232::initKeyenceCom()

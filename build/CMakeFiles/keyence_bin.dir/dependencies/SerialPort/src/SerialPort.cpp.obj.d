@@ -1,357 +1,255 @@
 CMakeFiles/keyence_bin.dir/dependencies/SerialPort/src/SerialPort.cpp.obj: \
- C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\dependencies\SerialPort\src\SerialPort.cpp \
- C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/dependencies/SerialPort/include/SerialPort.hpp \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/Winsock2.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw_unicode.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/windows.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw_mac.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw_secapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/vadefs.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/sdkddkver.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/excpt.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/crtdefs.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/corecrt.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/stdarg.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/stdarg.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/windef.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/winapifamily.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/minwindef.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/specstrings.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/sal.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/concurrencysal.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/driverspecs.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/winnt.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/ctype.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/apiset.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/psdk_inc/intrin-impl.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/basetsd.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/guiddef.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/string.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/sec_api/string_s.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/x86intrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/ia32intrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/immintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/mmintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/xmmintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/mm_malloc.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/stdlib.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/cstdlib \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/pstl/pstl_config.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/stdlib.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed/limits.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed/syslimits.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/limits.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/malloc.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/std_abs.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/errno.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/emmintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/pmmintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/tmmintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/smmintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/popcntintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/wmmintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/fxsrintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/xsaveintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/xsaveoptintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/xsavesintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/xsavecintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avxintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx2intrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx512fintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx512erintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx512pfintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx512cdintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx512vlintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx512bwintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx512dqintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx512vlbwintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx512vldqintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx512ifmaintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx512ifmavlintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx512vbmiintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx512vbmivlintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx5124fmapsintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx5124vnniwintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx512vpopcntdqintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx512vbmi2intrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx512vbmi2vlintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx512vnniintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx512vnnivlintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx512vpopcntdqvlintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx512bitalgintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx512vp2intersectintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx512vp2intersectvlintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/shaintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/lzcntintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/bmiintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/bmi2intrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/fmaintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/f16cintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/rtmintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/xtestintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/cetintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/gfniintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/vaesintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/vpclmulqdqintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/movdirintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/sgxintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/pconfigintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/waitpkgintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/cldemoteintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx512bf16vlintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/avx512bf16intrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/enqcmdintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/rdseedintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/prfchwintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/adxintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/clwbintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/clflushoptintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/wbnoinvdintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/pkuintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/mm3dnow.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/fma4intrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/ammintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/xopintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/lwpintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/tbmintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/mwaitxintrin.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/clzerointrin.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/pshpack4.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/poppack.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/pshpack4.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/pshpack2.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/poppack.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/pshpack2.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/pshpack8.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/pshpack8.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/ktmtypes.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/winbase.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/apisetcconv.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/minwinbase.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/bemapiset.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/debugapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/errhandlingapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/fibersapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/fileapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/handleapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/heapapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/ioapiset.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/interlockedapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/jobapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/libloaderapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/memoryapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/namedpipeapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/namespaceapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/processenv.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/processthreadsapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/processtopologyapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/profileapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/realtimeapiset.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/securityappcontainer.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/securitybaseapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/synchapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/sysinfoapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/systemtopologyapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/threadpoolapiset.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/threadpoollegacyapiset.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/utilapiset.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/wow64apiset.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/winerror.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/fltwinerror.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/timezoneapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/wingdi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/pshpack1.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/winuser.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/tvout.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/winnls.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/datetimeapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/stringapiset.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/wincon.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/winver.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/winreg.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/reason.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/winnetwk.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/wnnc.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/virtdisk.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/cderr.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/dde.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/ddeml.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/dlgs.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/lzexpand.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/mmsystem.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/nb30.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/rpc.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/rpcdce.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/rpcdcep.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/rpcnsi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/rpcnterr.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/rpcasync.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/shellapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/winperf.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/winsock.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/wincrypt.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/bcrypt.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/ncrypt.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/dpapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/winefs.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/winscard.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/wtypes.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/rpcndr.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/rpcnsip.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/rpcsal.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/ole2.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/objbase.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/combaseapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/wtypesbase.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/unknwnbase.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/objidlbase.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/cguid.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/objidl.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/unknwn.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/urlmon.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/oleidl.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/servprov.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/msxml.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/oaidl.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/propidl.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/oleauto.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/winioctl.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/winsmcrd.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/winspool.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/prsht.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/commdlg.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/stralign.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/sec_api/stralign_s.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/winsvc.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/mcx.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/imm.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/psdk_inc/_ws1_undef.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/_timeval.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/_bsd_types.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/inaddr.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/psdk_inc/_socket_types.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/psdk_inc/_fd_types.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/psdk_inc/_ip_types.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/psdk_inc/_wsadata.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/ws2def.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/psdk_inc/_wsa_errnos.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/qos.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/iostream \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/ostream \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/ios \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/iosfwd \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/stringfwd.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/memoryfwd.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/postypes.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/cwchar \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/wchar.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw_off_t.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw_stat64.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/swprintf.inl \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/exception \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/exception.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/exception_ptr.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/exception_defines.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/cxxabi_init_exception.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/stddef.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/stddef.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/typeinfo \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/hash_bytes.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/new \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/nested_exception.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/move.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/type_traits \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/char_traits.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/stl_algobase.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/functexcept.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/cpp_type_traits.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/ext/type_traits.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/ext/numeric_traits.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/stl_pair.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/stl_iterator_base_types.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/stl_iterator_base_funcs.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/concept_check.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/debug/assertions.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/stl_iterator.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/ptr_traits.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/debug/debug.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/predefined_ops.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/cstdint \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/stdint.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/stdint.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/localefwd.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/clocale \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/locale.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/stdio.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/cctype \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/ios_base.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/ext/atomicity.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/pthread.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/sys/types.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/process.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/corecrt_startup.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/signal.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/pthread_signal.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/sys/timeb.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/pthread_compat.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/pthread_unistd.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/locale_classes.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/string \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/allocator.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/ext/new_allocator.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/ostream_insert.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/cxxabi_forced.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/stl_function.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/backward/binders.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/range_access.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/initializer_list \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/iterator_concepts.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/concepts \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/range_cmp.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/basic_string.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/ext/alloc_traits.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/alloc_traits.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/stl_construct.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/string_view \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/functional_hash.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/string_view.tcc \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/ext/string_conversions.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/cstdio \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/cerrno \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/charconv.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/basic_string.tcc \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/locale_classes.tcc \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/system_error \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/stdexcept \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/streambuf \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/streambuf.tcc \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/basic_ios.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/locale_facets.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/cwctype \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/wctype.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/streambuf_iterator.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/locale_facets.tcc \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/basic_ios.tcc \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/ostream.tcc \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/istream \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/istream.tcc
+  C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\dependencies\SerialPort\src\SerialPort.cpp \
+  C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\dependencies\SerialPort\include\SerialPort.hpp \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\Winsock2.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\winapifamily.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\winpackagefamily.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\windows.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\sdkddkver.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\excpt.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\sal.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\concurrencysal.h \
+  C:\Program\ Files\LLVM\lib\clang\14.0.6\include\vadefs.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vadefs.h \
+  C:\Program\ Files\LLVM\lib\clang\14.0.6\include\stdarg.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\windef.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\minwindef.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\specstrings.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\specstrings_strict.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\specstrings_undef.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\driverspecs.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\sdv_driverspecs.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\winnt.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\ctype.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\corecrt.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\kernelspecs.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\basetsd.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\guiddef.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\string.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\corecrt_memory.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\corecrt_memcpy_s.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\errno.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_string.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstring.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\pshpack4.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\poppack.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\pshpack2.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\pshpack8.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\pshpack1.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\apiset.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\ktmtypes.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\winbase.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\apisetcconv.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\minwinbase.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\apiquery2.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\processenv.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\fileapifromapp.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\fileapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\debugapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\utilapiset.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\handleapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\errhandlingapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\fibersapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\namedpipeapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\profileapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\heapapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\ioapiset.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\synchapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\interlockedapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\processthreadsapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\sysinfoapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\memoryapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\enclaveapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\threadpoollegacyapiset.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\threadpoolapiset.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\jobapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\jobapi2.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\wow64apiset.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\libloaderapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\securitybaseapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\namespaceapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\systemtopologyapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\processtopologyapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\securityappcontainer.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\realtimeapiset.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\winerror.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\timezoneapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\wingdi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\winuser.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\tvout.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\winnls.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\datetimeapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\stringapiset.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\wincon.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\wincontypes.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\consoleapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\consoleapi2.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\consoleapi3.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\winver.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\verrsrc.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\winreg.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\reason.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\winnetwk.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\wnnc.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\cderr.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\dde.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\ddeml.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\dlgs.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\lzexpand.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\mmsystem.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\mmsyscom.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\mciapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\mmiscapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\mmiscapi2.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\playsoundapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\mmeapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\timeapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\joystickapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\nb30.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\rpc.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\rpcdce.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\rpcdcep.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\rpcnsi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\rpcnterr.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\rpcasync.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\shellapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\winperf.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\winsock.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\wincrypt.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\bcrypt.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\ncrypt.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\dpapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\winefs.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\winscard.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\wtypes.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\rpcndr.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\rpcnsip.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\rpcsal.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\wtypesbase.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\winioctl.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\winsmcrd.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\winspool.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\prsht.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\ole2.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\objbase.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\combaseapi.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\stdlib.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\corecrt_malloc.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\corecrt_search.h \
+  C:\Program\ Files\LLVM\lib\clang\14.0.6\include\stddef.h \
+  C:\Program\ Files\LLVM\lib\clang\14.0.6\include\__stddef_max_align_t.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstdlib.h \
+  C:\Program\ Files\LLVM\lib\clang\14.0.6\include\limits.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\limits.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\unknwnbase.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\objidlbase.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\cguid.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\coml2api.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\objidl.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\unknwn.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\propidlbase.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\oaidl.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\urlmon.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\oleidl.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\servprov.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\msxml.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\propidl.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\oleauto.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\commdlg.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\stralign.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\winsvc.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\mcx.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\imm.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\um\ime_cmodes.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\ws2def.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\inaddr.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\shared\qos.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iostream \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\yvals_core.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xkeycheck.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\istream \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\ostream \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\ios \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xlocnum \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\climits \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cmath \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\yvals.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_new_debug.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_new.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\crtdefs.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\use_ansi.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdlib \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\math.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\corecrt_math.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtr1common \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdio \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\stdio.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstdio.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\corecrt_stdio_config.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iterator \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iosfwd \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstring \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cwchar \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\wchar.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\corecrt_wconio.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\corecrt_wdirect.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\corecrt_wio.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\corecrt_share.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\corecrt_wprocess.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\corecrt_wtime.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\sys\stat.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\sys\types.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstddef \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstddef \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\utility \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\type_traits \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdint \
+  C:\Program\ Files\LLVM\lib\clang\14.0.6\include\stdint.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdint.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\streambuf \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xiosbase \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\share.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\system_error \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\__msvc_system_error_abi.hpp \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cerrno \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdexcept \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\exception \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\malloc.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_exception.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\eh.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\corecrt_terminate.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\limits \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cfloat \
+  C:\Program\ Files\LLVM\lib\clang\14.0.6\include\float.h \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\float.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin0.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin0.inl.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\isa_availability.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\new \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xatomic.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xpolymorphic_allocator.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xcall_once.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xerrc.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\atomic \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xthreads.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtimec.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\ctime \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\time.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xlocale \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\typeinfo \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_typeinfo.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xfacet \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xlocinfo \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xlocinfo.h \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cctype \
+  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\clocale \
+  C:\Program\ Files\ (x86)\Windows\ Kits\10\Include\10.0.19041.0\ucrt\locale.h

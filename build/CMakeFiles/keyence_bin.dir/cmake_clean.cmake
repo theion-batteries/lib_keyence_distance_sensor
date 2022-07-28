@@ -31,8 +31,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/keyence_bin.dir/src/main.cpp.obj.d"
   "keyence_bin.exe"
   "keyence_bin.exe.manifest"
+  "keyence_bin.lib"
   "keyence_bin.pdb"
-  "libkeyence_bin.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

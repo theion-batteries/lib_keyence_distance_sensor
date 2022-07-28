@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\build\CMakeFiles\22b29fc80035b90b01269b141acc04d6\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{71432468-4EEC-3F03-9584-346BDF21340C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32630.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "keyence_bin", "keyence_bin.vcxproj", "{704FF6D9-8482-3FA3-9467-17214FCA913F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		MinSizeRel|x64 = MinSizeRel|x64
+		Release|x64 = Release|x64
+		RelWithDebInfo|x64 = RelWithDebInfo|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{704FF6D9-8482-3FA3-9467-17214FCA913F}.Debug|x64.ActiveCfg = Debug|x64
+		{704FF6D9-8482-3FA3-9467-17214FCA913F}.Debug|x64.Build.0 = Debug|x64
+		{704FF6D9-8482-3FA3-9467-17214FCA913F}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
+		{704FF6D9-8482-3FA3-9467-17214FCA913F}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
+		{704FF6D9-8482-3FA3-9467-17214FCA913F}.Release|x64.ActiveCfg = Release|x64
+		{704FF6D9-8482-3FA3-9467-17214FCA913F}.Release|x64.Build.0 = Release|x64
+		{704FF6D9-8482-3FA3-9467-17214FCA913F}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
+		{704FF6D9-8482-3FA3-9467-17214FCA913F}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB9DC3CA-C581-3DBC-9366-A4C6287DA337}
+	EndGlobalSection
+EndGlobal
