@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Wed Jul 27 17:36:39 2022
+# Make data base, printed on Thu Jul 28 11:10:30 2022
 
 # Variables
 
@@ -28,8 +28,7 @@ PLATFORMIO_IDE = 2.5.0
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-HOMEDRIVE = C 
-:
+HOMEDRIVE = C:
 # automatic
 @F = $(notdir $@)
 # automatic
@@ -93,7 +92,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_17692_RMAXODHBKKMUIUAM
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_13324_GTTCCDNNLOPQDBYT
 # environment
 COMPUTERNAME = DESKTOP-BRFNNCP
 # environment
@@ -213,7 +212,7 @@ PROCESSOR_LEVEL = 23
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 17692
+VSCODE_PID = 13324
 # environment
 USERDOMAIN_ROAMINGPROFILE = AzureAD
 # variable set hash-table stats:
@@ -234,9 +233,8 @@ USERDOMAIN_ROAMINGPROFILE = AzureAD
 # C:\Program Files (x86)\Common Files\Oracle\Java\javapath (key C:/Program Files (x86)/Common Files/Oracle/Java/javapath, mtime 1652174015): 5 files, no impossibilities.
 # C:\Program Files\STEMMER IMAGING\Common Vision Blox\ (key C:/Program Files/STEMMER IMAGING/Common Vision Blox/, mtime 1634050659): 73 files, no impossibilities.
 # C: could not be stat'd.
-# C:\Users\SamiDhiab\AppData\Local\Microsoft\WindowsApps (key C:/Users/SamiDhiab/AppData/Local/Microsof 
-t/WindowsApps, mtime 1658743225): 17 files, no impossibilities.
-# C:\TDM-GCC-64\bin (key C:/TDM-GCC-64/bin, mtime 1637527553): 62 files, no impossibilities.
+# C:\Users\SamiDhiab\AppData\Local\Microsoft\WindowsApps (key C:/Users/SamiDhiab/AppData/Local/Microsoft/WindowsApps, mtime 1658743225): 17 files, no impossibilities.
+# C:\TDM-GCC-64\bin (key C:/TDM-GCC-64/bin, mtime 1621866422): 89 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1631803578): 8 files, no impossibilities.
 # C:\WINDOWS\System32\OpenSSH\: could not be stat'd.
 # C:\Program Files (x86)\Graphviz\bin (key C:/Program Files (x86)/Graphviz/bin, mtime 1652959808): 62 files, no impossibilities.
@@ -253,13 +251,13 @@ t/WindowsApps, mtime 1658743225): 17 files, no impossibilities.
 # C:\Program Files\doxygen\bin (key C:/Program Files/doxygen/bin, mtime 1652958329): 7 files, no impossibilities.
 # C:\Program Files\nodejs\ (key C:/Program Files/nodejs/, mtime 1632490465): 11 files, no impossibilities.
 # C:\Users\SamiDhiab\AppData\Local\Programs\MiKTeX\miktex\bin\x64\ (key C:/Users/SamiDhiab/AppData/Local/Programs/MiKTeX/miktex/bin/x64/, mtime 1652959888): 732 files, no impossibilities.
-# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1658928432): 2995 files, no impossibilities.
+# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1658938905): 2995 files, no impossibilities.
 # C:\Users\SamiDhiab\AppData\Local\Programs\Python\Python39\ (key C:/Users/SamiDhiab/AppData/Local/Programs/Python/Python39/, mtime 1633938602): 19 files, no impossibilities.
 # C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1657873902): 13 files, no impossibilities.
 # C:\Users\SamiDhiab\AppData\Local\Programs\Python\Python39\Scripts\ (key C:/Users/SamiDhiab/AppData/Local/Programs/Python/Python39/Scripts/, mtime 1647271958): 78 files, no impossibilities.
 # C:\Program Files\PuTTY\ (key C:/Program Files/PuTTY/, mtime 1629711085): 12 files, no impossibilities.
 
-# 4625 files, no impossibilities in 32 directories.
+# 4652 files, no impossibilities in 32 directories.
 
 # Implicit Rules
 
@@ -315,15 +313,15 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 9 (6) / strings = 4501 / storage = 68543 B / avg = 15 B
-# current buf: size = 8174 B / used = 3227 B / count = 242 / avg = 13 B
-# other used: total = 60369 B / count = 4259 / avg = 14 B
-# other free: total = 76 B / max = 21 B / min = 2 B / avg = 9 B
+# strcache buffers: 9 (5) / strings = 4528 / storage = 68939 B / avg = 15 B
+# current buf: size = 8174 B / used = 3646 B / count = 259 / avg = 14 B
+# other used: total = 60765 B / count = 4269 / avg = 14 B
+# other free: total = 99 B / max = 21 B / min = 4 B / avg = 12 B
 
-# strcache performance: lookups = 4664 / hit rate = 3%
+# strcache performance: lookups = 4691 / hit rate = 3%
 # hash-table stats:
-# Load=4501/8192=55%, Rehash=0, Collisions=2195/4664=47%
-# Finished Make data base on Wed Jul 27 17:36:39 2022
+# Load=4528/8192=55%, Rehash=0, Collisions=2229/4691=48%
+# Finished Make data base on Thu Jul 28 11:10:30 2022
 
  
 make.exe: *** No rule to make target 'all'.  Stop.
