@@ -1,4 +1,6 @@
 #include "keyence_win_api.h"
+#include "sockpp/tcp_connector.h"
+
 namespace keyence
 {
     /***************** Keyence RS232 Windows *********************/
@@ -245,9 +247,25 @@ namespace keyence
         std::cout << "creating keyence ethernet to windows interface" << std::endl;
         IP = ip;
         PORT = port;
-        sockpp::socket_initializer sockInit;
+        
         SockObject = new sockpp::tcp_connector({ ip, port });
-
+        /*std::cout << "Created a connection from " << SockObject->address() << std::endl;
+        std::cout << "Created a connection to " << SockObject->peer_address() << std::endl;
+        sendCmd("*idn?");
+        while (SockObject->is_connected())
+        {
+            std::cout << "data" << incomingData << std::endl;
+            std::cout << "response" << Response << std::endl;
+            incomingData = SockObject->read(Response, DATA_LENGTH);
+            std::cout << "data" << incomingData << std::endl;
+            std::cout << "response" << Response << std::endl;
+            if (incomingData != -1)
+            {
+                std::cout << "data" << incomingData << std::endl;
+                std::cout << "response" << Response << std::endl;
+                break;
+            }
+        }*/
     }
     keyenceWinSocket::~keyenceWinSocket()
     {
@@ -263,10 +281,12 @@ namespace keyence
             std::cerr << "Error connecting to server at "
                 << sockpp::inet_address(IP, PORT)
                 << "\n\t" << SockObject->last_error_str() << std::endl;
+            return;
         }
         std::cout << "Created a connection from " << SockObject->address() << std::endl;
+        std::cout << "Created a connection to " << SockObject->peer_address() << std::endl;
         // Set a timeout for the responses
-        if (!SockObject->read_timeout(std::chrono::seconds(5))) {
+        if (!SockObject->read_timeout(std::chrono::seconds(100))) {
             std::cerr << "Error setting timeout on TCP stream: "
                 << SockObject->last_error_str() << std::endl;
         }
@@ -277,201 +297,203 @@ namespace keyence
             std::cerr << "Error writing to the TCP stream: "
                 << SockObject->last_error_str() << std::endl;
         }
+        std::cout << "command " << cmd << " sent" << std::endl;
     }
-        // set general mode
-        void keyenceWinSocket::setGeneralMode()
-        {
-            //write the get value command
-            const char* command = "set_general_mode";
-            std::string cmd = findCommand(command, commands);
-            const char* Response;
-            char receivedString[255];
-            cmd = cmd+"\r";
-            sendCmd(cmd.c_str());
-            std::cout << "send command: " << cmd << std::endl;
-            while (SockObject->is_connected())
-            {
-                // Read data from rs232 port
-                int hasData = SockObject->read(receivedString, DATA_LENGTH);
-                if (hasData)
-                {
-                    if (cmd == receivedString)
-                    {
-                        break;
-                    }
+    // set general mode
+    void keyenceWinSocket::setGeneralMode()
+    {
 
-                    std::cout << "cmd" << cmd << std::endl;
-                    std::cout << "data" << receivedString << std::endl;
+        //write the get value command
+        const char* command = "set_general_mode";
+        std::string cmd = findCommand(command, commands);
+        const char* Response;
+        char receivedString[255];
+        cmd = cmd + "\r";
+        sendCmd(cmd.c_str());
+        std::cout << "send command: " << cmd << std::endl;
+        while (SockObject->is_connected())
+        {
+            // Read data from rs232 port
+            int hasData = SockObject->read(receivedString, DATA_LENGTH);
+            if (hasData)
+            {
+                if (cmd == receivedString)
+                {
+                    break;
                 }
-                Sleep(10);
+
+                std::cout << "data" << hasData << std::endl;
+                std::cout << "response" << receivedString << std::endl;
+            }
+            Sleep(200);
+        }
+    }
+    // set communication mode
+    void keyenceWinSocket::setCommunicationMode()
+    {
+        //write the get value command
+        char* receivedString;
+        const char* command = "set_communication_mode";
+        std::string cmd = findCommand(command, commands);
+        cmd += "\r";
+        sendCmd(cmd.c_str());
+        if (SockObject->is_connected())
+        {
+            // Read data from rs232 port
+            int hasData = SockObject->read(receivedString, DATA_LENGTH);
+            std::cout << receivedString << std::endl;
+        }
+    }
+
+
+    //get a output value of single head: head number format is 01,02,03... but param is given as int 1,2,3...
+    double keyenceWinSocket::getValueSingleOutputHead(int output_head_Nr)
+    {
+        int const buffer_len = DATA_LENGTH;
+        const char* Zero = "0";
+        std::string Response;
+        char* receivedString;
+        double val = 0;
+        // head specific parameters
+        std::string Soutput_head_Nr = std::to_string(output_head_Nr);
+        //write the get value command
+        const char* command = "mesure_value_outputN";
+        std::string cmd = static_cast<std::string>(findCommand(command, commands));
+        if (output_head_Nr < 9) {
+            Soutput_head_Nr = Zero + Soutput_head_Nr;
+        }
+        // cmd=MS,01
+        cmd += Soutput_head_Nr + "\r";
+        // send full cmd
+        sendCmd(cmd.c_str());
+
+        if (SockObject->is_connected())
+        {
+            // get the response
+            int hasData = SockObject->read(receivedString, DATA_LENGTH);
+            if (hasData)
+            {
+                Response = receivedString;
+                if (Response.substr(0, 5) == cmd)
+                {
+                    std::cout << "full response: " + Response << std::endl;
+                    Response.erase(0, 6); //remove default response
+                    val = atof(Response.c_str());
+                }
+            }
+
+        }
+        // error checking
+        if (val == 0xFFFF || val == 0xFFFFFFFF)
+        {
+            std::cout << "out of range value" << std::endl;
+            return lastValue;
+        }
+        else
+        {
+            if (val == 0) { std::cout << "no value" << std::endl; return lastValue; }
+            else {
+                std::cout << "filtered response for head: " + Soutput_head_Nr + " equal to: " << val << std::endl;
+                lastValue = val;
+                return val;
             }
         }
-        // set communication mode
-        void keyenceWinSocket::setCommunicationMode()
+    }
+    //get output multiple heads in this format: "0-12" example: head 1,2 and 3 will be 111000000000
+    double* keyenceWinSocket::getValueMultipleOutputHead(const char* HeadsArray)
+    {
+        int NumOfOutputs = 0;
+        std::string Response;
+        char* DATA;
+        //write the get value command
+        if (NumOfOutputs < 1)
         {
-            //write the get value command
-            char* receivedString;
-            const char* command = "set_communication_mode";
-            std::string cmd = findCommand(command, commands);
-            cmd += "\r";
-            sendCmd(cmd.c_str());
-            if (SockObject->is_connected())
+            for (auto& element : static_cast<std::string>(HeadsArray))
             {
-                // Read data from rs232 port
-                int hasData = SockObject->read(receivedString, DATA_LENGTH);
-                std::cout << receivedString << std::endl;
-            }
-        }
-
-
-        //get a output value of single head: head number format is 01,02,03... but param is given as int 1,2,3...
-        double keyenceWinSocket::getValueSingleOutputHead(int output_head_Nr)
-        {
-            int const buffer_len = DATA_LENGTH;
-            const char* Zero = "0";
-            std::string Response;
-             char* receivedString;
-            double val = 0;
-            // head specific parameters
-            std::string Soutput_head_Nr = std::to_string(output_head_Nr);
-            //write the get value command
-            const char* command = "mesure_value_outputN";
-            std::string cmd = static_cast<std::string>(findCommand(command, commands));
-            if (output_head_Nr < 9) {
-                Soutput_head_Nr = Zero + Soutput_head_Nr;
-            }
-            // cmd=MS,01
-            cmd += Soutput_head_Nr+"\r";
-            // send full cmd
-            sendCmd(cmd.c_str());
-
-            if (SockObject->is_connected())
-            {
-                // get the response
-                int hasData = SockObject->read(receivedString, DATA_LENGTH);
-                if (hasData)
+                if (element == '1')
                 {
-                    Response = receivedString;
-                    if (Response.substr(0, 5) == cmd)
-                    {
-                        std::cout << "full response: " + Response << std::endl;
-                        Response.erase(0, 6); //remove default response
-                        val = atof(Response.c_str());
-                    }
-                }
-
-            }
-            // error checking
-            if (val == 0xFFFF || val == 0xFFFFFFFF)
-            {
-                std::cout << "out of range value" << std::endl;
-                return lastValue;
-            }
-            else
-            {
-                if (val == 0) { std::cout << "no value" << std::endl; return lastValue; }
-                else {
-                    std::cout << "filtered response for head: " + Soutput_head_Nr + " equal to: " << val << std::endl;
-                    lastValue = val;
-                    return val;
+                    NumOfOutputs++;
                 }
             }
         }
-        //get output multiple heads in this format: "0-12" example: head 1,2 and 3 will be 111000000000
-        double* keyenceWinSocket::getValueMultipleOutputHead(const char* HeadsArray)
+        double Values[3];
+        const char* valuesHolder = "";
+        int ValuesCounter = 0;
+        std::cout << "number of heads" << std::endl;
+        std::cout << NumOfOutputs << std::endl;
+        const char* command = "mesure_value_multipleN";
+        std::string cmd = findCommand(command, commands);
+        //cmd:MM,010010000000
+        cmd += HeadsArray;
+        std::cout << "command sent:" << std::endl;
+        std::cout << cmd << std::endl;
+        cmd += "\r";
+        sendCmd(cmd.c_str());
+        if (SockObject->is_connected())
         {
-            int NumOfOutputs = 0;
-            std::string Response;
-            char* DATA;
-            //write the get value command
-            if (NumOfOutputs < 1)
-            {
-                for (auto& element : static_cast<std::string>(HeadsArray))
+            // Read data from rs232 port
+            int hasData = SockObject->read(DATA, DATA_LENGTH);
+            // Response: MM,010010000000,value[,value,value]: 
+            Response = DATA;
+            Response.replace(cmd.size(), Response.size(), "");
+            std::cout << Response << std::endl;
+            // iterate response and extract values
+            for (int i = 0; i < Response.length();i++)
+            {// ,val1,val2,val3,val4,val5
+                if (Response[i] == ',')
                 {
-                    if (element == '1')
-                    {
-                        NumOfOutputs++;
-                    }
+                    valuesHolder = Response.substr(i + 1, Response.at(i + 1)).c_str();
+                    std::cout << "value holder got" << std::endl;
+                    std::cout << valuesHolder << std::endl;
+                    Values[ValuesCounter] = atof(static_cast<std::string>(valuesHolder).c_str());
+                    ValuesCounter++;
+                    valuesHolder = "";
                 }
+                if (ValuesCounter == NumOfOutputs) break;
             }
-            double Values[3];
-            const char* valuesHolder = "";
-            int ValuesCounter = 0;
-            std::cout << "number of heads" << std::endl;
-            std::cout << NumOfOutputs << std::endl;
-            const char* command = "mesure_value_multipleN";
-            std::string cmd = findCommand(command, commands);
-            //cmd:MM,010010000000
-            cmd += HeadsArray;
-            std::cout << "command sent:" << std::endl;
-            std::cout << cmd << std::endl;
-            cmd+="\r";
-            sendCmd(cmd.c_str());
-            if (SockObject->is_connected())
+            for (int i = 0; i < NumOfOutputs; i++)
             {
-                // Read data from rs232 port
-                int hasData = SockObject->read(DATA, DATA_LENGTH);
-                // Response: MM,010010000000,value[,value,value]: 
-                Response = DATA;
-                Response.replace(cmd.size(), Response.size(), "");
+                std::cout << "extracted values" << std::endl;
+                std::cout << *(Values + i) << std::endl;
+            }
+            return Values;
+        }
+    }
+    // get output all
+    double* keyenceWinSocket::getValueOutputHeadAll()
+    {
+        std::string Response;
+        const char* valuesHolder = "";
+        int ValuesCounter = 0;
+        std::string cmd;
+        const char* command = "mesure_value_All";
+        char* receivedString;
+        cmd = findCommand(command, commands);
+        // speed purpose we skip any loop
+        //cmd = "MA";
+        cmd += "\r";
+        sendCmd(cmd.c_str());
+        if (SockObject->is_connected())
+        {
+            // Read data from rs232 port
+            int hasData = SockObject->read(receivedString, DATA_LENGTH);
+            // MA,value[,value,value]: 
+            if (hasData)
+            {
+                Response.replace(cmd.size(), Response.size(), ""); //remove default response
                 std::cout << Response << std::endl;
-                // iterate response and extract values
-                for (int i = 0; i < Response.length();i++)
-                {// ,val1,val2,val3,val4,val5
-                    if (Response[i] == ',')
-                    {
-                        valuesHolder = Response.substr(i + 1, Response.at(i + 1)).c_str();
-                        std::cout << "value holder got" << std::endl;
-                        std::cout << valuesHolder << std::endl;
-                        Values[ValuesCounter] = atof(static_cast<std::string>(valuesHolder).c_str());
-                        ValuesCounter++;
-                        valuesHolder = "";
-                    }
-                    if (ValuesCounter == NumOfOutputs) break;
-                }
-                for (int i = 0; i < NumOfOutputs; i++)
-                {
-                    std::cout << "extracted values" << std::endl;
-                    std::cout << *(Values + i) << std::endl;
-                }
-                return Values;
             }
-        }
-        // get output all
-        double* keyenceWinSocket::getValueOutputHeadAll()
-        {
-            std::string Response;
-            const char* valuesHolder = "";
-            int ValuesCounter = 0;
-            std::string cmd;
-            const char* command = "mesure_value_All";
-            char* receivedString;
-            cmd = findCommand(command, commands);
-            // speed purpose we skip any loop
-            //cmd = "MA";
-            cmd += "\r";
-            sendCmd(cmd.c_str());
-            if (SockObject->is_connected())
-            {
-                // Read data from rs232 port
-                int hasData = SockObject->read(receivedString, DATA_LENGTH);
-                // MA,value[,value,value]: 
-                if (hasData)
-                {
-                    Response.replace(cmd.size(), Response.size(), ""); //remove default response
-                    std::cout << Response << std::endl;
-                }
 
-                double Values[NUM_OUTPUT_HEADS];
-                // try to gte rid of any loop that slow down the main loop
-                // as we know that we use three heads, we can just add the index
-                int first_occurance = Response.find_first_of(',', 0);
-                int second_occurance = Response.find_first_of(',', first_occurance + 1);
-                int third_occurance = Response.find_first_of(',', second_occurance + 1);
-                Values[0] = atof(Response.substr(first_occurance + 1, second_occurance + 1).c_str());
-                Values[1] = atof(Response.substr(second_occurance + 1, third_occurance + 1).c_str());
-                Values[2] = atof(Response.substr(third_occurance + 1, Response.length()).c_str());
-                return Values;
-            }
+            double Values[NUM_OUTPUT_HEADS];
+            // try to gte rid of any loop that slow down the main loop
+            // as we know that we use three heads, we can just add the index
+            int first_occurance = Response.find_first_of(',', 0);
+            int second_occurance = Response.find_first_of(',', first_occurance + 1);
+            int third_occurance = Response.find_first_of(',', second_occurance + 1);
+            Values[0] = atof(Response.substr(first_occurance + 1, second_occurance + 1).c_str());
+            Values[1] = atof(Response.substr(second_occurance + 1, third_occurance + 1).c_str());
+            Values[2] = atof(Response.substr(third_occurance + 1, Response.length()).c_str());
+            return Values;
         }
     }
+}

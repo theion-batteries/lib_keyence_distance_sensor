@@ -14,7 +14,6 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_libraries",
 			"include_directories",
 			"INCLUDE_DIRECTORIES"
 		],
@@ -36,29 +35,23 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 53,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
 				"line" : 41,
 				"parent" : 0
 			},
 			{
-				"command" : 2,
+				"command" : 1,
 				"file" : 0,
 				"line" : 42,
 				"parent" : 0
 			},
 			{
-				"command" : 2,
+				"command" : 1,
 				"file" : 0,
 				"line" : 43,
 				"parent" : 0
 			},
 			{
-				"command" : 3,
+				"command" : 2,
 				"file" : 0,
 				"line" : 56,
 				"parent" : 0
@@ -80,19 +73,19 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 2,
 					"path" : "C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/includes"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 3,
 					"path" : "C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/dependencies/sockpp/include"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 4,
 					"path" : "C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/dependencies/SerialPort/include"
 				},
 				{
-					"backtrace" : 6,
+					"backtrace" : 5,
 					"path" : "c:/src/vcpkg/installed/x64-windows/include"
 				}
 			],
@@ -137,11 +130,6 @@
 			{
 				"fragment" : "-Xlinker /subsystem:console",
 				"role" : "flags"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "../dependencies/sockpp/build/libsockpp-static.a",
-				"role" : "libraries"
 			},
 			{
 				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames",

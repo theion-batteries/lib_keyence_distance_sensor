@@ -331,7 +331,6 @@ keyence_bin.exe: CMakeFiles/keyence_bin.dir/src/keyence_rs232_api.cpp.obj
 keyence_bin.exe: CMakeFiles/keyence_bin.dir/src/keyence_win_api.cpp.obj
 keyence_bin.exe: CMakeFiles/keyence_bin.dir/src/main.cpp.obj
 keyence_bin.exe: CMakeFiles/keyence_bin.dir/build.make
-keyence_bin.exe: ../dependencies/sockpp/build/libsockpp-static.a
 keyence_bin.exe: CMakeFiles/keyence_bin.dir/linklibs.rsp
 keyence_bin.exe: CMakeFiles/keyence_bin.dir/objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable keyence_bin.exe"

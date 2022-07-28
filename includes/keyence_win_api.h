@@ -58,10 +58,13 @@ namespace keyence
         void sendCmd(const char* cmd) override;
         
     private:
+    sockpp::socket_initializer sockInit;
     sockpp::tcp_connector* SockObject;
     const char* IP;
     uint16_t PORT;
     const int DATA_LENGTH =255;
+    char Response[255]={};
+    int incomingData=0;
     };
 } // namespace keyence
 

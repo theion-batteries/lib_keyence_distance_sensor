@@ -50,7 +50,7 @@ file(GLOB all_SRCS
 # add .exe
 add_executable(keyence_bin ${all_SRCS})
 # link againt static lib
-target_link_libraries(keyence_bin ${PROJECT_SOURCE_DIR}/dependencies/sockpp/build/libsockpp-static.a)
+#target_link_libraries(keyence_bin ${PROJECT_SOURCE_DIR}/dependencies/sockpp/build/libsockpp-static.a)
 
 ## include preinstalled lib with vcpkg
 INCLUDE_DIRECTORIES(

@@ -28,12 +28,12 @@ The CXX compiler identification is Clang, found in "C:/Users/SamiDhiab/Theion_Re
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/TDM-GCC-64/bin/make.exe -f Makefile cmTC_ed836/fast && C:/TDM-GCC-64/bin/make.exe  -f CMakeFiles/cmTC_ed836.dir/build.make CMakeFiles/cmTC_ed836.dir/build
+Run Build Command(s):C:/TDM-GCC-64/bin/make.exe -f Makefile cmTC_50df8/fast && C:/TDM-GCC-64/bin/make.exe  -f CMakeFiles/cmTC_50df8.dir/build.make CMakeFiles/cmTC_50df8.dir/build
 make.exe[1]: Entering directory 'C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ed836.dir/CMakeCCompilerABI.c.obj
-"C:/Program Files/LLVM/bin/clang.exe"   -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_ed836.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles/cmTC_ed836.dir/CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_ed836.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-3.22/Modules/CMakeCCompilerABI.c"
-Linking C executable cmTC_ed836.exe
-"C:/Program Files/LLVM/bin/clang.exe" -fuse-ld=lld-link -nostartfiles -nostdlib -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console @CMakeFiles/cmTC_ed836.dir/objects1.rsp -o cmTC_ed836.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_ed836.lib -Xlinker /pdb:C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/CMakeTmp/cmTC_ed836.pdb -Xlinker /version:0.0  
+Building C object CMakeFiles/cmTC_50df8.dir/CMakeCCompilerABI.c.obj
+"C:/Program Files/LLVM/bin/clang.exe"   -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_50df8.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles/cmTC_50df8.dir/CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_50df8.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-3.22/Modules/CMakeCCompilerABI.c"
+Linking C executable cmTC_50df8.exe
+"C:/Program Files/LLVM/bin/clang.exe" -fuse-ld=lld-link -nostartfiles -nostdlib -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console @CMakeFiles/cmTC_50df8.dir/objects1.rsp -o cmTC_50df8.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_50df8.lib -Xlinker /pdb:C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/CMakeTmp/cmTC_50df8.pdb -Xlinker /version:0.0  
 make.exe[1]: Leaving directory 'C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/CMakeTmp'
 
 
@@ -41,12 +41,12 @@ make.exe[1]: Leaving directory 'C:/Users/SamiDhiab/Theion_Repos/lib_keyence_dist
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/TDM-GCC-64/bin/make.exe -f Makefile cmTC_42d9e/fast && C:/TDM-GCC-64/bin/make.exe  -f CMakeFiles/cmTC_42d9e.dir/build.make CMakeFiles/cmTC_42d9e.dir/build
+Run Build Command(s):C:/TDM-GCC-64/bin/make.exe -f Makefile cmTC_3956a/fast && C:/TDM-GCC-64/bin/make.exe  -f CMakeFiles/cmTC_3956a.dir/build.make CMakeFiles/cmTC_3956a.dir/build
 make.exe[1]: Entering directory 'C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_42d9e.dir/CMakeCXXCompilerABI.cpp.obj
-"C:/Program Files/LLVM/bin/clang++.exe"   -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_42d9e.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles/cmTC_42d9e.dir/CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_42d9e.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp"
-Linking CXX executable cmTC_42d9e.exe
-"C:/Program Files/LLVM/bin/clang++.exe" -fuse-ld=lld-link -nostartfiles -nostdlib -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console @CMakeFiles/cmTC_42d9e.dir/objects1.rsp -o cmTC_42d9e.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_42d9e.lib -Xlinker /pdb:C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/CMakeTmp/cmTC_42d9e.pdb -Xlinker /version:0.0  
+Building CXX object CMakeFiles/cmTC_3956a.dir/CMakeCXXCompilerABI.cpp.obj
+"C:/Program Files/LLVM/bin/clang++.exe"   -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_3956a.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles/cmTC_3956a.dir/CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_3956a.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp"
+Linking CXX executable cmTC_3956a.exe
+"C:/Program Files/LLVM/bin/clang++.exe" -fuse-ld=lld-link -nostartfiles -nostdlib -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console @CMakeFiles/cmTC_3956a.dir/objects1.rsp -o cmTC_3956a.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_3956a.lib -Xlinker /pdb:C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/CMakeTmp/cmTC_3956a.pdb -Xlinker /version:0.0  
 make.exe[1]: Leaving directory 'C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/CMakeTmp'
 
 
@@ -56,12 +56,12 @@ make.exe[1]: Leaving directory 'C:/Users/SamiDhiab/Theion_Repos/lib_keyence_dist
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/TDM-GCC-64/bin/make.exe -f Makefile cmTC_1fe1f/fast && C:/TDM-GCC-64/bin/make.exe  -f CMakeFiles/cmTC_1fe1f.dir/build.make CMakeFiles/cmTC_1fe1f.dir/build
+Run Build Command(s):C:/TDM-GCC-64/bin/make.exe -f Makefile cmTC_a14bc/fast && C:/TDM-GCC-64/bin/make.exe  -f CMakeFiles/cmTC_a14bc.dir/build.make CMakeFiles/cmTC_a14bc.dir/build
 make.exe[1]: Entering directory 'C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_1fe1f.dir/feature_tests.cxx.obj
-"C:/Program Files/LLVM/bin/clang++.exe"   -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_1fe1f.dir/feature_tests.cxx.obj -MF CMakeFiles/cmTC_1fe1f.dir/feature_tests.cxx.obj.d -o CMakeFiles/cmTC_1fe1f.dir/feature_tests.cxx.obj -c C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_1fe1f.exe
-"C:/Program Files/LLVM/bin/clang++.exe" -fuse-ld=lld-link -nostartfiles -nostdlib -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console @CMakeFiles/cmTC_1fe1f.dir/objects1.rsp -o cmTC_1fe1f.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_1fe1f.lib -Xlinker /pdb:C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/CMakeTmp/cmTC_1fe1f.pdb -Xlinker /version:0.0  @CMakeFiles/cmTC_1fe1f.dir/linklibs.rsp 
+Building CXX object CMakeFiles/cmTC_a14bc.dir/feature_tests.cxx.obj
+"C:/Program Files/LLVM/bin/clang++.exe"   -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_a14bc.dir/feature_tests.cxx.obj -MF CMakeFiles/cmTC_a14bc.dir/feature_tests.cxx.obj.d -o CMakeFiles/cmTC_a14bc.dir/feature_tests.cxx.obj -c C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_a14bc.exe
+"C:/Program Files/LLVM/bin/clang++.exe" -fuse-ld=lld-link -nostartfiles -nostdlib -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console @CMakeFiles/cmTC_a14bc.dir/objects1.rsp -o cmTC_a14bc.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_a14bc.lib -Xlinker /pdb:C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/CMakeTmp/cmTC_a14bc.pdb -Xlinker /version:0.0  @CMakeFiles/cmTC_a14bc.dir/linklibs.rsp 
 make.exe[1]: Leaving directory 'C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/CMakeTmp'
 
 
@@ -127,12 +127,12 @@ make.exe[1]: Leaving directory 'C:/Users/SamiDhiab/Theion_Repos/lib_keyence_dist
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/TDM-GCC-64/bin/make.exe -f Makefile cmTC_60c99/fast && C:/TDM-GCC-64/bin/make.exe  -f CMakeFiles/cmTC_60c99.dir/build.make CMakeFiles/cmTC_60c99.dir/build
+Run Build Command(s):C:/TDM-GCC-64/bin/make.exe -f Makefile cmTC_6f827/fast && C:/TDM-GCC-64/bin/make.exe  -f CMakeFiles/cmTC_6f827.dir/build.make CMakeFiles/cmTC_6f827.dir/build
 make.exe[1]: Entering directory 'C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_60c99.dir/feature_tests.cxx.obj
-"C:/Program Files/LLVM/bin/clang++.exe"   -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_60c99.dir/feature_tests.cxx.obj -MF CMakeFiles/cmTC_60c99.dir/feature_tests.cxx.obj.d -o CMakeFiles/cmTC_60c99.dir/feature_tests.cxx.obj -c C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_60c99.exe
-"C:/Program Files/LLVM/bin/clang++.exe" -fuse-ld=lld-link -nostartfiles -nostdlib -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console @CMakeFiles/cmTC_60c99.dir/objects1.rsp -o cmTC_60c99.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_60c99.lib -Xlinker /pdb:C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/CMakeTmp/cmTC_60c99.pdb -Xlinker /version:0.0  @CMakeFiles/cmTC_60c99.dir/linklibs.rsp 
+Building CXX object CMakeFiles/cmTC_6f827.dir/feature_tests.cxx.obj
+"C:/Program Files/LLVM/bin/clang++.exe"   -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_6f827.dir/feature_tests.cxx.obj -MF CMakeFiles/cmTC_6f827.dir/feature_tests.cxx.obj.d -o CMakeFiles/cmTC_6f827.dir/feature_tests.cxx.obj -c C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_6f827.exe
+"C:/Program Files/LLVM/bin/clang++.exe" -fuse-ld=lld-link -nostartfiles -nostdlib -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console @CMakeFiles/cmTC_6f827.dir/objects1.rsp -o cmTC_6f827.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_6f827.lib -Xlinker /pdb:C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/CMakeTmp/cmTC_6f827.pdb -Xlinker /version:0.0  @CMakeFiles/cmTC_6f827.dir/linklibs.rsp 
 make.exe[1]: Leaving directory 'C:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor/build/CMakeFiles/CMakeTmp'
 
 
