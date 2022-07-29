@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Thu Jul 28 14:13:04 2022
+# Make data base, printed on Fri Jul 29 09:32:16 2022
 
 # Variables
 
@@ -44,7 +44,8 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupp
 # environment
 VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
 # environment
-PYCHARM COMMUNITY EDITION = C:\Program Files\JetBrains\PyCharm Community Edition 2021.2.2\bin;
+PYCHARM COMMUNITY EDITION = C:\Program Files\JetBrains\PyCharm Community Edition 2021 
+.2.2\bin;
 # environment
 ONEDRIVE = C:\Users\SamiDhiab\OneDrive - Theion GmbH
 # environment
@@ -60,8 +61,7 @@ FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 TMP = C:\Users\SAMIDH~1\AppData\Local\Temp
 # environment
-GENICAM_GENTL64_PATH = C:\Program Files\STEMMER IMAGING\Common Vision Blox\Ge 
-nICam\bin\win64_x64\TLIs
+GENICAM_GENTL64_PATH = C:\Program Files\STEMMER IMAGING\Common Vision Blox\GenICam\bin\win64_x64\TLIs
 # environment
 PROGRAMW6432 = C:\Program Files
 # environment
@@ -93,7 +93,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_7492_NLVSCSUQBVFPHCRX
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_13648_GLYYRZYNZTJRSGWP
 # environment
 COMPUTERNAME = DESKTOP-BRFNNCP
 # environment
@@ -161,8 +161,7 @@ OS = Windows_NT
 # environment
 VSCODE_IPC_HOOK = \\.\pipe\66617ee1df8269f425333cb861d18dbe-1.69.2-main-sock
 # environment
-PYTHONPATH = C:\Users\SamiDhiab\Theion_Repos;C:\Users\SamiDhiab\Theion_Repos\IR_Thermal_Cam 
-era\test\Medium_Imports_Tutorial\utils;C:\Users\SamiDhiab\Theion_Repos\soft_temperature_control_module\lib;
+PYTHONPATH = C:\Users\SamiDhiab\Theion_Repos;C:\Users\SamiDhiab\Theion_Repos\IR_Thermal_Camera\test\Medium_Imports_Tutorial\utils;C:\Users\SamiDhiab\Theion_Repos\soft_temperature_control_module\lib;
 # environment
 HOMEPATH = \Users\SamiDhiab
 # environment
@@ -180,7 +179,8 @@ SYSTEMROOT = C:\WINDOWS
 # automatic
 +F = $(notdir $+)
 # environment
-APPDATA = C:\Users\SamiDhiab\AppData\Roaming
+APPDATA = C:\Users\SamiD 
+hiab\AppData\Roaming
 # environment
 TEMP = C:\Users\SAMIDH~1\AppData\Local\Temp
 # environment
@@ -214,7 +214,7 @@ PROCESSOR_LEVEL = 23
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 7492
+VSCODE_PID = 13648
 # environment
 USERDOMAIN_ROAMINGPROFILE = AzureAD
 # variable set hash-table stats:
@@ -231,8 +231,7 @@ USERDOMAIN_ROAMINGPROFILE = AzureAD
 # C:\Users\SamiDhiab\AppData\Roaming\npm (key C:/Users/SamiDhiab/AppData/Roaming/npm, mtime 1632490459): 2 files, no impossibilities.
 # . (key c:/Users/SamiDhiab/Theion_Repos/lib_keyence_distance_sensor, mtime 1659002313): 15 files, no impossibilities.
 # C:\Users\SamiDhiab\.platformio\penv\Scripts\ (key C:/Users/SamiDhiab/.platformio/penv/Scripts/, mtime 1656008720): 25 files, no impossibilities.
-# C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn 
-\ (key C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/, mtime 1636023288): 7 files, no impossibilities.
+# C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\ (key C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/, mtime 1636023288): 7 files, no impossibilities.
 # C:\Program Files (x86)\Common Files\Oracle\Java\javapath (key C:/Program Files (x86)/Common Files/Oracle/Java/javapath, mtime 1652174015): 5 files, no impossibilities.
 # C:\Program Files\STEMMER IMAGING\Common Vision Blox\ (key C:/Program Files/STEMMER IMAGING/Common Vision Blox/, mtime 1634050659): 73 files, no impossibilities.
 # C: could not be stat'd.
@@ -252,17 +251,17 @@ USERDOMAIN_ROAMINGPROFILE = AzureAD
 # C:\Program Files\Eclipse Foundation\jdk-8.0.302.8-hotspot\bin (key C:/Program Files/Eclipse Foundation/jdk-8.0.302.8-hotspot/bin, mtime 1637168167): 53 files, no impossibilities.
 # C:\Program Files\Microsoft SQL Server\130\Tools\Binn\ (key C:/Program Files/Microsoft SQL Server/130/Tools/Binn/, mtime 1636023284): 4 files, no impossibilities.
 # C:\WINDOWS\System32\Wbem (key C:/WINDOWS/System32/Wbem, mtime 1657876240): 174 files, no impossibilities.
-# C:\Program Files\doxygen\bin (key C:/Program Files/doxygen/bin, mtime 1652958329): 7 files, no impossibilities.
+# C:\Program Files\doxygen\bin (key C:/Program Files/doxygen/ 
+bin, mtime 1652958329): 7 files, no impossibilities.
 # C:\Program Files\nodejs\ (key C:/Program Files/nodejs/, mtime 1632490465): 11 files, no impossibilities.
 # C:\Users\SamiDhiab\AppData\Local\Programs\MiKTeX\miktex\bin\x64\ (key C:/Users/SamiDhiab/AppData/Local/Programs/MiKTeX/miktex/bin/x64/, mtime 1652959888): 732 files, no impossibilities.
-# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1659009219): 2995 files, no impossibilities.
+# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1659027257): 2996 files, no impossibilities.
 # C:\Users\SamiDhiab\AppData\Local\Programs\Python\Python39\ (key C:/Users/SamiDhiab/AppData/Local/Programs/Python/Python39/, mtime 1633938602): 19 files, no impossibilities.
 # C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1657873902): 13 files, no impossibilities.
 # C:\Users\SamiDhiab\AppData\Local\Programs\Python\Python39\Scripts\ (key C:/Users/SamiDhiab/AppData/Local/Programs/Python/Python39/Scripts/, mtime 1647271958): 78 files, no impossibilities.
 # C:\Program Files\PuTTY\ (key C:/Program Files/PuTTY/, mtime 1629711085): 12 files, no impossibilities.
 
- 
-# 4773 files, no impossibilities in 33 directories.
+# 4774 files, no impossibilities in 33 directories.
 
 # Implicit Rules
 
@@ -318,15 +317,15 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 9 (7) / strings = 4600 / storage = 70077 B / avg = 15 B
+# strcache buffers: 9 (7) / strings = 4601 / storage = 70083 B / avg = 15 B
 # current buf: size = 8174 B / used = 4751 B / count = 310 / avg = 15 B
-# other used: total = 61903 B / count = 4290 / avg = 14 B
-# other free: total = 66 B / max = 17 B / min = 2 B / avg = 8 B
+# other used: total = 61909 B / count = 4291 / avg = 14 B
+# other free: total = 60 B / max = 17 B / min = 2 B / avg = 7 B
 
-# strcache performance: lookups = 4813 / hit rate = 4%
+# strcache performance: lookups = 4814 / hit rate = 4%
 # hash-table stats:
-# Load=4600/8192=56%, Rehash=0, Collisions=2375/4813=49%
-# Finished Make data base on Thu Jul 28 14:13:04 2022
+# Load=4601/8192=56%, Rehash=0, Collisions=2375/4814=49%
+# Finished Make data base on Fri Jul 29 09:32:16 2022
 
  
 make.exe: *** No rule to make target 'all'.  Stop.

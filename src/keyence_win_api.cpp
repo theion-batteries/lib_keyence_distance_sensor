@@ -286,7 +286,7 @@ namespace keyence
         std::cout << "Created a connection from " << SockObject->address() << std::endl;
         std::cout << "Created a connection to " << SockObject->peer_address() << std::endl;
         // Set a timeout for the responses
-        if (!SockObject->read_timeout(std::chrono::seconds(100))) {
+        if (!SockObject->read_timeout(std::chrono::seconds(5))) {
             std::cerr << "Error setting timeout on TCP stream: "
                 << SockObject->last_error_str() << std::endl;
         }
@@ -302,7 +302,6 @@ namespace keyence
     // set general mode
     void keyenceWinSocket::setGeneralMode()
     {
-
         //write the get value command
         const char* command = "set_general_mode";
         std::string cmd = findCommand(command, commands);
