@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Fri Jul 29 09:32:16 2022
+# Make data base, printed on Mon Aug 01 16:45:39 2022
 
 # Variables
 
@@ -24,11 +24,12 @@ GENICAM_CACHE_V3_0 = C:\ProgramData\STEMMER IMAGING\Common Vision Blox\GenICam\x
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # environment
-PLATFORMIO_IDE = 2.5.0
+PLATFORMIO_IDE = 2.5.1
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-HOMEDRIVE = C:
+HOMEDRIVE = C 
+:
 # automatic
 @F = $(notdir $@)
 # automatic
@@ -44,8 +45,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupp
 # environment
 VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
 # environment
-PYCHARM COMMUNITY EDITION = C:\Program Files\JetBrains\PyCharm Community Edition 2021 
-.2.2\bin;
+PYCHARM COMMUNITY EDITION = C:\Program Files\JetBrains\PyCharm Community Edition 2021.2.2\bin;
 # environment
 ONEDRIVE = C:\Users\SamiDhiab\OneDrive - Theion GmbH
 # environment
@@ -93,7 +93,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_13648_GLYYRZYNZTJRSGWP
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_15156_UQJSWOHCUZUAUHOJ
 # environment
 COMPUTERNAME = DESKTOP-BRFNNCP
 # environment
@@ -179,8 +179,7 @@ SYSTEMROOT = C:\WINDOWS
 # automatic
 +F = $(notdir $+)
 # environment
-APPDATA = C:\Users\SamiD 
-hiab\AppData\Roaming
+APPDATA = C:\Users\SamiDhiab\AppData\Roaming
 # environment
 TEMP = C:\Users\SAMIDH~1\AppData\Local\Temp
 # environment
@@ -214,7 +213,7 @@ PROCESSOR_LEVEL = 23
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 13648
+VSCODE_PID = 15156
 # environment
 USERDOMAIN_ROAMINGPROFILE = AzureAD
 # variable set hash-table stats:
@@ -255,13 +254,13 @@ USERDOMAIN_ROAMINGPROFILE = AzureAD
 bin, mtime 1652958329): 7 files, no impossibilities.
 # C:\Program Files\nodejs\ (key C:/Program Files/nodejs/, mtime 1632490465): 11 files, no impossibilities.
 # C:\Users\SamiDhiab\AppData\Local\Programs\MiKTeX\miktex\bin\x64\ (key C:/Users/SamiDhiab/AppData/Local/Programs/MiKTeX/miktex/bin/x64/, mtime 1652959888): 732 files, no impossibilities.
-# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1659027257): 2996 files, no impossibilities.
+# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1659309293): 2996 files, no impossibilities.
 # C:\Users\SamiDhiab\AppData\Local\Programs\Python\Python39\ (key C:/Users/SamiDhiab/AppData/Local/Programs/Python/Python39/, mtime 1633938602): 19 files, no impossibilities.
 # C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1657873902): 13 files, no impossibilities.
-# C:\Users\SamiDhiab\AppData\Local\Programs\Python\Python39\Scripts\ (key C:/Users/SamiDhiab/AppData/Local/Programs/Python/Python39/Scripts/, mtime 1647271958): 78 files, no impossibilities.
+# C:\Users\SamiDhiab\AppData\Local\Programs\Python\Python39\Scripts\ (key C:/Users/SamiDhiab/AppData/Local/Programs/Python/Python39/Scripts/, mtime 1659097482): 79 files, no impossibilities.
 # C:\Program Files\PuTTY\ (key C:/Program Files/PuTTY/, mtime 1629711085): 12 files, no impossibilities.
 
-# 4774 files, no impossibilities in 33 directories.
+# 4775 files, no impossibilities in 33 directories.
 
 # Implicit Rules
 
@@ -317,15 +316,15 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 9 (7) / strings = 4601 / storage = 70083 B / avg = 15 B
+# strcache buffers: 9 (8) / strings = 4602 / storage = 70102 B / avg = 15 B
 # current buf: size = 8174 B / used = 4751 B / count = 310 / avg = 15 B
-# other used: total = 61909 B / count = 4291 / avg = 14 B
-# other free: total = 60 B / max = 17 B / min = 2 B / avg = 7 B
+# other used: total = 61928 B / count = 4292 / avg = 14 B
+# other free: total = 41 B / max = 12 B / min = 1 B / avg = 5 B
 
-# strcache performance: lookups = 4814 / hit rate = 4%
+# strcache performance: lookups = 4815 / hit rate = 4%
 # hash-table stats:
-# Load=4601/8192=56%, Rehash=0, Collisions=2375/4814=49%
-# Finished Make data base on Fri Jul 29 09:32:16 2022
+# Load=4602/8192=56%, Rehash=0, Collisions=2377/4815=49%
+# Finished Make data base on Mon Aug 01 16:45:39 2022
 
  
 make.exe: *** No rule to make target 'all'.  Stop.
