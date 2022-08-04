@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Thu Aug 04 12:08:25 2022
+# Make data base, printed on Thu Aug 04 13:24:59 2022
 
 # Variables
 
@@ -28,8 +28,7 @@ PLATFORMIO_IDE = 2.5.1
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-HOMEDRIVE = C 
-:
+HOMEDRIVE = C:
 # automatic
 @F = $(notdir $@)
 # automatic
@@ -93,7 +92,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_13680_HKLYXRNGKRIFHIEO
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_16436_WPQQNGECTQABIQGH
 # environment
 COMPUTERNAME = DESKTOP-BRFNNCP
 # environment
@@ -213,7 +212,7 @@ PROCESSOR_LEVEL = 23
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 13680
+VSCODE_PID = 16436
 # environment
 USERDOMAIN_ROAMINGPROFILE = AzureAD
 # variable set hash-table stats:
@@ -250,7 +249,8 @@ USERDOMAIN_ROAMINGPROFILE = AzureAD
 # C:\Program Files\Eclipse Foundation\jdk-8.0.302.8-hotspot\bin (key C:/Program Files/Eclipse Foundation/jdk-8.0.302.8-hotspot/bin, mtime 1637168167): 53 files, no impossibilities.
 # C:\Program Files\Microsoft SQL Server\130\Tools\Binn\ (key C:/Program Files/Microsoft SQL Server/130/Tools/Binn/, mtime 1636023284): 4 files, no impossibilities.
 # C:\WINDOWS\System32\Wbem (key C:/WINDOWS/System32/Wbem, mtime 1657876240): 174 files, no impossibilities.
-# C:\Program Files\doxygen\bin (key C:/Program Files/doxygen/bin, mtime 1652958329): 7 files, no impossibilities.
+# C:\Program Files\doxygen\bin (key C:/Program Files/doxygen/ 
+bin, mtime 1652958329): 7 files, no impossibilities.
 # C:\Program Files\nodejs\ (key C:/Program Files/nodejs/, mtime 1632490465): 11 files, no impossibilities.
 # C:\Users\SamiDhiab\AppData\Local\Programs\MiKTeX\miktex\bin\x64\ (key C:/Users/SamiDhiab/AppData/Local/Programs/MiKTeX/miktex/bin/x64/, mtime 1652959888): 732 files, no impossibilities.
 # C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1659539563): 2996 files, no impossibilities.
@@ -323,7 +323,7 @@ GNUmakefile:
 # strcache performance: lookups = 4815 / hit rate = 4%
 # hash-table stats:
 # Load=4602/8192=56%, Rehash=0, Collisions=2377/4815=49%
-# Finished Make data base on Thu Aug 04 12:08:25 2022
+# Finished Make data base on Thu Aug 04 13:24:59 2022
 
  
 make.exe: *** No rule to make target 'all'.  Stop.

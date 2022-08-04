@@ -33,7 +33,7 @@ The same testing procedure can be applied on any platform.
 please follow the link for full virtual implementation:
 https://wokwi.com/projects/334545131093885522
 
-## Q&A
+## Q & A
 if cmake failed to build due to socket dependecies problems, do the following
 ~~~cpp
 // in file dependencies\sockpp\include\sockpp\platform.h
