@@ -8,6 +8,7 @@
 This Repo include standalone cpp library for interfacing the keyence controll unitusing the interface class distance_sensor.
 This library is designed to be system independant and uses the dependencies injection mechanism to include the correct class.
 
+## CMake Static Lib
 ## APIs
 To use this library, create an instance of the distance sensor by injecting the correct interface (communication -> architecture).
 Example:

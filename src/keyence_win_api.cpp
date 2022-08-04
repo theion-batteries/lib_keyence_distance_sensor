@@ -241,7 +241,16 @@ namespace keyence
             std::cout << receivedString << std::endl;
         }
     }
+
+
+
+/**********************************************************************
+ * ************************************************************************
+ * ************************************************************************/
     /***************** Keyence Ethernet socket Windows *********************/
+
+
+    
     keyenceWinSocket::keyenceWinSocket(const char* ip, uint16_t port)
     {
         std::cout << "creating keyence ethernet to windows interface" << std::endl;

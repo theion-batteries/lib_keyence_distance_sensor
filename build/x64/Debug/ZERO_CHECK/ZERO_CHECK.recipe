@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\SamiDhiab\Theion_Repos\lib_keyence_distance_sensor\build\x64\Debug\ZERO_CHECK</FullPath>
+      <FullPath>C:\Users\SamiDhiab\Theion_Repos\soft_wafer_holder_system_controller\dependencies\lib_keyence_distance_sensor\build\x64\debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
