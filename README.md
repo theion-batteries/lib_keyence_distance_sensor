@@ -32,3 +32,15 @@ This library has a mock implementation to test all sensor responses and the prog
 The same testing procedure can be applied on any platform.
 please follow the link for full virtual implementation:
 https://wokwi.com/projects/334545131093885522
+
+## Q&A
+if cmake failed to build due to socket dependecies problems, do the following
+~~~cpp
+// in file dependencies\sockpp\include\sockpp\platform.h
+// paste these lines anywhere
+
+/* Need to link with Ws2_32.lib, Mswsock.lib, and Advapi32.lib*/
+#pragma comment (lib, "Ws2_32.lib")
+#pragma comment (lib, "Mswsock.lib")
+#pragma comment (lib, "AdvApi32.lib")
+~~~
