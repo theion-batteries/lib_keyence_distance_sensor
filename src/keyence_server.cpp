@@ -78,8 +78,8 @@ void keyence_server::create_sensor3()
 void keyence_server::init_sensor_controller()
 {
 	create_sensor1();
-	create_sensor2();
-	create_sensor3();
+	//create_sensor2();
+	//create_sensor3();
 	std::cout << "request received, asking controller for settings " << std::endl;
 
 	KeyenceDistSensorHEAD1->initSensorCom(); // init sensor communication
@@ -114,9 +114,10 @@ void keyence_server::server_parse(std::string& msg)
 	std::cout << "parsing request: " << msg << std::endl;
 	std::cout << "searching callback function  " << std::endl;
 	auto iter = keyence_callbacks.find(msg);
-    if(iter == keyence_callbacks.end()) { std::cout <<"not found"; }
-	init_sensor_controller();
-	iter->second;
-	//get1_call;
+    if(iter == keyence_callbacks.end()) {
+		 std::cout <<"cmd not found";
+		 return; }
+	keyence_callbacks[msg](this); //run callback
+	
 
 }

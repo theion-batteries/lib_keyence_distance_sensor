@@ -35,13 +35,22 @@ private:
         {"delta",{"192.168.0.201",3344}},
         {"keyence",{"192.168.0.104",24687}},
     };
-    std::function<void(keyence_server*)> get1_call = &keyence_server::get_value_output1;
+    using fnCmd = std::function<void(keyence_server*)>;
+    std::map < std::string, fnCmd > keyence_callbacks = 
+    {
+        std::make_pair("set_R0", std::mem_fn(&keyence_server::init_sensor_controller)),
+        std::make_pair("set_Q0", std::mem_fn(&keyence_server::init_sensor_controller)),
+        std::make_pair("get1", std::mem_fn(&keyence_server::get_value_output1)),
+        std::make_pair("get2", std::mem_fn(&keyence_server::get_value_output2)),
+        std::make_pair("get3", std::mem_fn(&keyence_server::get_value_output3)),
+        std::make_pair("get_all", std::mem_fn(&keyence_server::get_value_outputAll))
+          };
 
-    std::map<std::string, void (keyence_server::*)()> keyence_callbacks = {
-        {"get1",&keyence_server::get_value_output1}, {"get2",&keyence_server::get_value_output2},
-        {"get3",&keyence_server::get_value_output3}, {"get_all",&keyence_server::get_value_outputAll},
-        {"set_R0",&keyence_server::init_sensor_controller}, {"set_Q0",&keyence_server::init_sensor_controller}
-    };
+    /* std::map<std::string, void (keyence_server::*)()> keyence_callbacks = {
+         {"get1",&keyence_server::get_value_output1}, {"get2",&keyence_server::get_value_output2},
+         {"get3",&keyence_server::get_value_output3}, {"get_all",&keyence_server::get_value_outputAll},
+         {"set_R0",&keyence_server::init_sensor_controller}, {"set_Q0",&keyence_server::init_sensor_controller}
+     };*/
     const char* keyence_controller_ip = "192.168.0.104"; //ip controller
     uint16_t keyence_controller_port = 24687; // port
     IdistanceSensor* KeyenceDistSensorHEAD1;
