@@ -28,4 +28,11 @@ double IdistanceSensor::getCurrentDistance()
     //return currentDistance=KeyenceObject->getValueMultipleOutputHead("100000000000")[HeadNum-1];
 
 }
-    void IdistanceSensor::printDistance(float val){};
+std::vector<double> IdistanceSensor::getValuesAll()
+{
+ auto Values =keyenceInterface->getValueOutputHeadAll();
+return std::vector<double>(Values, Values + sizeof Values / sizeof Values[0]);
+ 
+}
+
+void IdistanceSensor::printDistance(float val){};
