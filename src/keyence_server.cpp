@@ -1,7 +1,7 @@
 /**
  * @file keyence_server.cpp
  * @author your name (you@domain.com)
- * @brief
+ * @brief 
  * @version 0.1
  * @date 2022-08-04
  *
@@ -110,6 +110,7 @@ void keyence_server::get_value_outputAll()
 }
 void keyence_server::server_parse(std::string& msg)
 {
+
 
 	std::cout << "parsing request: " << msg << std::endl;
 	std::cout << "searching callback function  " << std::endl;
