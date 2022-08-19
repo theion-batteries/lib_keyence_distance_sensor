@@ -20,6 +20,7 @@ public:
     void initSensorCom();
     //generic methods
     double getCurrentDistance();
+    std::vector<double> getValuesAll();
     void printDistance(float val);
     
 private:
