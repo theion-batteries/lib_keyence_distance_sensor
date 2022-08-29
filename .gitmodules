@@ -4,5 +4,5 @@
 	branch = master
 [submodule "dependencies/sockpp"]
 	path = dependencies/sockpp
-	url = https://github.com/theionSami/sockpp.git/sockpp.git
+	url = https://github.com/theionSami/sockpp.git
 	branch = master
