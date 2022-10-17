@@ -1,8 +1,0 @@
-[submodule "dependencies/SerialPort"]
-	path = dependencies/SerialPort
-	url = https://github.com/theionSami/SerialPort.git
-	branch = master
-[submodule "dependencies/sockpp"]
-	path = dependencies/sockpp
-	url = https://github.com/theionSami/sockpp.git/sockpp.git
-	branch = master
