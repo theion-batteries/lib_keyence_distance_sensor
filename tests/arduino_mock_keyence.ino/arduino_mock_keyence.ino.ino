@@ -3,7 +3,7 @@
  * Example For receiving data from SerialPort
  */
 
-#define BAUD 9600
+#define BAUD 115200
 #define DELAY_TIME 100
 #define led 13
 
@@ -21,11 +21,17 @@ void loop() {
     receivedString = Serial.readStringUntil('\n');
   }
 
-  if (receivedString.equals("R0"))
+  if (receivedString.equals("x"))
   {
     digitalWrite(led, HIGH);
-    Serial.print("R0");
     delay(100);
   }
-  else if (receivedString.equals("OFF")) digitalWrite(led, LOW);
+  if (receivedString.equals("xx"))
+  {
+    digitalWrite(led, LOW);
+  }
+   if (receivedString.equals("xxx"))
+  {
+    digitalWrite(led, HIGH);
+  }
 }
