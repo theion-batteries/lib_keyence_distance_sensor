@@ -1,0 +1,1 @@
+# CMAKE file for lib keyence including serial and socket com
